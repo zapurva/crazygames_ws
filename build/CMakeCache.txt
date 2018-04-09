@@ -309,7 +309,7 @@ crazyflie_controller_BINARY_DIR:STATIC=/home/jan/apurva_joshi/crazygames_ws/buil
 crazyflie_controller_SOURCE_DIR:STATIC=/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_controller
 
 //Value Computed by CMake
-crazyflie_cpp_BINARY_DIR:STATIC=/home/jan/apurva_joshi/crazygames_ws/build/crazyflie_ros/crazyflie_cpp
+crazyflie_cpp_BINARY_DIR:STATIC=/home/jan/apurva_joshi/crazygames_ws/build/crazyflie_ros/crazyflie_tools
 
 //The directory containing a CMake configuration file for crazyflie_cpp.
 crazyflie_cpp_DIR:PATH=/home/jan/apurva_joshi/crazygames_ws/devel/share/crazyflie_cpp/cmake
@@ -318,7 +318,7 @@ crazyflie_cpp_DIR:PATH=/home/jan/apurva_joshi/crazygames_ws/devel/share/crazyfli
 crazyflie_cpp_LIB_DEPENDS:STATIC=general;/usr/lib/x86_64-linux-gnu/libusb-1.0.so;
 
 //Value Computed by CMake
-crazyflie_cpp_SOURCE_DIR:STATIC=/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_cpp
+crazyflie_cpp_SOURCE_DIR:STATIC=/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_tools
 
 //Value Computed by CMake
 crazyflie_demo_BINARY_DIR:STATIC=/home/jan/apurva_joshi/crazygames_ws/build/crazyflie_ros/crazyflie_demo

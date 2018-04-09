@@ -195,6 +195,48 @@ _crazyflie_driver_generate_messages_check_deps_GenericLogData/fast:
 .PHONY : _crazyflie_driver_generate_messages_check_deps_GenericLogData/fast
 
 # Convenience name for target.
+crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_GoTo.dir/rule:
+	cd /home/jan/apurva_joshi/crazygames_ws/build && $(MAKE) -f CMakeFiles/Makefile2 crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_GoTo.dir/rule
+.PHONY : crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_GoTo.dir/rule
+
+# Convenience name for target.
+_crazyflie_driver_generate_messages_check_deps_GoTo: crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_GoTo.dir/rule
+.PHONY : _crazyflie_driver_generate_messages_check_deps_GoTo
+
+# fast build rule for target.
+_crazyflie_driver_generate_messages_check_deps_GoTo/fast:
+	cd /home/jan/apurva_joshi/crazygames_ws/build && $(MAKE) -f crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_GoTo.dir/build.make crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_GoTo.dir/build
+.PHONY : _crazyflie_driver_generate_messages_check_deps_GoTo/fast
+
+# Convenience name for target.
+crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_Hover.dir/rule:
+	cd /home/jan/apurva_joshi/crazygames_ws/build && $(MAKE) -f CMakeFiles/Makefile2 crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_Hover.dir/rule
+.PHONY : crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_Hover.dir/rule
+
+# Convenience name for target.
+_crazyflie_driver_generate_messages_check_deps_Hover: crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_Hover.dir/rule
+.PHONY : _crazyflie_driver_generate_messages_check_deps_Hover
+
+# fast build rule for target.
+_crazyflie_driver_generate_messages_check_deps_Hover/fast:
+	cd /home/jan/apurva_joshi/crazygames_ws/build && $(MAKE) -f crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_Hover.dir/build.make crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_Hover.dir/build
+.PHONY : _crazyflie_driver_generate_messages_check_deps_Hover/fast
+
+# Convenience name for target.
+crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_Land.dir/rule:
+	cd /home/jan/apurva_joshi/crazygames_ws/build && $(MAKE) -f CMakeFiles/Makefile2 crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_Land.dir/rule
+.PHONY : crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_Land.dir/rule
+
+# Convenience name for target.
+_crazyflie_driver_generate_messages_check_deps_Land: crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_Land.dir/rule
+.PHONY : _crazyflie_driver_generate_messages_check_deps_Land
+
+# fast build rule for target.
+_crazyflie_driver_generate_messages_check_deps_Land/fast:
+	cd /home/jan/apurva_joshi/crazygames_ws/build && $(MAKE) -f crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_Land.dir/build.make crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_Land.dir/build
+.PHONY : _crazyflie_driver_generate_messages_check_deps_Land/fast
+
+# Convenience name for target.
 crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_LogBlock.dir/rule:
 	cd /home/jan/apurva_joshi/crazygames_ws/build && $(MAKE) -f CMakeFiles/Makefile2 crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_LogBlock.dir/rule
 .PHONY : crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_LogBlock.dir/rule
@@ -207,6 +249,20 @@ _crazyflie_driver_generate_messages_check_deps_LogBlock: crazyflie_ros/crazyflie
 _crazyflie_driver_generate_messages_check_deps_LogBlock/fast:
 	cd /home/jan/apurva_joshi/crazygames_ws/build && $(MAKE) -f crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_LogBlock.dir/build.make crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_LogBlock.dir/build
 .PHONY : _crazyflie_driver_generate_messages_check_deps_LogBlock/fast
+
+# Convenience name for target.
+crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_Position.dir/rule:
+	cd /home/jan/apurva_joshi/crazygames_ws/build && $(MAKE) -f CMakeFiles/Makefile2 crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_Position.dir/rule
+.PHONY : crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_Position.dir/rule
+
+# Convenience name for target.
+_crazyflie_driver_generate_messages_check_deps_Position: crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_Position.dir/rule
+.PHONY : _crazyflie_driver_generate_messages_check_deps_Position
+
+# fast build rule for target.
+_crazyflie_driver_generate_messages_check_deps_Position/fast:
+	cd /home/jan/apurva_joshi/crazygames_ws/build && $(MAKE) -f crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_Position.dir/build.make crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_Position.dir/build
+.PHONY : _crazyflie_driver_generate_messages_check_deps_Position/fast
 
 # Convenience name for target.
 crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_RemoveCrazyflie.dir/rule:
@@ -223,6 +279,76 @@ _crazyflie_driver_generate_messages_check_deps_RemoveCrazyflie/fast:
 .PHONY : _crazyflie_driver_generate_messages_check_deps_RemoveCrazyflie/fast
 
 # Convenience name for target.
+crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_SetGroupMask.dir/rule:
+	cd /home/jan/apurva_joshi/crazygames_ws/build && $(MAKE) -f CMakeFiles/Makefile2 crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_SetGroupMask.dir/rule
+.PHONY : crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_SetGroupMask.dir/rule
+
+# Convenience name for target.
+_crazyflie_driver_generate_messages_check_deps_SetGroupMask: crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_SetGroupMask.dir/rule
+.PHONY : _crazyflie_driver_generate_messages_check_deps_SetGroupMask
+
+# fast build rule for target.
+_crazyflie_driver_generate_messages_check_deps_SetGroupMask/fast:
+	cd /home/jan/apurva_joshi/crazygames_ws/build && $(MAKE) -f crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_SetGroupMask.dir/build.make crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_SetGroupMask.dir/build
+.PHONY : _crazyflie_driver_generate_messages_check_deps_SetGroupMask/fast
+
+# Convenience name for target.
+crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_StartTrajectory.dir/rule:
+	cd /home/jan/apurva_joshi/crazygames_ws/build && $(MAKE) -f CMakeFiles/Makefile2 crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_StartTrajectory.dir/rule
+.PHONY : crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_StartTrajectory.dir/rule
+
+# Convenience name for target.
+_crazyflie_driver_generate_messages_check_deps_StartTrajectory: crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_StartTrajectory.dir/rule
+.PHONY : _crazyflie_driver_generate_messages_check_deps_StartTrajectory
+
+# fast build rule for target.
+_crazyflie_driver_generate_messages_check_deps_StartTrajectory/fast:
+	cd /home/jan/apurva_joshi/crazygames_ws/build && $(MAKE) -f crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_StartTrajectory.dir/build.make crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_StartTrajectory.dir/build
+.PHONY : _crazyflie_driver_generate_messages_check_deps_StartTrajectory/fast
+
+# Convenience name for target.
+crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_Stop.dir/rule:
+	cd /home/jan/apurva_joshi/crazygames_ws/build && $(MAKE) -f CMakeFiles/Makefile2 crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_Stop.dir/rule
+.PHONY : crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_Stop.dir/rule
+
+# Convenience name for target.
+_crazyflie_driver_generate_messages_check_deps_Stop: crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_Stop.dir/rule
+.PHONY : _crazyflie_driver_generate_messages_check_deps_Stop
+
+# fast build rule for target.
+_crazyflie_driver_generate_messages_check_deps_Stop/fast:
+	cd /home/jan/apurva_joshi/crazygames_ws/build && $(MAKE) -f crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_Stop.dir/build.make crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_Stop.dir/build
+.PHONY : _crazyflie_driver_generate_messages_check_deps_Stop/fast
+
+# Convenience name for target.
+crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_Takeoff.dir/rule:
+	cd /home/jan/apurva_joshi/crazygames_ws/build && $(MAKE) -f CMakeFiles/Makefile2 crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_Takeoff.dir/rule
+.PHONY : crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_Takeoff.dir/rule
+
+# Convenience name for target.
+_crazyflie_driver_generate_messages_check_deps_Takeoff: crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_Takeoff.dir/rule
+.PHONY : _crazyflie_driver_generate_messages_check_deps_Takeoff
+
+# fast build rule for target.
+_crazyflie_driver_generate_messages_check_deps_Takeoff/fast:
+	cd /home/jan/apurva_joshi/crazygames_ws/build && $(MAKE) -f crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_Takeoff.dir/build.make crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_Takeoff.dir/build
+.PHONY : _crazyflie_driver_generate_messages_check_deps_Takeoff/fast
+
+# Convenience name for target.
+crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_TrajectoryPolynomialPiece.dir/rule:
+	cd /home/jan/apurva_joshi/crazygames_ws/build && $(MAKE) -f CMakeFiles/Makefile2 crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_TrajectoryPolynomialPiece.dir/rule
+.PHONY : crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_TrajectoryPolynomialPiece.dir/rule
+
+# Convenience name for target.
+_crazyflie_driver_generate_messages_check_deps_TrajectoryPolynomialPiece: crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_TrajectoryPolynomialPiece.dir/rule
+.PHONY : _crazyflie_driver_generate_messages_check_deps_TrajectoryPolynomialPiece
+
+# fast build rule for target.
+_crazyflie_driver_generate_messages_check_deps_TrajectoryPolynomialPiece/fast:
+	cd /home/jan/apurva_joshi/crazygames_ws/build && $(MAKE) -f crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_TrajectoryPolynomialPiece.dir/build.make crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_TrajectoryPolynomialPiece.dir/build
+.PHONY : _crazyflie_driver_generate_messages_check_deps_TrajectoryPolynomialPiece/fast
+
+# Convenience name for target.
 crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_UpdateParams.dir/rule:
 	cd /home/jan/apurva_joshi/crazygames_ws/build && $(MAKE) -f CMakeFiles/Makefile2 crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_UpdateParams.dir/rule
 .PHONY : crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_UpdateParams.dir/rule
@@ -235,6 +361,20 @@ _crazyflie_driver_generate_messages_check_deps_UpdateParams: crazyflie_ros/crazy
 _crazyflie_driver_generate_messages_check_deps_UpdateParams/fast:
 	cd /home/jan/apurva_joshi/crazygames_ws/build && $(MAKE) -f crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_UpdateParams.dir/build.make crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_UpdateParams.dir/build
 .PHONY : _crazyflie_driver_generate_messages_check_deps_UpdateParams/fast
+
+# Convenience name for target.
+crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_UploadTrajectory.dir/rule:
+	cd /home/jan/apurva_joshi/crazygames_ws/build && $(MAKE) -f CMakeFiles/Makefile2 crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_UploadTrajectory.dir/rule
+.PHONY : crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_UploadTrajectory.dir/rule
+
+# Convenience name for target.
+_crazyflie_driver_generate_messages_check_deps_UploadTrajectory: crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_UploadTrajectory.dir/rule
+.PHONY : _crazyflie_driver_generate_messages_check_deps_UploadTrajectory
+
+# fast build rule for target.
+_crazyflie_driver_generate_messages_check_deps_UploadTrajectory/fast:
+	cd /home/jan/apurva_joshi/crazygames_ws/build && $(MAKE) -f crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_UploadTrajectory.dir/build.make crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_UploadTrajectory.dir/build
+.PHONY : _crazyflie_driver_generate_messages_check_deps_UploadTrajectory/fast
 
 # Convenience name for target.
 crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_crtpPacket.dir/rule:
@@ -447,9 +587,19 @@ help:
 	@echo "... _crazyflie_driver_generate_messages_check_deps_AddCrazyflie"
 	@echo "... _crazyflie_driver_generate_messages_check_deps_FullState"
 	@echo "... _crazyflie_driver_generate_messages_check_deps_GenericLogData"
+	@echo "... _crazyflie_driver_generate_messages_check_deps_GoTo"
+	@echo "... _crazyflie_driver_generate_messages_check_deps_Hover"
+	@echo "... _crazyflie_driver_generate_messages_check_deps_Land"
 	@echo "... _crazyflie_driver_generate_messages_check_deps_LogBlock"
+	@echo "... _crazyflie_driver_generate_messages_check_deps_Position"
 	@echo "... _crazyflie_driver_generate_messages_check_deps_RemoveCrazyflie"
+	@echo "... _crazyflie_driver_generate_messages_check_deps_SetGroupMask"
+	@echo "... _crazyflie_driver_generate_messages_check_deps_StartTrajectory"
+	@echo "... _crazyflie_driver_generate_messages_check_deps_Stop"
+	@echo "... _crazyflie_driver_generate_messages_check_deps_Takeoff"
+	@echo "... _crazyflie_driver_generate_messages_check_deps_TrajectoryPolynomialPiece"
 	@echo "... _crazyflie_driver_generate_messages_check_deps_UpdateParams"
+	@echo "... _crazyflie_driver_generate_messages_check_deps_UploadTrajectory"
 	@echo "... _crazyflie_driver_generate_messages_check_deps_crtpPacket"
 	@echo "... _crazyflie_driver_generate_messages_check_deps_sendPacket"
 	@echo "... crazyflie_add"

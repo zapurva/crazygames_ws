@@ -2,9 +2,19 @@
 /home/jan/apurva_joshi/crazygames_ws/build/crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_AddCrazyflie.dir
 /home/jan/apurva_joshi/crazygames_ws/build/crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_FullState.dir
 /home/jan/apurva_joshi/crazygames_ws/build/crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_GenericLogData.dir
+/home/jan/apurva_joshi/crazygames_ws/build/crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_GoTo.dir
+/home/jan/apurva_joshi/crazygames_ws/build/crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_Hover.dir
+/home/jan/apurva_joshi/crazygames_ws/build/crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_Land.dir
 /home/jan/apurva_joshi/crazygames_ws/build/crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_LogBlock.dir
+/home/jan/apurva_joshi/crazygames_ws/build/crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_Position.dir
 /home/jan/apurva_joshi/crazygames_ws/build/crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_RemoveCrazyflie.dir
+/home/jan/apurva_joshi/crazygames_ws/build/crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_SetGroupMask.dir
+/home/jan/apurva_joshi/crazygames_ws/build/crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_StartTrajectory.dir
+/home/jan/apurva_joshi/crazygames_ws/build/crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_Stop.dir
+/home/jan/apurva_joshi/crazygames_ws/build/crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_Takeoff.dir
+/home/jan/apurva_joshi/crazygames_ws/build/crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_TrajectoryPolynomialPiece.dir
 /home/jan/apurva_joshi/crazygames_ws/build/crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_UpdateParams.dir
+/home/jan/apurva_joshi/crazygames_ws/build/crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_UploadTrajectory.dir
 /home/jan/apurva_joshi/crazygames_ws/build/crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_crtpPacket.dir
 /home/jan/apurva_joshi/crazygames_ws/build/crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_sendPacket.dir
 /home/jan/apurva_joshi/crazygames_ws/build/vrpn_client_ros/CMakeFiles/_run_tests_vrpn_client_ros.dir
@@ -42,6 +52,7 @@
 /home/jan/apurva_joshi/crazygames_ws/build/gtest/CMakeFiles/gtest.dir
 /home/jan/apurva_joshi/crazygames_ws/build/gtest/CMakeFiles/gtest_main.dir
 /home/jan/apurva_joshi/crazygames_ws/build/crazyflie_ros/crazyflie_tools/CMakeFiles/listLogVariables.dir
+/home/jan/apurva_joshi/crazygames_ws/build/crazyflie_ros/crazyflie_tools/CMakeFiles/listMemories.dir
 /home/jan/apurva_joshi/crazygames_ws/build/crazyflie_ros/crazyflie_tools/CMakeFiles/listParams.dir
 /home/jan/apurva_joshi/crazygames_ws/build/crazyflie_ros/crazyflie_demo/CMakeFiles/quadrotor_teleop.dir
 /home/jan/apurva_joshi/crazygames_ws/build/crazyflie_ros/crazyflie_tools/CMakeFiles/reboot.dir
@@ -60,9 +71,6 @@
 /home/jan/apurva_joshi/crazygames_ws/build/vrpn_client_ros/CMakeFiles/run_tests_vrpn_client_ros_roslint.dir
 /home/jan/apurva_joshi/crazygames_ws/build/vrpn_client_ros/CMakeFiles/run_tests_vrpn_client_ros_roslint_package.dir
 /home/jan/apurva_joshi/crazygames_ws/build/crazyflie_ros/crazyflie_tools/CMakeFiles/scan.dir
-/home/jan/apurva_joshi/crazygames_ws/build/crazyflie_ros/crazyflie_cpp/CMakeFiles/sendPacket.dir
-/home/jan/apurva_joshi/crazygames_ws/build/crazyflie_ros/crazyflie_cpp/CMakeFiles/sendSetpoint.dir
-/home/jan/apurva_joshi/crazygames_ws/build/crazyflie_ros/crazyflie_cpp/CMakeFiles/sendSetpointMulti.dir
 /home/jan/apurva_joshi/crazygames_ws/build/crazyflie_ros/crazyflie_controller/CMakeFiles/sensor_msgs_generate_messages_cpp.dir
 /home/jan/apurva_joshi/crazygames_ws/build/crazyflie_ros/crazyflie_controller/CMakeFiles/sensor_msgs_generate_messages_lisp.dir
 /home/jan/apurva_joshi/crazygames_ws/build/crazyflie_ros/crazyflie_controller/CMakeFiles/sensor_msgs_generate_messages_py.dir

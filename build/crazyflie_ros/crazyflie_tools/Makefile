@@ -209,6 +209,20 @@ listLogVariables/fast:
 .PHONY : listLogVariables/fast
 
 # Convenience name for target.
+crazyflie_ros/crazyflie_tools/CMakeFiles/listMemories.dir/rule:
+	cd /home/jan/apurva_joshi/crazygames_ws/build && $(MAKE) -f CMakeFiles/Makefile2 crazyflie_ros/crazyflie_tools/CMakeFiles/listMemories.dir/rule
+.PHONY : crazyflie_ros/crazyflie_tools/CMakeFiles/listMemories.dir/rule
+
+# Convenience name for target.
+listMemories: crazyflie_ros/crazyflie_tools/CMakeFiles/listMemories.dir/rule
+.PHONY : listMemories
+
+# fast build rule for target.
+listMemories/fast:
+	cd /home/jan/apurva_joshi/crazygames_ws/build && $(MAKE) -f crazyflie_ros/crazyflie_tools/CMakeFiles/listMemories.dir/build.make crazyflie_ros/crazyflie_tools/CMakeFiles/listMemories.dir/build
+.PHONY : listMemories/fast
+
+# Convenience name for target.
 crazyflie_ros/crazyflie_tools/CMakeFiles/listParams.dir/rule:
 	cd /home/jan/apurva_joshi/crazygames_ws/build && $(MAKE) -f CMakeFiles/Makefile2 crazyflie_ros/crazyflie_tools/CMakeFiles/listParams.dir/rule
 .PHONY : crazyflie_ros/crazyflie_tools/CMakeFiles/listParams.dir/rule
@@ -360,6 +374,30 @@ src/listLogVariables.cpp.s:
 	cd /home/jan/apurva_joshi/crazygames_ws/build && $(MAKE) -f crazyflie_ros/crazyflie_tools/CMakeFiles/listLogVariables.dir/build.make crazyflie_ros/crazyflie_tools/CMakeFiles/listLogVariables.dir/src/listLogVariables.cpp.s
 .PHONY : src/listLogVariables.cpp.s
 
+src/listMemories.o: src/listMemories.cpp.o
+.PHONY : src/listMemories.o
+
+# target to build an object file
+src/listMemories.cpp.o:
+	cd /home/jan/apurva_joshi/crazygames_ws/build && $(MAKE) -f crazyflie_ros/crazyflie_tools/CMakeFiles/listMemories.dir/build.make crazyflie_ros/crazyflie_tools/CMakeFiles/listMemories.dir/src/listMemories.cpp.o
+.PHONY : src/listMemories.cpp.o
+
+src/listMemories.i: src/listMemories.cpp.i
+.PHONY : src/listMemories.i
+
+# target to preprocess a source file
+src/listMemories.cpp.i:
+	cd /home/jan/apurva_joshi/crazygames_ws/build && $(MAKE) -f crazyflie_ros/crazyflie_tools/CMakeFiles/listMemories.dir/build.make crazyflie_ros/crazyflie_tools/CMakeFiles/listMemories.dir/src/listMemories.cpp.i
+.PHONY : src/listMemories.cpp.i
+
+src/listMemories.s: src/listMemories.cpp.s
+.PHONY : src/listMemories.s
+
+# target to generate assembly for a file
+src/listMemories.cpp.s:
+	cd /home/jan/apurva_joshi/crazygames_ws/build && $(MAKE) -f crazyflie_ros/crazyflie_tools/CMakeFiles/listMemories.dir/build.make crazyflie_ros/crazyflie_tools/CMakeFiles/listMemories.dir/src/listMemories.cpp.s
+.PHONY : src/listMemories.cpp.s
+
 src/listParams.o: src/listParams.cpp.o
 .PHONY : src/listParams.o
 
@@ -470,6 +508,7 @@ help:
 	@echo "... install/local"
 	@echo "... install/strip"
 	@echo "... listLogVariables"
+	@echo "... listMemories"
 	@echo "... listParams"
 	@echo "... list_install_components"
 	@echo "... reboot"
@@ -489,6 +528,9 @@ help:
 	@echo "... src/listLogVariables.o"
 	@echo "... src/listLogVariables.i"
 	@echo "... src/listLogVariables.s"
+	@echo "... src/listMemories.o"
+	@echo "... src/listMemories.i"
+	@echo "... src/listMemories.s"
 	@echo "... src/listParams.o"
 	@echo "... src/listParams.i"
 	@echo "... src/listParams.s"

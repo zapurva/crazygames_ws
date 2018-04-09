@@ -24,7 +24,6 @@ SET(CMAKE_TARGET_LINKED_INFO_FILES
 # The include file search paths:
 SET(CMAKE_C_TARGET_INCLUDE_PATH
   "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_cpp/include/crazyflie_cpp"
-  "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_cpp/include"
   )
 SET(CMAKE_CXX_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})
 SET(CMAKE_Fortran_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})

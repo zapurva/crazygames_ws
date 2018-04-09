@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.cmake.em
 
-message(STATUS "crazyflie_driver: 4 messages, 4 services")
+message(STATUS "crazyflie_driver: 7 messages, 11 services")
 
 set(MSG_I_FLAGS "-Icrazyflie_driver:/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg;-Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg;-Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg")
 
@@ -15,6 +15,11 @@ add_custom_target(crazyflie_driver_generate_messages ALL)
 
 
 
+get_filename_component(_filename "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/Hover.msg" NAME_WE)
+add_custom_target(_crazyflie_driver_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "crazyflie_driver" "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/Hover.msg" "std_msgs/Header"
+)
+
 get_filename_component(_filename "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/LogBlock.msg" NAME_WE)
 add_custom_target(_crazyflie_driver_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "crazyflie_driver" "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/LogBlock.msg" ""
@@ -23,6 +28,16 @@ add_custom_target(_crazyflie_driver_generate_messages_check_deps_${_filename}
 get_filename_component(_filename "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/crtpPacket.msg" NAME_WE)
 add_custom_target(_crazyflie_driver_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "crazyflie_driver" "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/crtpPacket.msg" ""
+)
+
+get_filename_component(_filename "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/UploadTrajectory.srv" NAME_WE)
+add_custom_target(_crazyflie_driver_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "crazyflie_driver" "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/UploadTrajectory.srv" "crazyflie_driver/TrajectoryPolynomialPiece"
+)
+
+get_filename_component(_filename "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/Land.srv" NAME_WE)
+add_custom_target(_crazyflie_driver_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "crazyflie_driver" "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/Land.srv" ""
 )
 
 get_filename_component(_filename "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/sendPacket.srv" NAME_WE)
@@ -35,9 +50,29 @@ add_custom_target(_crazyflie_driver_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "crazyflie_driver" "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/GenericLogData.msg" "std_msgs/Header"
 )
 
+get_filename_component(_filename "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/TrajectoryPolynomialPiece.msg" NAME_WE)
+add_custom_target(_crazyflie_driver_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "crazyflie_driver" "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/TrajectoryPolynomialPiece.msg" ""
+)
+
+get_filename_component(_filename "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/SetGroupMask.srv" NAME_WE)
+add_custom_target(_crazyflie_driver_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "crazyflie_driver" "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/SetGroupMask.srv" ""
+)
+
 get_filename_component(_filename "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/FullState.msg" NAME_WE)
 add_custom_target(_crazyflie_driver_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "crazyflie_driver" "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/FullState.msg" "geometry_msgs/Point:geometry_msgs/Vector3:std_msgs/Header:geometry_msgs/Quaternion:geometry_msgs/Pose:geometry_msgs/Twist"
+)
+
+get_filename_component(_filename "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/Stop.srv" NAME_WE)
+add_custom_target(_crazyflie_driver_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "crazyflie_driver" "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/Stop.srv" ""
+)
+
+get_filename_component(_filename "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/Takeoff.srv" NAME_WE)
+add_custom_target(_crazyflie_driver_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "crazyflie_driver" "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/Takeoff.srv" ""
 )
 
 get_filename_component(_filename "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/RemoveCrazyflie.srv" NAME_WE)
@@ -45,9 +80,24 @@ add_custom_target(_crazyflie_driver_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "crazyflie_driver" "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/RemoveCrazyflie.srv" ""
 )
 
+get_filename_component(_filename "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/GoTo.srv" NAME_WE)
+add_custom_target(_crazyflie_driver_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "crazyflie_driver" "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/GoTo.srv" "geometry_msgs/Point"
+)
+
+get_filename_component(_filename "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/StartTrajectory.srv" NAME_WE)
+add_custom_target(_crazyflie_driver_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "crazyflie_driver" "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/StartTrajectory.srv" ""
+)
+
 get_filename_component(_filename "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/UpdateParams.srv" NAME_WE)
 add_custom_target(_crazyflie_driver_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "crazyflie_driver" "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/UpdateParams.srv" ""
+)
+
+get_filename_component(_filename "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/Position.msg" NAME_WE)
+add_custom_target(_crazyflie_driver_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "crazyflie_driver" "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/Position.msg" "std_msgs/Header"
 )
 
 get_filename_component(_filename "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/AddCrazyflie.srv" NAME_WE)
@@ -62,7 +112,31 @@ add_custom_target(_crazyflie_driver_generate_messages_check_deps_${_filename}
 ### Section generating for lang: gencpp
 ### Generating Messages
 _generate_msg_cpp(crazyflie_driver
+  "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/Hover.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/crazyflie_driver
+)
+_generate_msg_cpp(crazyflie_driver
   "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/LogBlock.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/crazyflie_driver
+)
+_generate_msg_cpp(crazyflie_driver
+  "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/crtpPacket.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/crazyflie_driver
+)
+_generate_msg_cpp(crazyflie_driver
+  "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/GenericLogData.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/crazyflie_driver
+)
+_generate_msg_cpp(crazyflie_driver
+  "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/TrajectoryPolynomialPiece.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/crazyflie_driver
@@ -74,27 +148,33 @@ _generate_msg_cpp(crazyflie_driver
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/crazyflie_driver
 )
 _generate_msg_cpp(crazyflie_driver
-  "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/GenericLogData.msg"
+  "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/Position.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/crazyflie_driver
-)
-_generate_msg_cpp(crazyflie_driver
-  "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/crtpPacket.msg"
-  "${MSG_I_FLAGS}"
-  ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/crazyflie_driver
 )
 
 ### Generating Services
 _generate_srv_cpp(crazyflie_driver
-  "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/sendPacket.srv"
+  "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/SetGroupMask.srv"
   "${MSG_I_FLAGS}"
-  "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/crtpPacket.msg"
+  ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/crazyflie_driver
 )
 _generate_srv_cpp(crazyflie_driver
-  "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/UpdateParams.srv"
+  "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/UploadTrajectory.srv"
+  "${MSG_I_FLAGS}"
+  "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/TrajectoryPolynomialPiece.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/crazyflie_driver
+)
+_generate_srv_cpp(crazyflie_driver
+  "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/Land.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/crazyflie_driver
+)
+_generate_srv_cpp(crazyflie_driver
+  "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/Stop.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/crazyflie_driver
@@ -106,9 +186,39 @@ _generate_srv_cpp(crazyflie_driver
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/crazyflie_driver
 )
 _generate_srv_cpp(crazyflie_driver
+  "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/Takeoff.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/crazyflie_driver
+)
+_generate_srv_cpp(crazyflie_driver
+  "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/sendPacket.srv"
+  "${MSG_I_FLAGS}"
+  "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/crtpPacket.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/crazyflie_driver
+)
+_generate_srv_cpp(crazyflie_driver
+  "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/GoTo.srv"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/indigo/share/geometry_msgs/cmake/../msg/Point.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/crazyflie_driver
+)
+_generate_srv_cpp(crazyflie_driver
   "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/AddCrazyflie.srv"
   "${MSG_I_FLAGS}"
   "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/LogBlock.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/crazyflie_driver
+)
+_generate_srv_cpp(crazyflie_driver
+  "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/UpdateParams.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/crazyflie_driver
+)
+_generate_srv_cpp(crazyflie_driver
+  "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/StartTrajectory.srv"
+  "${MSG_I_FLAGS}"
+  ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/crazyflie_driver
 )
 
@@ -124,19 +234,39 @@ add_custom_target(crazyflie_driver_generate_messages_cpp
 add_dependencies(crazyflie_driver_generate_messages crazyflie_driver_generate_messages_cpp)
 
 # add dependencies to all check dependencies targets
+get_filename_component(_filename "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/Hover.msg" NAME_WE)
+add_dependencies(crazyflie_driver_generate_messages_cpp _crazyflie_driver_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/LogBlock.msg" NAME_WE)
 add_dependencies(crazyflie_driver_generate_messages_cpp _crazyflie_driver_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/crtpPacket.msg" NAME_WE)
+add_dependencies(crazyflie_driver_generate_messages_cpp _crazyflie_driver_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/UploadTrajectory.srv" NAME_WE)
+add_dependencies(crazyflie_driver_generate_messages_cpp _crazyflie_driver_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/Land.srv" NAME_WE)
 add_dependencies(crazyflie_driver_generate_messages_cpp _crazyflie_driver_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/sendPacket.srv" NAME_WE)
 add_dependencies(crazyflie_driver_generate_messages_cpp _crazyflie_driver_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/GenericLogData.msg" NAME_WE)
 add_dependencies(crazyflie_driver_generate_messages_cpp _crazyflie_driver_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/TrajectoryPolynomialPiece.msg" NAME_WE)
+add_dependencies(crazyflie_driver_generate_messages_cpp _crazyflie_driver_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/SetGroupMask.srv" NAME_WE)
+add_dependencies(crazyflie_driver_generate_messages_cpp _crazyflie_driver_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/FullState.msg" NAME_WE)
+add_dependencies(crazyflie_driver_generate_messages_cpp _crazyflie_driver_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/Stop.srv" NAME_WE)
+add_dependencies(crazyflie_driver_generate_messages_cpp _crazyflie_driver_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/Takeoff.srv" NAME_WE)
 add_dependencies(crazyflie_driver_generate_messages_cpp _crazyflie_driver_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/RemoveCrazyflie.srv" NAME_WE)
 add_dependencies(crazyflie_driver_generate_messages_cpp _crazyflie_driver_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/GoTo.srv" NAME_WE)
+add_dependencies(crazyflie_driver_generate_messages_cpp _crazyflie_driver_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/StartTrajectory.srv" NAME_WE)
+add_dependencies(crazyflie_driver_generate_messages_cpp _crazyflie_driver_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/UpdateParams.srv" NAME_WE)
+add_dependencies(crazyflie_driver_generate_messages_cpp _crazyflie_driver_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/Position.msg" NAME_WE)
 add_dependencies(crazyflie_driver_generate_messages_cpp _crazyflie_driver_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/AddCrazyflie.srv" NAME_WE)
 add_dependencies(crazyflie_driver_generate_messages_cpp _crazyflie_driver_generate_messages_check_deps_${_filename})
@@ -151,7 +281,31 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS crazyflie_driver_generate_messages_
 ### Section generating for lang: genlisp
 ### Generating Messages
 _generate_msg_lisp(crazyflie_driver
+  "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/Hover.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/crazyflie_driver
+)
+_generate_msg_lisp(crazyflie_driver
   "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/LogBlock.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/crazyflie_driver
+)
+_generate_msg_lisp(crazyflie_driver
+  "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/crtpPacket.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/crazyflie_driver
+)
+_generate_msg_lisp(crazyflie_driver
+  "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/GenericLogData.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/crazyflie_driver
+)
+_generate_msg_lisp(crazyflie_driver
+  "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/TrajectoryPolynomialPiece.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/crazyflie_driver
@@ -163,27 +317,33 @@ _generate_msg_lisp(crazyflie_driver
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/crazyflie_driver
 )
 _generate_msg_lisp(crazyflie_driver
-  "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/GenericLogData.msg"
+  "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/Position.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/crazyflie_driver
-)
-_generate_msg_lisp(crazyflie_driver
-  "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/crtpPacket.msg"
-  "${MSG_I_FLAGS}"
-  ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/crazyflie_driver
 )
 
 ### Generating Services
 _generate_srv_lisp(crazyflie_driver
-  "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/sendPacket.srv"
+  "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/SetGroupMask.srv"
   "${MSG_I_FLAGS}"
-  "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/crtpPacket.msg"
+  ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/crazyflie_driver
 )
 _generate_srv_lisp(crazyflie_driver
-  "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/UpdateParams.srv"
+  "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/UploadTrajectory.srv"
+  "${MSG_I_FLAGS}"
+  "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/TrajectoryPolynomialPiece.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/crazyflie_driver
+)
+_generate_srv_lisp(crazyflie_driver
+  "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/Land.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/crazyflie_driver
+)
+_generate_srv_lisp(crazyflie_driver
+  "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/Stop.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/crazyflie_driver
@@ -195,9 +355,39 @@ _generate_srv_lisp(crazyflie_driver
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/crazyflie_driver
 )
 _generate_srv_lisp(crazyflie_driver
+  "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/Takeoff.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/crazyflie_driver
+)
+_generate_srv_lisp(crazyflie_driver
+  "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/sendPacket.srv"
+  "${MSG_I_FLAGS}"
+  "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/crtpPacket.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/crazyflie_driver
+)
+_generate_srv_lisp(crazyflie_driver
+  "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/GoTo.srv"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/indigo/share/geometry_msgs/cmake/../msg/Point.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/crazyflie_driver
+)
+_generate_srv_lisp(crazyflie_driver
   "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/AddCrazyflie.srv"
   "${MSG_I_FLAGS}"
   "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/LogBlock.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/crazyflie_driver
+)
+_generate_srv_lisp(crazyflie_driver
+  "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/UpdateParams.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/crazyflie_driver
+)
+_generate_srv_lisp(crazyflie_driver
+  "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/StartTrajectory.srv"
+  "${MSG_I_FLAGS}"
+  ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/crazyflie_driver
 )
 
@@ -213,19 +403,39 @@ add_custom_target(crazyflie_driver_generate_messages_lisp
 add_dependencies(crazyflie_driver_generate_messages crazyflie_driver_generate_messages_lisp)
 
 # add dependencies to all check dependencies targets
+get_filename_component(_filename "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/Hover.msg" NAME_WE)
+add_dependencies(crazyflie_driver_generate_messages_lisp _crazyflie_driver_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/LogBlock.msg" NAME_WE)
 add_dependencies(crazyflie_driver_generate_messages_lisp _crazyflie_driver_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/crtpPacket.msg" NAME_WE)
+add_dependencies(crazyflie_driver_generate_messages_lisp _crazyflie_driver_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/UploadTrajectory.srv" NAME_WE)
+add_dependencies(crazyflie_driver_generate_messages_lisp _crazyflie_driver_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/Land.srv" NAME_WE)
 add_dependencies(crazyflie_driver_generate_messages_lisp _crazyflie_driver_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/sendPacket.srv" NAME_WE)
 add_dependencies(crazyflie_driver_generate_messages_lisp _crazyflie_driver_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/GenericLogData.msg" NAME_WE)
 add_dependencies(crazyflie_driver_generate_messages_lisp _crazyflie_driver_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/TrajectoryPolynomialPiece.msg" NAME_WE)
+add_dependencies(crazyflie_driver_generate_messages_lisp _crazyflie_driver_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/SetGroupMask.srv" NAME_WE)
+add_dependencies(crazyflie_driver_generate_messages_lisp _crazyflie_driver_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/FullState.msg" NAME_WE)
+add_dependencies(crazyflie_driver_generate_messages_lisp _crazyflie_driver_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/Stop.srv" NAME_WE)
+add_dependencies(crazyflie_driver_generate_messages_lisp _crazyflie_driver_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/Takeoff.srv" NAME_WE)
 add_dependencies(crazyflie_driver_generate_messages_lisp _crazyflie_driver_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/RemoveCrazyflie.srv" NAME_WE)
 add_dependencies(crazyflie_driver_generate_messages_lisp _crazyflie_driver_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/GoTo.srv" NAME_WE)
+add_dependencies(crazyflie_driver_generate_messages_lisp _crazyflie_driver_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/StartTrajectory.srv" NAME_WE)
+add_dependencies(crazyflie_driver_generate_messages_lisp _crazyflie_driver_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/UpdateParams.srv" NAME_WE)
+add_dependencies(crazyflie_driver_generate_messages_lisp _crazyflie_driver_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/Position.msg" NAME_WE)
 add_dependencies(crazyflie_driver_generate_messages_lisp _crazyflie_driver_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/AddCrazyflie.srv" NAME_WE)
 add_dependencies(crazyflie_driver_generate_messages_lisp _crazyflie_driver_generate_messages_check_deps_${_filename})
@@ -240,7 +450,31 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS crazyflie_driver_generate_messages_
 ### Section generating for lang: genpy
 ### Generating Messages
 _generate_msg_py(crazyflie_driver
+  "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/Hover.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/crazyflie_driver
+)
+_generate_msg_py(crazyflie_driver
   "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/LogBlock.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/crazyflie_driver
+)
+_generate_msg_py(crazyflie_driver
+  "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/crtpPacket.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/crazyflie_driver
+)
+_generate_msg_py(crazyflie_driver
+  "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/GenericLogData.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/crazyflie_driver
+)
+_generate_msg_py(crazyflie_driver
+  "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/TrajectoryPolynomialPiece.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/crazyflie_driver
@@ -252,27 +486,33 @@ _generate_msg_py(crazyflie_driver
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/crazyflie_driver
 )
 _generate_msg_py(crazyflie_driver
-  "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/GenericLogData.msg"
+  "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/Position.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/crazyflie_driver
-)
-_generate_msg_py(crazyflie_driver
-  "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/crtpPacket.msg"
-  "${MSG_I_FLAGS}"
-  ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/crazyflie_driver
 )
 
 ### Generating Services
 _generate_srv_py(crazyflie_driver
-  "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/sendPacket.srv"
+  "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/SetGroupMask.srv"
   "${MSG_I_FLAGS}"
-  "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/crtpPacket.msg"
+  ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/crazyflie_driver
 )
 _generate_srv_py(crazyflie_driver
-  "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/UpdateParams.srv"
+  "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/UploadTrajectory.srv"
+  "${MSG_I_FLAGS}"
+  "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/TrajectoryPolynomialPiece.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/crazyflie_driver
+)
+_generate_srv_py(crazyflie_driver
+  "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/Land.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/crazyflie_driver
+)
+_generate_srv_py(crazyflie_driver
+  "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/Stop.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/crazyflie_driver
@@ -284,9 +524,39 @@ _generate_srv_py(crazyflie_driver
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/crazyflie_driver
 )
 _generate_srv_py(crazyflie_driver
+  "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/Takeoff.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/crazyflie_driver
+)
+_generate_srv_py(crazyflie_driver
+  "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/sendPacket.srv"
+  "${MSG_I_FLAGS}"
+  "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/crtpPacket.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/crazyflie_driver
+)
+_generate_srv_py(crazyflie_driver
+  "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/GoTo.srv"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/indigo/share/geometry_msgs/cmake/../msg/Point.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/crazyflie_driver
+)
+_generate_srv_py(crazyflie_driver
   "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/AddCrazyflie.srv"
   "${MSG_I_FLAGS}"
   "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/LogBlock.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/crazyflie_driver
+)
+_generate_srv_py(crazyflie_driver
+  "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/UpdateParams.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/crazyflie_driver
+)
+_generate_srv_py(crazyflie_driver
+  "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/StartTrajectory.srv"
+  "${MSG_I_FLAGS}"
+  ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/crazyflie_driver
 )
 
@@ -302,19 +572,39 @@ add_custom_target(crazyflie_driver_generate_messages_py
 add_dependencies(crazyflie_driver_generate_messages crazyflie_driver_generate_messages_py)
 
 # add dependencies to all check dependencies targets
+get_filename_component(_filename "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/Hover.msg" NAME_WE)
+add_dependencies(crazyflie_driver_generate_messages_py _crazyflie_driver_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/LogBlock.msg" NAME_WE)
 add_dependencies(crazyflie_driver_generate_messages_py _crazyflie_driver_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/crtpPacket.msg" NAME_WE)
+add_dependencies(crazyflie_driver_generate_messages_py _crazyflie_driver_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/UploadTrajectory.srv" NAME_WE)
+add_dependencies(crazyflie_driver_generate_messages_py _crazyflie_driver_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/Land.srv" NAME_WE)
 add_dependencies(crazyflie_driver_generate_messages_py _crazyflie_driver_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/sendPacket.srv" NAME_WE)
 add_dependencies(crazyflie_driver_generate_messages_py _crazyflie_driver_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/GenericLogData.msg" NAME_WE)
 add_dependencies(crazyflie_driver_generate_messages_py _crazyflie_driver_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/TrajectoryPolynomialPiece.msg" NAME_WE)
+add_dependencies(crazyflie_driver_generate_messages_py _crazyflie_driver_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/SetGroupMask.srv" NAME_WE)
+add_dependencies(crazyflie_driver_generate_messages_py _crazyflie_driver_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/FullState.msg" NAME_WE)
+add_dependencies(crazyflie_driver_generate_messages_py _crazyflie_driver_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/Stop.srv" NAME_WE)
+add_dependencies(crazyflie_driver_generate_messages_py _crazyflie_driver_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/Takeoff.srv" NAME_WE)
 add_dependencies(crazyflie_driver_generate_messages_py _crazyflie_driver_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/RemoveCrazyflie.srv" NAME_WE)
 add_dependencies(crazyflie_driver_generate_messages_py _crazyflie_driver_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/GoTo.srv" NAME_WE)
+add_dependencies(crazyflie_driver_generate_messages_py _crazyflie_driver_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/StartTrajectory.srv" NAME_WE)
+add_dependencies(crazyflie_driver_generate_messages_py _crazyflie_driver_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/UpdateParams.srv" NAME_WE)
+add_dependencies(crazyflie_driver_generate_messages_py _crazyflie_driver_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/Position.msg" NAME_WE)
 add_dependencies(crazyflie_driver_generate_messages_py _crazyflie_driver_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/AddCrazyflie.srv" NAME_WE)
 add_dependencies(crazyflie_driver_generate_messages_py _crazyflie_driver_generate_messages_check_deps_${_filename})

@@ -166,48 +166,6 @@ crazyflie_cpp/fast:
 	cd /home/jan/apurva_joshi/crazygames_ws/build && $(MAKE) -f crazyflie_ros/crazyflie_cpp/CMakeFiles/crazyflie_cpp.dir/build.make crazyflie_ros/crazyflie_cpp/CMakeFiles/crazyflie_cpp.dir/build
 .PHONY : crazyflie_cpp/fast
 
-# Convenience name for target.
-crazyflie_ros/crazyflie_cpp/CMakeFiles/sendPacket.dir/rule:
-	cd /home/jan/apurva_joshi/crazygames_ws/build && $(MAKE) -f CMakeFiles/Makefile2 crazyflie_ros/crazyflie_cpp/CMakeFiles/sendPacket.dir/rule
-.PHONY : crazyflie_ros/crazyflie_cpp/CMakeFiles/sendPacket.dir/rule
-
-# Convenience name for target.
-sendPacket: crazyflie_ros/crazyflie_cpp/CMakeFiles/sendPacket.dir/rule
-.PHONY : sendPacket
-
-# fast build rule for target.
-sendPacket/fast:
-	cd /home/jan/apurva_joshi/crazygames_ws/build && $(MAKE) -f crazyflie_ros/crazyflie_cpp/CMakeFiles/sendPacket.dir/build.make crazyflie_ros/crazyflie_cpp/CMakeFiles/sendPacket.dir/build
-.PHONY : sendPacket/fast
-
-# Convenience name for target.
-crazyflie_ros/crazyflie_cpp/CMakeFiles/sendSetpoint.dir/rule:
-	cd /home/jan/apurva_joshi/crazygames_ws/build && $(MAKE) -f CMakeFiles/Makefile2 crazyflie_ros/crazyflie_cpp/CMakeFiles/sendSetpoint.dir/rule
-.PHONY : crazyflie_ros/crazyflie_cpp/CMakeFiles/sendSetpoint.dir/rule
-
-# Convenience name for target.
-sendSetpoint: crazyflie_ros/crazyflie_cpp/CMakeFiles/sendSetpoint.dir/rule
-.PHONY : sendSetpoint
-
-# fast build rule for target.
-sendSetpoint/fast:
-	cd /home/jan/apurva_joshi/crazygames_ws/build && $(MAKE) -f crazyflie_ros/crazyflie_cpp/CMakeFiles/sendSetpoint.dir/build.make crazyflie_ros/crazyflie_cpp/CMakeFiles/sendSetpoint.dir/build
-.PHONY : sendSetpoint/fast
-
-# Convenience name for target.
-crazyflie_ros/crazyflie_cpp/CMakeFiles/sendSetpointMulti.dir/rule:
-	cd /home/jan/apurva_joshi/crazygames_ws/build && $(MAKE) -f CMakeFiles/Makefile2 crazyflie_ros/crazyflie_cpp/CMakeFiles/sendSetpointMulti.dir/rule
-.PHONY : crazyflie_ros/crazyflie_cpp/CMakeFiles/sendSetpointMulti.dir/rule
-
-# Convenience name for target.
-sendSetpointMulti: crazyflie_ros/crazyflie_cpp/CMakeFiles/sendSetpointMulti.dir/rule
-.PHONY : sendSetpointMulti
-
-# fast build rule for target.
-sendSetpointMulti/fast:
-	cd /home/jan/apurva_joshi/crazygames_ws/build && $(MAKE) -f crazyflie_ros/crazyflie_cpp/CMakeFiles/sendSetpointMulti.dir/build.make crazyflie_ros/crazyflie_cpp/CMakeFiles/sendSetpointMulti.dir/build
-.PHONY : sendSetpointMulti/fast
-
 src/Crazyflie.o: src/Crazyflie.cpp.o
 .PHONY : src/Crazyflie.o
 
@@ -328,78 +286,6 @@ src/crtp.cpp.s:
 	cd /home/jan/apurva_joshi/crazygames_ws/build && $(MAKE) -f crazyflie_ros/crazyflie_cpp/CMakeFiles/crazyflie_cpp.dir/build.make crazyflie_ros/crazyflie_cpp/CMakeFiles/crazyflie_cpp.dir/src/crtp.cpp.s
 .PHONY : src/crtp.cpp.s
 
-test/sendPacket.o: test/sendPacket.cpp.o
-.PHONY : test/sendPacket.o
-
-# target to build an object file
-test/sendPacket.cpp.o:
-	cd /home/jan/apurva_joshi/crazygames_ws/build && $(MAKE) -f crazyflie_ros/crazyflie_cpp/CMakeFiles/sendPacket.dir/build.make crazyflie_ros/crazyflie_cpp/CMakeFiles/sendPacket.dir/test/sendPacket.cpp.o
-.PHONY : test/sendPacket.cpp.o
-
-test/sendPacket.i: test/sendPacket.cpp.i
-.PHONY : test/sendPacket.i
-
-# target to preprocess a source file
-test/sendPacket.cpp.i:
-	cd /home/jan/apurva_joshi/crazygames_ws/build && $(MAKE) -f crazyflie_ros/crazyflie_cpp/CMakeFiles/sendPacket.dir/build.make crazyflie_ros/crazyflie_cpp/CMakeFiles/sendPacket.dir/test/sendPacket.cpp.i
-.PHONY : test/sendPacket.cpp.i
-
-test/sendPacket.s: test/sendPacket.cpp.s
-.PHONY : test/sendPacket.s
-
-# target to generate assembly for a file
-test/sendPacket.cpp.s:
-	cd /home/jan/apurva_joshi/crazygames_ws/build && $(MAKE) -f crazyflie_ros/crazyflie_cpp/CMakeFiles/sendPacket.dir/build.make crazyflie_ros/crazyflie_cpp/CMakeFiles/sendPacket.dir/test/sendPacket.cpp.s
-.PHONY : test/sendPacket.cpp.s
-
-test/sendSetpoint.o: test/sendSetpoint.cpp.o
-.PHONY : test/sendSetpoint.o
-
-# target to build an object file
-test/sendSetpoint.cpp.o:
-	cd /home/jan/apurva_joshi/crazygames_ws/build && $(MAKE) -f crazyflie_ros/crazyflie_cpp/CMakeFiles/sendSetpoint.dir/build.make crazyflie_ros/crazyflie_cpp/CMakeFiles/sendSetpoint.dir/test/sendSetpoint.cpp.o
-.PHONY : test/sendSetpoint.cpp.o
-
-test/sendSetpoint.i: test/sendSetpoint.cpp.i
-.PHONY : test/sendSetpoint.i
-
-# target to preprocess a source file
-test/sendSetpoint.cpp.i:
-	cd /home/jan/apurva_joshi/crazygames_ws/build && $(MAKE) -f crazyflie_ros/crazyflie_cpp/CMakeFiles/sendSetpoint.dir/build.make crazyflie_ros/crazyflie_cpp/CMakeFiles/sendSetpoint.dir/test/sendSetpoint.cpp.i
-.PHONY : test/sendSetpoint.cpp.i
-
-test/sendSetpoint.s: test/sendSetpoint.cpp.s
-.PHONY : test/sendSetpoint.s
-
-# target to generate assembly for a file
-test/sendSetpoint.cpp.s:
-	cd /home/jan/apurva_joshi/crazygames_ws/build && $(MAKE) -f crazyflie_ros/crazyflie_cpp/CMakeFiles/sendSetpoint.dir/build.make crazyflie_ros/crazyflie_cpp/CMakeFiles/sendSetpoint.dir/test/sendSetpoint.cpp.s
-.PHONY : test/sendSetpoint.cpp.s
-
-test/sendSetpointMulti.o: test/sendSetpointMulti.cpp.o
-.PHONY : test/sendSetpointMulti.o
-
-# target to build an object file
-test/sendSetpointMulti.cpp.o:
-	cd /home/jan/apurva_joshi/crazygames_ws/build && $(MAKE) -f crazyflie_ros/crazyflie_cpp/CMakeFiles/sendSetpointMulti.dir/build.make crazyflie_ros/crazyflie_cpp/CMakeFiles/sendSetpointMulti.dir/test/sendSetpointMulti.cpp.o
-.PHONY : test/sendSetpointMulti.cpp.o
-
-test/sendSetpointMulti.i: test/sendSetpointMulti.cpp.i
-.PHONY : test/sendSetpointMulti.i
-
-# target to preprocess a source file
-test/sendSetpointMulti.cpp.i:
-	cd /home/jan/apurva_joshi/crazygames_ws/build && $(MAKE) -f crazyflie_ros/crazyflie_cpp/CMakeFiles/sendSetpointMulti.dir/build.make crazyflie_ros/crazyflie_cpp/CMakeFiles/sendSetpointMulti.dir/test/sendSetpointMulti.cpp.i
-.PHONY : test/sendSetpointMulti.cpp.i
-
-test/sendSetpointMulti.s: test/sendSetpointMulti.cpp.s
-.PHONY : test/sendSetpointMulti.s
-
-# target to generate assembly for a file
-test/sendSetpointMulti.cpp.s:
-	cd /home/jan/apurva_joshi/crazygames_ws/build && $(MAKE) -f crazyflie_ros/crazyflie_cpp/CMakeFiles/sendSetpointMulti.dir/build.make crazyflie_ros/crazyflie_cpp/CMakeFiles/sendSetpointMulti.dir/test/sendSetpointMulti.cpp.s
-.PHONY : test/sendSetpointMulti.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -413,9 +299,6 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... sendPacket"
-	@echo "... sendSetpoint"
-	@echo "... sendSetpointMulti"
 	@echo "... test"
 	@echo "... src/Crazyflie.o"
 	@echo "... src/Crazyflie.i"
@@ -432,15 +315,6 @@ help:
 	@echo "... src/crtp.o"
 	@echo "... src/crtp.i"
 	@echo "... src/crtp.s"
-	@echo "... test/sendPacket.o"
-	@echo "... test/sendPacket.i"
-	@echo "... test/sendPacket.s"
-	@echo "... test/sendSetpoint.o"
-	@echo "... test/sendSetpoint.i"
-	@echo "... test/sendSetpoint.s"
-	@echo "... test/sendSetpointMulti.o"
-	@echo "... test/sendSetpointMulti.i"
-	@echo "... test/sendSetpointMulti.s"
 .PHONY : help
 
 

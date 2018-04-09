@@ -48,22 +48,58 @@ CMAKE_BINARY_DIR = /home/jan/apurva_joshi/crazygames_ws/build
 # Include the progress variables for this target.
 include crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_py.dir/progress.make
 
+crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_py: /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/msg/_Hover.py
 crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_py: /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/msg/_LogBlock.py
-crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_py: /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/msg/_FullState.py
-crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_py: /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/msg/_GenericLogData.py
 crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_py: /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/msg/_crtpPacket.py
-crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_py: /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/_sendPacket.py
-crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_py: /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/_UpdateParams.py
+crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_py: /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/msg/_GenericLogData.py
+crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_py: /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/msg/_TrajectoryPolynomialPiece.py
+crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_py: /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/msg/_FullState.py
+crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_py: /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/msg/_Position.py
+crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_py: /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/_SetGroupMask.py
+crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_py: /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/_UploadTrajectory.py
+crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_py: /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/_Land.py
+crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_py: /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/_Stop.py
 crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_py: /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/_RemoveCrazyflie.py
+crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_py: /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/_Takeoff.py
+crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_py: /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/_sendPacket.py
+crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_py: /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/_GoTo.py
 crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_py: /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/_AddCrazyflie.py
+crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_py: /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/_UpdateParams.py
+crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_py: /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/_StartTrajectory.py
 crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_py: /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/msg/__init__.py
 crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_py: /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/__init__.py
 
+/home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/msg/_Hover.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
+/home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/msg/_Hover.py: /home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/Hover.msg
+/home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/msg/_Hover.py: /opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jan/apurva_joshi/crazygames_ws/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python from MSG crazyflie_driver/Hover"
+	cd /home/jan/apurva_joshi/crazygames_ws/build/crazyflie_ros/crazyflie_driver && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/Hover.msg -Icrazyflie_driver:/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -p crazyflie_driver -o /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/msg
+
 /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/msg/_LogBlock.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
 /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/msg/_LogBlock.py: /home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/LogBlock.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jan/apurva_joshi/crazygames_ws/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jan/apurva_joshi/crazygames_ws/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python from MSG crazyflie_driver/LogBlock"
 	cd /home/jan/apurva_joshi/crazygames_ws/build/crazyflie_ros/crazyflie_driver && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/LogBlock.msg -Icrazyflie_driver:/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -p crazyflie_driver -o /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/msg
+
+/home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/msg/_crtpPacket.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
+/home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/msg/_crtpPacket.py: /home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/crtpPacket.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jan/apurva_joshi/crazygames_ws/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python from MSG crazyflie_driver/crtpPacket"
+	cd /home/jan/apurva_joshi/crazygames_ws/build/crazyflie_ros/crazyflie_driver && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/crtpPacket.msg -Icrazyflie_driver:/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -p crazyflie_driver -o /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/msg
+
+/home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/msg/_GenericLogData.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
+/home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/msg/_GenericLogData.py: /home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/GenericLogData.msg
+/home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/msg/_GenericLogData.py: /opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jan/apurva_joshi/crazygames_ws/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python from MSG crazyflie_driver/GenericLogData"
+	cd /home/jan/apurva_joshi/crazygames_ws/build/crazyflie_ros/crazyflie_driver && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/GenericLogData.msg -Icrazyflie_driver:/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -p crazyflie_driver -o /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/msg
+
+/home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/msg/_TrajectoryPolynomialPiece.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
+/home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/msg/_TrajectoryPolynomialPiece.py: /home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/TrajectoryPolynomialPiece.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jan/apurva_joshi/crazygames_ws/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python from MSG crazyflie_driver/TrajectoryPolynomialPiece"
+	cd /home/jan/apurva_joshi/crazygames_ws/build/crazyflie_ros/crazyflie_driver && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/TrajectoryPolynomialPiece.msg -Icrazyflie_driver:/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -p crazyflie_driver -o /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/msg
 
 /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/msg/_FullState.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
 /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/msg/_FullState.py: /home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/FullState.msg
@@ -73,84 +109,152 @@ crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_py:
 /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/msg/_FullState.py: /opt/ros/indigo/share/geometry_msgs/cmake/../msg/Quaternion.msg
 /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/msg/_FullState.py: /opt/ros/indigo/share/geometry_msgs/cmake/../msg/Pose.msg
 /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/msg/_FullState.py: /opt/ros/indigo/share/geometry_msgs/cmake/../msg/Twist.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jan/apurva_joshi/crazygames_ws/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jan/apurva_joshi/crazygames_ws/build/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python from MSG crazyflie_driver/FullState"
 	cd /home/jan/apurva_joshi/crazygames_ws/build/crazyflie_ros/crazyflie_driver && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/FullState.msg -Icrazyflie_driver:/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -p crazyflie_driver -o /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/msg
 
-/home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/msg/_GenericLogData.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
-/home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/msg/_GenericLogData.py: /home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/GenericLogData.msg
-/home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/msg/_GenericLogData.py: /opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jan/apurva_joshi/crazygames_ws/build/CMakeFiles $(CMAKE_PROGRESS_3)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python from MSG crazyflie_driver/GenericLogData"
-	cd /home/jan/apurva_joshi/crazygames_ws/build/crazyflie_ros/crazyflie_driver && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/GenericLogData.msg -Icrazyflie_driver:/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -p crazyflie_driver -o /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/msg
+/home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/msg/_Position.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
+/home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/msg/_Position.py: /home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/Position.msg
+/home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/msg/_Position.py: /opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jan/apurva_joshi/crazygames_ws/build/CMakeFiles $(CMAKE_PROGRESS_7)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python from MSG crazyflie_driver/Position"
+	cd /home/jan/apurva_joshi/crazygames_ws/build/crazyflie_ros/crazyflie_driver && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/Position.msg -Icrazyflie_driver:/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -p crazyflie_driver -o /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/msg
 
-/home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/msg/_crtpPacket.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
-/home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/msg/_crtpPacket.py: /home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/crtpPacket.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jan/apurva_joshi/crazygames_ws/build/CMakeFiles $(CMAKE_PROGRESS_4)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python from MSG crazyflie_driver/crtpPacket"
-	cd /home/jan/apurva_joshi/crazygames_ws/build/crazyflie_ros/crazyflie_driver && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/crtpPacket.msg -Icrazyflie_driver:/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -p crazyflie_driver -o /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/msg
+/home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/_SetGroupMask.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/gensrv_py.py
+/home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/_SetGroupMask.py: /home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/SetGroupMask.srv
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jan/apurva_joshi/crazygames_ws/build/CMakeFiles $(CMAKE_PROGRESS_8)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python code from SRV crazyflie_driver/SetGroupMask"
+	cd /home/jan/apurva_joshi/crazygames_ws/build/crazyflie_ros/crazyflie_driver && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/SetGroupMask.srv -Icrazyflie_driver:/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -p crazyflie_driver -o /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv
+
+/home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/_UploadTrajectory.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/gensrv_py.py
+/home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/_UploadTrajectory.py: /home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/UploadTrajectory.srv
+/home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/_UploadTrajectory.py: /home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/TrajectoryPolynomialPiece.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jan/apurva_joshi/crazygames_ws/build/CMakeFiles $(CMAKE_PROGRESS_9)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python code from SRV crazyflie_driver/UploadTrajectory"
+	cd /home/jan/apurva_joshi/crazygames_ws/build/crazyflie_ros/crazyflie_driver && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/UploadTrajectory.srv -Icrazyflie_driver:/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -p crazyflie_driver -o /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv
+
+/home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/_Land.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/gensrv_py.py
+/home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/_Land.py: /home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/Land.srv
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jan/apurva_joshi/crazygames_ws/build/CMakeFiles $(CMAKE_PROGRESS_10)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python code from SRV crazyflie_driver/Land"
+	cd /home/jan/apurva_joshi/crazygames_ws/build/crazyflie_ros/crazyflie_driver && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/Land.srv -Icrazyflie_driver:/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -p crazyflie_driver -o /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv
+
+/home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/_Stop.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/gensrv_py.py
+/home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/_Stop.py: /home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/Stop.srv
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jan/apurva_joshi/crazygames_ws/build/CMakeFiles $(CMAKE_PROGRESS_11)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python code from SRV crazyflie_driver/Stop"
+	cd /home/jan/apurva_joshi/crazygames_ws/build/crazyflie_ros/crazyflie_driver && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/Stop.srv -Icrazyflie_driver:/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -p crazyflie_driver -o /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv
+
+/home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/_RemoveCrazyflie.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/gensrv_py.py
+/home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/_RemoveCrazyflie.py: /home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/RemoveCrazyflie.srv
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jan/apurva_joshi/crazygames_ws/build/CMakeFiles $(CMAKE_PROGRESS_12)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python code from SRV crazyflie_driver/RemoveCrazyflie"
+	cd /home/jan/apurva_joshi/crazygames_ws/build/crazyflie_ros/crazyflie_driver && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/RemoveCrazyflie.srv -Icrazyflie_driver:/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -p crazyflie_driver -o /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv
+
+/home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/_Takeoff.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/gensrv_py.py
+/home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/_Takeoff.py: /home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/Takeoff.srv
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jan/apurva_joshi/crazygames_ws/build/CMakeFiles $(CMAKE_PROGRESS_13)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python code from SRV crazyflie_driver/Takeoff"
+	cd /home/jan/apurva_joshi/crazygames_ws/build/crazyflie_ros/crazyflie_driver && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/Takeoff.srv -Icrazyflie_driver:/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -p crazyflie_driver -o /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv
 
 /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/_sendPacket.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/gensrv_py.py
 /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/_sendPacket.py: /home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/sendPacket.srv
 /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/_sendPacket.py: /home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/crtpPacket.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jan/apurva_joshi/crazygames_ws/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jan/apurva_joshi/crazygames_ws/build/CMakeFiles $(CMAKE_PROGRESS_14)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python code from SRV crazyflie_driver/sendPacket"
 	cd /home/jan/apurva_joshi/crazygames_ws/build/crazyflie_ros/crazyflie_driver && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/sendPacket.srv -Icrazyflie_driver:/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -p crazyflie_driver -o /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv
 
-/home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/_UpdateParams.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/gensrv_py.py
-/home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/_UpdateParams.py: /home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/UpdateParams.srv
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jan/apurva_joshi/crazygames_ws/build/CMakeFiles $(CMAKE_PROGRESS_6)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python code from SRV crazyflie_driver/UpdateParams"
-	cd /home/jan/apurva_joshi/crazygames_ws/build/crazyflie_ros/crazyflie_driver && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/UpdateParams.srv -Icrazyflie_driver:/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -p crazyflie_driver -o /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv
-
-/home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/_RemoveCrazyflie.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/gensrv_py.py
-/home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/_RemoveCrazyflie.py: /home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/RemoveCrazyflie.srv
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jan/apurva_joshi/crazygames_ws/build/CMakeFiles $(CMAKE_PROGRESS_7)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python code from SRV crazyflie_driver/RemoveCrazyflie"
-	cd /home/jan/apurva_joshi/crazygames_ws/build/crazyflie_ros/crazyflie_driver && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/RemoveCrazyflie.srv -Icrazyflie_driver:/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -p crazyflie_driver -o /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv
+/home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/_GoTo.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/gensrv_py.py
+/home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/_GoTo.py: /home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/GoTo.srv
+/home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/_GoTo.py: /opt/ros/indigo/share/geometry_msgs/cmake/../msg/Point.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jan/apurva_joshi/crazygames_ws/build/CMakeFiles $(CMAKE_PROGRESS_15)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python code from SRV crazyflie_driver/GoTo"
+	cd /home/jan/apurva_joshi/crazygames_ws/build/crazyflie_ros/crazyflie_driver && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/GoTo.srv -Icrazyflie_driver:/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -p crazyflie_driver -o /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv
 
 /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/_AddCrazyflie.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/gensrv_py.py
 /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/_AddCrazyflie.py: /home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/AddCrazyflie.srv
 /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/_AddCrazyflie.py: /home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/LogBlock.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jan/apurva_joshi/crazygames_ws/build/CMakeFiles $(CMAKE_PROGRESS_8)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jan/apurva_joshi/crazygames_ws/build/CMakeFiles $(CMAKE_PROGRESS_16)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python code from SRV crazyflie_driver/AddCrazyflie"
 	cd /home/jan/apurva_joshi/crazygames_ws/build/crazyflie_ros/crazyflie_driver && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/AddCrazyflie.srv -Icrazyflie_driver:/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -p crazyflie_driver -o /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv
 
+/home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/_UpdateParams.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/gensrv_py.py
+/home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/_UpdateParams.py: /home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/UpdateParams.srv
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jan/apurva_joshi/crazygames_ws/build/CMakeFiles $(CMAKE_PROGRESS_17)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python code from SRV crazyflie_driver/UpdateParams"
+	cd /home/jan/apurva_joshi/crazygames_ws/build/crazyflie_ros/crazyflie_driver && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/UpdateParams.srv -Icrazyflie_driver:/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -p crazyflie_driver -o /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv
+
+/home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/_StartTrajectory.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/gensrv_py.py
+/home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/_StartTrajectory.py: /home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/StartTrajectory.srv
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jan/apurva_joshi/crazygames_ws/build/CMakeFiles $(CMAKE_PROGRESS_18)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python code from SRV crazyflie_driver/StartTrajectory"
+	cd /home/jan/apurva_joshi/crazygames_ws/build/crazyflie_ros/crazyflie_driver && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/StartTrajectory.srv -Icrazyflie_driver:/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -p crazyflie_driver -o /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv
+
 /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/msg/__init__.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
+/home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/msg/__init__.py: /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/msg/_Hover.py
 /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/msg/__init__.py: /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/msg/_LogBlock.py
-/home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/msg/__init__.py: /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/msg/_FullState.py
-/home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/msg/__init__.py: /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/msg/_GenericLogData.py
 /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/msg/__init__.py: /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/msg/_crtpPacket.py
-/home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/msg/__init__.py: /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/_sendPacket.py
-/home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/msg/__init__.py: /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/_UpdateParams.py
+/home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/msg/__init__.py: /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/msg/_GenericLogData.py
+/home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/msg/__init__.py: /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/msg/_TrajectoryPolynomialPiece.py
+/home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/msg/__init__.py: /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/msg/_FullState.py
+/home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/msg/__init__.py: /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/msg/_Position.py
+/home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/msg/__init__.py: /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/_SetGroupMask.py
+/home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/msg/__init__.py: /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/_UploadTrajectory.py
+/home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/msg/__init__.py: /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/_Land.py
+/home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/msg/__init__.py: /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/_Stop.py
 /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/msg/__init__.py: /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/_RemoveCrazyflie.py
+/home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/msg/__init__.py: /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/_Takeoff.py
+/home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/msg/__init__.py: /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/_sendPacket.py
+/home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/msg/__init__.py: /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/_GoTo.py
 /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/msg/__init__.py: /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/_AddCrazyflie.py
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jan/apurva_joshi/crazygames_ws/build/CMakeFiles $(CMAKE_PROGRESS_9)
+/home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/msg/__init__.py: /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/_UpdateParams.py
+/home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/msg/__init__.py: /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/_StartTrajectory.py
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jan/apurva_joshi/crazygames_ws/build/CMakeFiles $(CMAKE_PROGRESS_19)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python msg __init__.py for crazyflie_driver"
 	cd /home/jan/apurva_joshi/crazygames_ws/build/crazyflie_ros/crazyflie_driver && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/msg --initpy
 
 /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/__init__.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
+/home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/__init__.py: /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/msg/_Hover.py
 /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/__init__.py: /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/msg/_LogBlock.py
-/home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/__init__.py: /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/msg/_FullState.py
-/home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/__init__.py: /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/msg/_GenericLogData.py
 /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/__init__.py: /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/msg/_crtpPacket.py
-/home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/__init__.py: /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/_sendPacket.py
-/home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/__init__.py: /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/_UpdateParams.py
+/home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/__init__.py: /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/msg/_GenericLogData.py
+/home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/__init__.py: /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/msg/_TrajectoryPolynomialPiece.py
+/home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/__init__.py: /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/msg/_FullState.py
+/home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/__init__.py: /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/msg/_Position.py
+/home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/__init__.py: /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/_SetGroupMask.py
+/home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/__init__.py: /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/_UploadTrajectory.py
+/home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/__init__.py: /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/_Land.py
+/home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/__init__.py: /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/_Stop.py
 /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/__init__.py: /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/_RemoveCrazyflie.py
+/home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/__init__.py: /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/_Takeoff.py
+/home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/__init__.py: /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/_sendPacket.py
+/home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/__init__.py: /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/_GoTo.py
 /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/__init__.py: /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/_AddCrazyflie.py
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jan/apurva_joshi/crazygames_ws/build/CMakeFiles $(CMAKE_PROGRESS_10)
+/home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/__init__.py: /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/_UpdateParams.py
+/home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/__init__.py: /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/_StartTrajectory.py
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jan/apurva_joshi/crazygames_ws/build/CMakeFiles $(CMAKE_PROGRESS_20)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python srv __init__.py for crazyflie_driver"
 	cd /home/jan/apurva_joshi/crazygames_ws/build/crazyflie_ros/crazyflie_driver && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv --initpy
 
 crazyflie_driver_generate_messages_py: crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_py
+crazyflie_driver_generate_messages_py: /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/msg/_Hover.py
 crazyflie_driver_generate_messages_py: /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/msg/_LogBlock.py
-crazyflie_driver_generate_messages_py: /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/msg/_FullState.py
-crazyflie_driver_generate_messages_py: /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/msg/_GenericLogData.py
 crazyflie_driver_generate_messages_py: /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/msg/_crtpPacket.py
-crazyflie_driver_generate_messages_py: /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/_sendPacket.py
-crazyflie_driver_generate_messages_py: /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/_UpdateParams.py
+crazyflie_driver_generate_messages_py: /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/msg/_GenericLogData.py
+crazyflie_driver_generate_messages_py: /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/msg/_TrajectoryPolynomialPiece.py
+crazyflie_driver_generate_messages_py: /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/msg/_FullState.py
+crazyflie_driver_generate_messages_py: /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/msg/_Position.py
+crazyflie_driver_generate_messages_py: /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/_SetGroupMask.py
+crazyflie_driver_generate_messages_py: /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/_UploadTrajectory.py
+crazyflie_driver_generate_messages_py: /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/_Land.py
+crazyflie_driver_generate_messages_py: /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/_Stop.py
 crazyflie_driver_generate_messages_py: /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/_RemoveCrazyflie.py
+crazyflie_driver_generate_messages_py: /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/_Takeoff.py
+crazyflie_driver_generate_messages_py: /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/_sendPacket.py
+crazyflie_driver_generate_messages_py: /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/_GoTo.py
 crazyflie_driver_generate_messages_py: /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/_AddCrazyflie.py
+crazyflie_driver_generate_messages_py: /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/_UpdateParams.py
+crazyflie_driver_generate_messages_py: /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/_StartTrajectory.py
 crazyflie_driver_generate_messages_py: /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/msg/__init__.py
 crazyflie_driver_generate_messages_py: /home/jan/apurva_joshi/crazygames_ws/devel/lib/python2.7/dist-packages/crazyflie_driver/srv/__init__.py
 crazyflie_driver_generate_messages_py: crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_py.dir/build.make

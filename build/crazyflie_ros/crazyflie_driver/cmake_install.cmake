@@ -35,8 +35,15 @@ ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/crazyflie_driver/srv" TYPE FILE FILES
     "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/AddCrazyflie.srv"
+    "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/GoTo.srv"
+    "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/Land.srv"
     "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/RemoveCrazyflie.srv"
+    "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/SetGroupMask.srv"
+    "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/StartTrajectory.srv"
+    "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/Stop.srv"
+    "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/Takeoff.srv"
     "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/UpdateParams.srv"
+    "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/UploadTrajectory.srv"
     "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/sendPacket.srv"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -46,7 +53,10 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
     "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/LogBlock.msg"
     "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/GenericLogData.msg"
     "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/FullState.msg"
+    "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/TrajectoryPolynomialPiece.msg"
     "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/crtpPacket.msg"
+    "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/Hover.msg"
+    "/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/Position.msg"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 

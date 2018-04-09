@@ -48,21 +48,61 @@ CMAKE_BINARY_DIR = /home/jan/apurva_joshi/crazygames_ws/build
 # Include the progress variables for this target.
 include crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_cpp.dir/progress.make
 
+crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_cpp: /home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/Hover.h
 crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_cpp: /home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/LogBlock.h
-crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_cpp: /home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/FullState.h
-crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_cpp: /home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/GenericLogData.h
 crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_cpp: /home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/crtpPacket.h
-crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_cpp: /home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/sendPacket.h
-crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_cpp: /home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/UpdateParams.h
+crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_cpp: /home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/GenericLogData.h
+crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_cpp: /home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/TrajectoryPolynomialPiece.h
+crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_cpp: /home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/FullState.h
+crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_cpp: /home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/Position.h
+crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_cpp: /home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/SetGroupMask.h
+crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_cpp: /home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/UploadTrajectory.h
+crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_cpp: /home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/Land.h
+crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_cpp: /home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/Stop.h
 crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_cpp: /home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/RemoveCrazyflie.h
+crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_cpp: /home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/Takeoff.h
+crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_cpp: /home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/sendPacket.h
+crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_cpp: /home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/GoTo.h
 crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_cpp: /home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/AddCrazyflie.h
+crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_cpp: /home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/UpdateParams.h
+crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_cpp: /home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/StartTrajectory.h
+
+/home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/Hover.h: /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py
+/home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/Hover.h: /home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/Hover.msg
+/home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/Hover.h: /opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg
+/home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/Hover.h: /opt/ros/indigo/share/gencpp/cmake/../msg.h.template
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jan/apurva_joshi/crazygames_ws/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating C++ code from crazyflie_driver/Hover.msg"
+	cd /home/jan/apurva_joshi/crazygames_ws/build/crazyflie_ros/crazyflie_driver && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/Hover.msg -Icrazyflie_driver:/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -p crazyflie_driver -o /home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver -e /opt/ros/indigo/share/gencpp/cmake/..
 
 /home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/LogBlock.h: /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py
 /home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/LogBlock.h: /home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/LogBlock.msg
 /home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/LogBlock.h: /opt/ros/indigo/share/gencpp/cmake/../msg.h.template
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jan/apurva_joshi/crazygames_ws/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jan/apurva_joshi/crazygames_ws/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating C++ code from crazyflie_driver/LogBlock.msg"
 	cd /home/jan/apurva_joshi/crazygames_ws/build/crazyflie_ros/crazyflie_driver && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/LogBlock.msg -Icrazyflie_driver:/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -p crazyflie_driver -o /home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver -e /opt/ros/indigo/share/gencpp/cmake/..
+
+/home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/crtpPacket.h: /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py
+/home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/crtpPacket.h: /home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/crtpPacket.msg
+/home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/crtpPacket.h: /opt/ros/indigo/share/gencpp/cmake/../msg.h.template
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jan/apurva_joshi/crazygames_ws/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating C++ code from crazyflie_driver/crtpPacket.msg"
+	cd /home/jan/apurva_joshi/crazygames_ws/build/crazyflie_ros/crazyflie_driver && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/crtpPacket.msg -Icrazyflie_driver:/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -p crazyflie_driver -o /home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver -e /opt/ros/indigo/share/gencpp/cmake/..
+
+/home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/GenericLogData.h: /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py
+/home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/GenericLogData.h: /home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/GenericLogData.msg
+/home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/GenericLogData.h: /opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg
+/home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/GenericLogData.h: /opt/ros/indigo/share/gencpp/cmake/../msg.h.template
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jan/apurva_joshi/crazygames_ws/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating C++ code from crazyflie_driver/GenericLogData.msg"
+	cd /home/jan/apurva_joshi/crazygames_ws/build/crazyflie_ros/crazyflie_driver && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/GenericLogData.msg -Icrazyflie_driver:/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -p crazyflie_driver -o /home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver -e /opt/ros/indigo/share/gencpp/cmake/..
+
+/home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/TrajectoryPolynomialPiece.h: /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py
+/home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/TrajectoryPolynomialPiece.h: /home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/TrajectoryPolynomialPiece.msg
+/home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/TrajectoryPolynomialPiece.h: /opt/ros/indigo/share/gencpp/cmake/../msg.h.template
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jan/apurva_joshi/crazygames_ws/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating C++ code from crazyflie_driver/TrajectoryPolynomialPiece.msg"
+	cd /home/jan/apurva_joshi/crazygames_ws/build/crazyflie_ros/crazyflie_driver && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/TrajectoryPolynomialPiece.msg -Icrazyflie_driver:/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -p crazyflie_driver -o /home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver -e /opt/ros/indigo/share/gencpp/cmake/..
 
 /home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/FullState.h: /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py
 /home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/FullState.h: /home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/FullState.msg
@@ -73,68 +113,129 @@ crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_cpp
 /home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/FullState.h: /opt/ros/indigo/share/geometry_msgs/cmake/../msg/Pose.msg
 /home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/FullState.h: /opt/ros/indigo/share/geometry_msgs/cmake/../msg/Twist.msg
 /home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/FullState.h: /opt/ros/indigo/share/gencpp/cmake/../msg.h.template
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jan/apurva_joshi/crazygames_ws/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jan/apurva_joshi/crazygames_ws/build/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating C++ code from crazyflie_driver/FullState.msg"
 	cd /home/jan/apurva_joshi/crazygames_ws/build/crazyflie_ros/crazyflie_driver && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/FullState.msg -Icrazyflie_driver:/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -p crazyflie_driver -o /home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver -e /opt/ros/indigo/share/gencpp/cmake/..
 
-/home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/GenericLogData.h: /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py
-/home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/GenericLogData.h: /home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/GenericLogData.msg
-/home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/GenericLogData.h: /opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg
-/home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/GenericLogData.h: /opt/ros/indigo/share/gencpp/cmake/../msg.h.template
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jan/apurva_joshi/crazygames_ws/build/CMakeFiles $(CMAKE_PROGRESS_3)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating C++ code from crazyflie_driver/GenericLogData.msg"
-	cd /home/jan/apurva_joshi/crazygames_ws/build/crazyflie_ros/crazyflie_driver && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/GenericLogData.msg -Icrazyflie_driver:/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -p crazyflie_driver -o /home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver -e /opt/ros/indigo/share/gencpp/cmake/..
+/home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/Position.h: /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py
+/home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/Position.h: /home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/Position.msg
+/home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/Position.h: /opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg
+/home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/Position.h: /opt/ros/indigo/share/gencpp/cmake/../msg.h.template
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jan/apurva_joshi/crazygames_ws/build/CMakeFiles $(CMAKE_PROGRESS_7)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating C++ code from crazyflie_driver/Position.msg"
+	cd /home/jan/apurva_joshi/crazygames_ws/build/crazyflie_ros/crazyflie_driver && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/Position.msg -Icrazyflie_driver:/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -p crazyflie_driver -o /home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver -e /opt/ros/indigo/share/gencpp/cmake/..
 
-/home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/crtpPacket.h: /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py
-/home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/crtpPacket.h: /home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/crtpPacket.msg
-/home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/crtpPacket.h: /opt/ros/indigo/share/gencpp/cmake/../msg.h.template
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jan/apurva_joshi/crazygames_ws/build/CMakeFiles $(CMAKE_PROGRESS_4)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating C++ code from crazyflie_driver/crtpPacket.msg"
-	cd /home/jan/apurva_joshi/crazygames_ws/build/crazyflie_ros/crazyflie_driver && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/crtpPacket.msg -Icrazyflie_driver:/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -p crazyflie_driver -o /home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver -e /opt/ros/indigo/share/gencpp/cmake/..
+/home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/SetGroupMask.h: /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py
+/home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/SetGroupMask.h: /home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/SetGroupMask.srv
+/home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/SetGroupMask.h: /opt/ros/indigo/share/gencpp/cmake/../msg.h.template
+/home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/SetGroupMask.h: /opt/ros/indigo/share/gencpp/cmake/../srv.h.template
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jan/apurva_joshi/crazygames_ws/build/CMakeFiles $(CMAKE_PROGRESS_8)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating C++ code from crazyflie_driver/SetGroupMask.srv"
+	cd /home/jan/apurva_joshi/crazygames_ws/build/crazyflie_ros/crazyflie_driver && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/SetGroupMask.srv -Icrazyflie_driver:/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -p crazyflie_driver -o /home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver -e /opt/ros/indigo/share/gencpp/cmake/..
+
+/home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/UploadTrajectory.h: /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py
+/home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/UploadTrajectory.h: /home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/UploadTrajectory.srv
+/home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/UploadTrajectory.h: /home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/TrajectoryPolynomialPiece.msg
+/home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/UploadTrajectory.h: /opt/ros/indigo/share/gencpp/cmake/../msg.h.template
+/home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/UploadTrajectory.h: /opt/ros/indigo/share/gencpp/cmake/../srv.h.template
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jan/apurva_joshi/crazygames_ws/build/CMakeFiles $(CMAKE_PROGRESS_9)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating C++ code from crazyflie_driver/UploadTrajectory.srv"
+	cd /home/jan/apurva_joshi/crazygames_ws/build/crazyflie_ros/crazyflie_driver && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/UploadTrajectory.srv -Icrazyflie_driver:/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -p crazyflie_driver -o /home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver -e /opt/ros/indigo/share/gencpp/cmake/..
+
+/home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/Land.h: /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py
+/home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/Land.h: /home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/Land.srv
+/home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/Land.h: /opt/ros/indigo/share/gencpp/cmake/../msg.h.template
+/home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/Land.h: /opt/ros/indigo/share/gencpp/cmake/../srv.h.template
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jan/apurva_joshi/crazygames_ws/build/CMakeFiles $(CMAKE_PROGRESS_10)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating C++ code from crazyflie_driver/Land.srv"
+	cd /home/jan/apurva_joshi/crazygames_ws/build/crazyflie_ros/crazyflie_driver && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/Land.srv -Icrazyflie_driver:/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -p crazyflie_driver -o /home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver -e /opt/ros/indigo/share/gencpp/cmake/..
+
+/home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/Stop.h: /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py
+/home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/Stop.h: /home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/Stop.srv
+/home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/Stop.h: /opt/ros/indigo/share/gencpp/cmake/../msg.h.template
+/home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/Stop.h: /opt/ros/indigo/share/gencpp/cmake/../srv.h.template
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jan/apurva_joshi/crazygames_ws/build/CMakeFiles $(CMAKE_PROGRESS_11)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating C++ code from crazyflie_driver/Stop.srv"
+	cd /home/jan/apurva_joshi/crazygames_ws/build/crazyflie_ros/crazyflie_driver && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/Stop.srv -Icrazyflie_driver:/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -p crazyflie_driver -o /home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver -e /opt/ros/indigo/share/gencpp/cmake/..
+
+/home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/RemoveCrazyflie.h: /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py
+/home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/RemoveCrazyflie.h: /home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/RemoveCrazyflie.srv
+/home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/RemoveCrazyflie.h: /opt/ros/indigo/share/gencpp/cmake/../msg.h.template
+/home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/RemoveCrazyflie.h: /opt/ros/indigo/share/gencpp/cmake/../srv.h.template
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jan/apurva_joshi/crazygames_ws/build/CMakeFiles $(CMAKE_PROGRESS_12)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating C++ code from crazyflie_driver/RemoveCrazyflie.srv"
+	cd /home/jan/apurva_joshi/crazygames_ws/build/crazyflie_ros/crazyflie_driver && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/RemoveCrazyflie.srv -Icrazyflie_driver:/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -p crazyflie_driver -o /home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver -e /opt/ros/indigo/share/gencpp/cmake/..
+
+/home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/Takeoff.h: /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py
+/home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/Takeoff.h: /home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/Takeoff.srv
+/home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/Takeoff.h: /opt/ros/indigo/share/gencpp/cmake/../msg.h.template
+/home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/Takeoff.h: /opt/ros/indigo/share/gencpp/cmake/../srv.h.template
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jan/apurva_joshi/crazygames_ws/build/CMakeFiles $(CMAKE_PROGRESS_13)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating C++ code from crazyflie_driver/Takeoff.srv"
+	cd /home/jan/apurva_joshi/crazygames_ws/build/crazyflie_ros/crazyflie_driver && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/Takeoff.srv -Icrazyflie_driver:/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -p crazyflie_driver -o /home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver -e /opt/ros/indigo/share/gencpp/cmake/..
 
 /home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/sendPacket.h: /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py
 /home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/sendPacket.h: /home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/sendPacket.srv
 /home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/sendPacket.h: /home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/crtpPacket.msg
 /home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/sendPacket.h: /opt/ros/indigo/share/gencpp/cmake/../msg.h.template
 /home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/sendPacket.h: /opt/ros/indigo/share/gencpp/cmake/../srv.h.template
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jan/apurva_joshi/crazygames_ws/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jan/apurva_joshi/crazygames_ws/build/CMakeFiles $(CMAKE_PROGRESS_14)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating C++ code from crazyflie_driver/sendPacket.srv"
 	cd /home/jan/apurva_joshi/crazygames_ws/build/crazyflie_ros/crazyflie_driver && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/sendPacket.srv -Icrazyflie_driver:/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -p crazyflie_driver -o /home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver -e /opt/ros/indigo/share/gencpp/cmake/..
 
-/home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/UpdateParams.h: /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py
-/home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/UpdateParams.h: /home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/UpdateParams.srv
-/home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/UpdateParams.h: /opt/ros/indigo/share/gencpp/cmake/../msg.h.template
-/home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/UpdateParams.h: /opt/ros/indigo/share/gencpp/cmake/../srv.h.template
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jan/apurva_joshi/crazygames_ws/build/CMakeFiles $(CMAKE_PROGRESS_6)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating C++ code from crazyflie_driver/UpdateParams.srv"
-	cd /home/jan/apurva_joshi/crazygames_ws/build/crazyflie_ros/crazyflie_driver && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/UpdateParams.srv -Icrazyflie_driver:/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -p crazyflie_driver -o /home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver -e /opt/ros/indigo/share/gencpp/cmake/..
-
-/home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/RemoveCrazyflie.h: /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py
-/home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/RemoveCrazyflie.h: /home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/RemoveCrazyflie.srv
-/home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/RemoveCrazyflie.h: /opt/ros/indigo/share/gencpp/cmake/../msg.h.template
-/home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/RemoveCrazyflie.h: /opt/ros/indigo/share/gencpp/cmake/../srv.h.template
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jan/apurva_joshi/crazygames_ws/build/CMakeFiles $(CMAKE_PROGRESS_7)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating C++ code from crazyflie_driver/RemoveCrazyflie.srv"
-	cd /home/jan/apurva_joshi/crazygames_ws/build/crazyflie_ros/crazyflie_driver && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/RemoveCrazyflie.srv -Icrazyflie_driver:/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -p crazyflie_driver -o /home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver -e /opt/ros/indigo/share/gencpp/cmake/..
+/home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/GoTo.h: /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py
+/home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/GoTo.h: /home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/GoTo.srv
+/home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/GoTo.h: /opt/ros/indigo/share/geometry_msgs/cmake/../msg/Point.msg
+/home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/GoTo.h: /opt/ros/indigo/share/gencpp/cmake/../msg.h.template
+/home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/GoTo.h: /opt/ros/indigo/share/gencpp/cmake/../srv.h.template
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jan/apurva_joshi/crazygames_ws/build/CMakeFiles $(CMAKE_PROGRESS_15)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating C++ code from crazyflie_driver/GoTo.srv"
+	cd /home/jan/apurva_joshi/crazygames_ws/build/crazyflie_ros/crazyflie_driver && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/GoTo.srv -Icrazyflie_driver:/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -p crazyflie_driver -o /home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver -e /opt/ros/indigo/share/gencpp/cmake/..
 
 /home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/AddCrazyflie.h: /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py
 /home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/AddCrazyflie.h: /home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/AddCrazyflie.srv
 /home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/AddCrazyflie.h: /home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg/LogBlock.msg
 /home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/AddCrazyflie.h: /opt/ros/indigo/share/gencpp/cmake/../msg.h.template
 /home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/AddCrazyflie.h: /opt/ros/indigo/share/gencpp/cmake/../srv.h.template
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jan/apurva_joshi/crazygames_ws/build/CMakeFiles $(CMAKE_PROGRESS_8)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jan/apurva_joshi/crazygames_ws/build/CMakeFiles $(CMAKE_PROGRESS_16)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating C++ code from crazyflie_driver/AddCrazyflie.srv"
 	cd /home/jan/apurva_joshi/crazygames_ws/build/crazyflie_ros/crazyflie_driver && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/AddCrazyflie.srv -Icrazyflie_driver:/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -p crazyflie_driver -o /home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver -e /opt/ros/indigo/share/gencpp/cmake/..
 
+/home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/UpdateParams.h: /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py
+/home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/UpdateParams.h: /home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/UpdateParams.srv
+/home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/UpdateParams.h: /opt/ros/indigo/share/gencpp/cmake/../msg.h.template
+/home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/UpdateParams.h: /opt/ros/indigo/share/gencpp/cmake/../srv.h.template
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jan/apurva_joshi/crazygames_ws/build/CMakeFiles $(CMAKE_PROGRESS_17)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating C++ code from crazyflie_driver/UpdateParams.srv"
+	cd /home/jan/apurva_joshi/crazygames_ws/build/crazyflie_ros/crazyflie_driver && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/UpdateParams.srv -Icrazyflie_driver:/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -p crazyflie_driver -o /home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver -e /opt/ros/indigo/share/gencpp/cmake/..
+
+/home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/StartTrajectory.h: /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py
+/home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/StartTrajectory.h: /home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/StartTrajectory.srv
+/home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/StartTrajectory.h: /opt/ros/indigo/share/gencpp/cmake/../msg.h.template
+/home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/StartTrajectory.h: /opt/ros/indigo/share/gencpp/cmake/../srv.h.template
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jan/apurva_joshi/crazygames_ws/build/CMakeFiles $(CMAKE_PROGRESS_18)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating C++ code from crazyflie_driver/StartTrajectory.srv"
+	cd /home/jan/apurva_joshi/crazygames_ws/build/crazyflie_ros/crazyflie_driver && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/srv/StartTrajectory.srv -Icrazyflie_driver:/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_driver/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -p crazyflie_driver -o /home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver -e /opt/ros/indigo/share/gencpp/cmake/..
+
 crazyflie_driver_generate_messages_cpp: crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_cpp
+crazyflie_driver_generate_messages_cpp: /home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/Hover.h
 crazyflie_driver_generate_messages_cpp: /home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/LogBlock.h
-crazyflie_driver_generate_messages_cpp: /home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/FullState.h
-crazyflie_driver_generate_messages_cpp: /home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/GenericLogData.h
 crazyflie_driver_generate_messages_cpp: /home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/crtpPacket.h
-crazyflie_driver_generate_messages_cpp: /home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/sendPacket.h
-crazyflie_driver_generate_messages_cpp: /home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/UpdateParams.h
+crazyflie_driver_generate_messages_cpp: /home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/GenericLogData.h
+crazyflie_driver_generate_messages_cpp: /home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/TrajectoryPolynomialPiece.h
+crazyflie_driver_generate_messages_cpp: /home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/FullState.h
+crazyflie_driver_generate_messages_cpp: /home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/Position.h
+crazyflie_driver_generate_messages_cpp: /home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/SetGroupMask.h
+crazyflie_driver_generate_messages_cpp: /home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/UploadTrajectory.h
+crazyflie_driver_generate_messages_cpp: /home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/Land.h
+crazyflie_driver_generate_messages_cpp: /home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/Stop.h
 crazyflie_driver_generate_messages_cpp: /home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/RemoveCrazyflie.h
+crazyflie_driver_generate_messages_cpp: /home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/Takeoff.h
+crazyflie_driver_generate_messages_cpp: /home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/sendPacket.h
+crazyflie_driver_generate_messages_cpp: /home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/GoTo.h
 crazyflie_driver_generate_messages_cpp: /home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/AddCrazyflie.h
+crazyflie_driver_generate_messages_cpp: /home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/UpdateParams.h
+crazyflie_driver_generate_messages_cpp: /home/jan/apurva_joshi/crazygames_ws/devel/include/crazyflie_driver/StartTrajectory.h
 crazyflie_driver_generate_messages_cpp: crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_cpp.dir/build.make
 .PHONY : crazyflie_driver_generate_messages_cpp
 
