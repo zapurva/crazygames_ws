@@ -1,0 +1,8 @@
+prefix=/home/jan/apurva_joshi/crazygames_ws/install
+
+Name: crazygames
+Description: Description of crazygames
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/jan/apurva_joshi/crazygames_ws/install/lib 
+Requires: 

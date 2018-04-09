@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_cpp/include/crazyflie_cpp/Crazyradio.h
+stdint.h
+-
+vector
+-
+ITransport.h
+/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_cpp/include/crazyflie_cpp/ITransport.h
+USBDevice.h
+/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_cpp/include/crazyflie_cpp/USBDevice.h
+
+/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_cpp/include/crazyflie_cpp/ITransport.h
+stdint.h
+-
+
+/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_cpp/include/crazyflie_cpp/USBDevice.h
+stdint.h
+-
+
+/home/jan/apurva_joshi/crazygames_ws/src/crazyflie_ros/crazyflie_cpp/test/sendPacket.cpp
+iostream
+-
+crazyflie_cpp/Crazyradio.h
+-
+

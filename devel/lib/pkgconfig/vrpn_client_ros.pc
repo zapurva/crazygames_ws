@@ -1,0 +1,8 @@
+prefix=/home/jan/apurva_joshi/crazygames_ws/devel
+
+Name: vrpn_client_ros
+Description: Description of vrpn_client_ros
+Version: 0.2.2
+Cflags: -I/home/jan/apurva_joshi/crazygames_ws/src/vrpn_client_ros/include -I/opt/ros/indigo/include
+Libs: -L/home/jan/apurva_joshi/crazygames_ws/devel/lib -lvrpn_client_ros /opt/ros/indigo/lib/libvrpn.a
+Requires: geometry_msgs tf2_ros
