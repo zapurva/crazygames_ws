@@ -32,8 +32,8 @@
 /home/jan/apurva_joshi/crazygames_ws/build/CMakeFiles/clean_test_results.dir
 /home/jan/apurva_joshi/crazygames_ws/build/vrpn_client_ros/CMakeFiles/clean_test_results_vrpn_client_ros.dir
 /home/jan/apurva_joshi/crazygames_ws/build/crazyflie_ros/crazyflie_tools/CMakeFiles/console.dir
+/home/jan/apurva_joshi/crazygames_ws/build/crazyflie_ros/crazyflie_controller/CMakeFiles/controller.dir
 /home/jan/apurva_joshi/crazygames_ws/build/crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_add.dir
-/home/jan/apurva_joshi/crazygames_ws/build/crazyflie_ros/crazyflie_controller/CMakeFiles/crazyflie_controller.dir
 /home/jan/apurva_joshi/crazygames_ws/build/crazyflie_ros/crazyflie_cpp/CMakeFiles/crazyflie_cpp.dir
 /home/jan/apurva_joshi/crazygames_ws/build/crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_gencpp.dir
 /home/jan/apurva_joshi/crazygames_ws/build/crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages.dir
@@ -84,6 +84,7 @@
 /home/jan/apurva_joshi/crazygames_ws/build/crazyflie_ros/crazyflie_controller/CMakeFiles/tf_generate_messages_cpp.dir
 /home/jan/apurva_joshi/crazygames_ws/build/crazyflie_ros/crazyflie_controller/CMakeFiles/tf_generate_messages_lisp.dir
 /home/jan/apurva_joshi/crazygames_ws/build/crazyflie_ros/crazyflie_controller/CMakeFiles/tf_generate_messages_py.dir
+/home/jan/apurva_joshi/crazygames_ws/build/crazyflie_ros/crazyflie_controller/CMakeFiles/time_optimal_controller.dir
 /home/jan/apurva_joshi/crazygames_ws/build/crazyflie_ros/crazyflie_tools/CMakeFiles/version.dir
 /home/jan/apurva_joshi/crazygames_ws/build/vrpn_client_ros/CMakeFiles/vrpn_client_node.dir
 /home/jan/apurva_joshi/crazygames_ws/build/vrpn_client_ros/CMakeFiles/vrpn_client_ros.dir

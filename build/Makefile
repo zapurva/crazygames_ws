@@ -335,17 +335,17 @@ actionlib_msgs_generate_messages_py/fast:
 .PHONY : actionlib_msgs_generate_messages_py/fast
 
 #=============================================================================
-# Target rules for targets named crazyflie_controller
+# Target rules for targets named controller
 
 # Build rule for target.
-crazyflie_controller: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 crazyflie_controller
-.PHONY : crazyflie_controller
+controller: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 controller
+.PHONY : controller
 
 # fast build rule for target.
-crazyflie_controller/fast:
-	$(MAKE) -f crazyflie_ros/crazyflie_controller/CMakeFiles/crazyflie_controller.dir/build.make crazyflie_ros/crazyflie_controller/CMakeFiles/crazyflie_controller.dir/build
-.PHONY : crazyflie_controller/fast
+controller/fast:
+	$(MAKE) -f crazyflie_ros/crazyflie_controller/CMakeFiles/controller.dir/build.make crazyflie_ros/crazyflie_controller/CMakeFiles/controller.dir/build
+.PHONY : controller/fast
 
 #=============================================================================
 # Target rules for targets named geometry_msgs_generate_messages_cpp
@@ -619,6 +619,19 @@ tf_generate_messages_py: cmake_check_build_system
 tf_generate_messages_py/fast:
 	$(MAKE) -f crazyflie_ros/crazyflie_controller/CMakeFiles/tf_generate_messages_py.dir/build.make crazyflie_ros/crazyflie_controller/CMakeFiles/tf_generate_messages_py.dir/build
 .PHONY : tf_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named time_optimal_controller
+
+# Build rule for target.
+time_optimal_controller: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 time_optimal_controller
+.PHONY : time_optimal_controller
+
+# fast build rule for target.
+time_optimal_controller/fast:
+	$(MAKE) -f crazyflie_ros/crazyflie_controller/CMakeFiles/time_optimal_controller.dir/build.make crazyflie_ros/crazyflie_controller/CMakeFiles/time_optimal_controller.dir/build
+.PHONY : time_optimal_controller/fast
 
 #=============================================================================
 # Target rules for targets named crazyflie_cpp
@@ -1349,7 +1362,7 @@ help:
 	@echo "... actionlib_msgs_generate_messages_cpp"
 	@echo "... actionlib_msgs_generate_messages_lisp"
 	@echo "... actionlib_msgs_generate_messages_py"
-	@echo "... crazyflie_controller"
+	@echo "... controller"
 	@echo "... geometry_msgs_generate_messages_cpp"
 	@echo "... geometry_msgs_generate_messages_lisp"
 	@echo "... geometry_msgs_generate_messages_py"
@@ -1371,6 +1384,7 @@ help:
 	@echo "... tf_generate_messages_cpp"
 	@echo "... tf_generate_messages_lisp"
 	@echo "... tf_generate_messages_py"
+	@echo "... time_optimal_controller"
 	@echo "... crazyflie_cpp"
 	@echo "... battery"
 	@echo "... console"

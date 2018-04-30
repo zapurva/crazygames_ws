@@ -237,18 +237,18 @@ actionlib_msgs_generate_messages_py/fast:
 .PHONY : actionlib_msgs_generate_messages_py/fast
 
 # Convenience name for target.
-crazyflie_ros/crazyflie_controller/CMakeFiles/crazyflie_controller.dir/rule:
-	cd /home/jan/apurva_joshi/crazygames_ws/build && $(MAKE) -f CMakeFiles/Makefile2 crazyflie_ros/crazyflie_controller/CMakeFiles/crazyflie_controller.dir/rule
-.PHONY : crazyflie_ros/crazyflie_controller/CMakeFiles/crazyflie_controller.dir/rule
+crazyflie_ros/crazyflie_controller/CMakeFiles/controller.dir/rule:
+	cd /home/jan/apurva_joshi/crazygames_ws/build && $(MAKE) -f CMakeFiles/Makefile2 crazyflie_ros/crazyflie_controller/CMakeFiles/controller.dir/rule
+.PHONY : crazyflie_ros/crazyflie_controller/CMakeFiles/controller.dir/rule
 
 # Convenience name for target.
-crazyflie_controller: crazyflie_ros/crazyflie_controller/CMakeFiles/crazyflie_controller.dir/rule
-.PHONY : crazyflie_controller
+controller: crazyflie_ros/crazyflie_controller/CMakeFiles/controller.dir/rule
+.PHONY : controller
 
 # fast build rule for target.
-crazyflie_controller/fast:
-	cd /home/jan/apurva_joshi/crazygames_ws/build && $(MAKE) -f crazyflie_ros/crazyflie_controller/CMakeFiles/crazyflie_controller.dir/build.make crazyflie_ros/crazyflie_controller/CMakeFiles/crazyflie_controller.dir/build
-.PHONY : crazyflie_controller/fast
+controller/fast:
+	cd /home/jan/apurva_joshi/crazygames_ws/build && $(MAKE) -f crazyflie_ros/crazyflie_controller/CMakeFiles/controller.dir/build.make crazyflie_ros/crazyflie_controller/CMakeFiles/controller.dir/build
+.PHONY : controller/fast
 
 # Convenience name for target.
 crazyflie_ros/crazyflie_controller/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule:
@@ -544,12 +544,26 @@ tf_generate_messages_py/fast:
 	cd /home/jan/apurva_joshi/crazygames_ws/build && $(MAKE) -f crazyflie_ros/crazyflie_controller/CMakeFiles/tf_generate_messages_py.dir/build.make crazyflie_ros/crazyflie_controller/CMakeFiles/tf_generate_messages_py.dir/build
 .PHONY : tf_generate_messages_py/fast
 
+# Convenience name for target.
+crazyflie_ros/crazyflie_controller/CMakeFiles/time_optimal_controller.dir/rule:
+	cd /home/jan/apurva_joshi/crazygames_ws/build && $(MAKE) -f CMakeFiles/Makefile2 crazyflie_ros/crazyflie_controller/CMakeFiles/time_optimal_controller.dir/rule
+.PHONY : crazyflie_ros/crazyflie_controller/CMakeFiles/time_optimal_controller.dir/rule
+
+# Convenience name for target.
+time_optimal_controller: crazyflie_ros/crazyflie_controller/CMakeFiles/time_optimal_controller.dir/rule
+.PHONY : time_optimal_controller
+
+# fast build rule for target.
+time_optimal_controller/fast:
+	cd /home/jan/apurva_joshi/crazygames_ws/build && $(MAKE) -f crazyflie_ros/crazyflie_controller/CMakeFiles/time_optimal_controller.dir/build.make crazyflie_ros/crazyflie_controller/CMakeFiles/time_optimal_controller.dir/build
+.PHONY : time_optimal_controller/fast
+
 src/controller.o: src/controller.cpp.o
 .PHONY : src/controller.o
 
 # target to build an object file
 src/controller.cpp.o:
-	cd /home/jan/apurva_joshi/crazygames_ws/build && $(MAKE) -f crazyflie_ros/crazyflie_controller/CMakeFiles/crazyflie_controller.dir/build.make crazyflie_ros/crazyflie_controller/CMakeFiles/crazyflie_controller.dir/src/controller.cpp.o
+	cd /home/jan/apurva_joshi/crazygames_ws/build && $(MAKE) -f crazyflie_ros/crazyflie_controller/CMakeFiles/controller.dir/build.make crazyflie_ros/crazyflie_controller/CMakeFiles/controller.dir/src/controller.cpp.o
 .PHONY : src/controller.cpp.o
 
 src/controller.i: src/controller.cpp.i
@@ -557,7 +571,7 @@ src/controller.i: src/controller.cpp.i
 
 # target to preprocess a source file
 src/controller.cpp.i:
-	cd /home/jan/apurva_joshi/crazygames_ws/build && $(MAKE) -f crazyflie_ros/crazyflie_controller/CMakeFiles/crazyflie_controller.dir/build.make crazyflie_ros/crazyflie_controller/CMakeFiles/crazyflie_controller.dir/src/controller.cpp.i
+	cd /home/jan/apurva_joshi/crazygames_ws/build && $(MAKE) -f crazyflie_ros/crazyflie_controller/CMakeFiles/controller.dir/build.make crazyflie_ros/crazyflie_controller/CMakeFiles/controller.dir/src/controller.cpp.i
 .PHONY : src/controller.cpp.i
 
 src/controller.s: src/controller.cpp.s
@@ -565,8 +579,32 @@ src/controller.s: src/controller.cpp.s
 
 # target to generate assembly for a file
 src/controller.cpp.s:
-	cd /home/jan/apurva_joshi/crazygames_ws/build && $(MAKE) -f crazyflie_ros/crazyflie_controller/CMakeFiles/crazyflie_controller.dir/build.make crazyflie_ros/crazyflie_controller/CMakeFiles/crazyflie_controller.dir/src/controller.cpp.s
+	cd /home/jan/apurva_joshi/crazygames_ws/build && $(MAKE) -f crazyflie_ros/crazyflie_controller/CMakeFiles/controller.dir/build.make crazyflie_ros/crazyflie_controller/CMakeFiles/controller.dir/src/controller.cpp.s
 .PHONY : src/controller.cpp.s
+
+src/time_optimal_controller.o: src/time_optimal_controller.cpp.o
+.PHONY : src/time_optimal_controller.o
+
+# target to build an object file
+src/time_optimal_controller.cpp.o:
+	cd /home/jan/apurva_joshi/crazygames_ws/build && $(MAKE) -f crazyflie_ros/crazyflie_controller/CMakeFiles/time_optimal_controller.dir/build.make crazyflie_ros/crazyflie_controller/CMakeFiles/time_optimal_controller.dir/src/time_optimal_controller.cpp.o
+.PHONY : src/time_optimal_controller.cpp.o
+
+src/time_optimal_controller.i: src/time_optimal_controller.cpp.i
+.PHONY : src/time_optimal_controller.i
+
+# target to preprocess a source file
+src/time_optimal_controller.cpp.i:
+	cd /home/jan/apurva_joshi/crazygames_ws/build && $(MAKE) -f crazyflie_ros/crazyflie_controller/CMakeFiles/time_optimal_controller.dir/build.make crazyflie_ros/crazyflie_controller/CMakeFiles/time_optimal_controller.dir/src/time_optimal_controller.cpp.i
+.PHONY : src/time_optimal_controller.cpp.i
+
+src/time_optimal_controller.s: src/time_optimal_controller.cpp.s
+.PHONY : src/time_optimal_controller.s
+
+# target to generate assembly for a file
+src/time_optimal_controller.cpp.s:
+	cd /home/jan/apurva_joshi/crazygames_ws/build && $(MAKE) -f crazyflie_ros/crazyflie_controller/CMakeFiles/time_optimal_controller.dir/build.make crazyflie_ros/crazyflie_controller/CMakeFiles/time_optimal_controller.dir/src/time_optimal_controller.cpp.s
+.PHONY : src/time_optimal_controller.cpp.s
 
 # Help Target
 help:
@@ -580,7 +618,7 @@ help:
 	@echo "... actionlib_msgs_generate_messages_cpp"
 	@echo "... actionlib_msgs_generate_messages_lisp"
 	@echo "... actionlib_msgs_generate_messages_py"
-	@echo "... crazyflie_controller"
+	@echo "... controller"
 	@echo "... edit_cache"
 	@echo "... geometry_msgs_generate_messages_cpp"
 	@echo "... geometry_msgs_generate_messages_lisp"
@@ -609,9 +647,13 @@ help:
 	@echo "... tf_generate_messages_cpp"
 	@echo "... tf_generate_messages_lisp"
 	@echo "... tf_generate_messages_py"
+	@echo "... time_optimal_controller"
 	@echo "... src/controller.o"
 	@echo "... src/controller.i"
 	@echo "... src/controller.s"
+	@echo "... src/time_optimal_controller.o"
+	@echo "... src/time_optimal_controller.i"
+	@echo "... src/time_optimal_controller.s"
 .PHONY : help
 
 
