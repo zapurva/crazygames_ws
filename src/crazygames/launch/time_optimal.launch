@@ -40,7 +40,7 @@
     </node>
 
     <!--Launching controller script: controller.cpp-->
-    <include file="$(find crazyflie_controller)/launch/crazyflie2.launch">
+    <include file="$(find crazyflie_controller)/launch/init_controller.launch">
       <arg name="frame" value="$(arg frame)" />
     </include>
 
