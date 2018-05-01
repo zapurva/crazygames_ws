@@ -1206,6 +1206,19 @@ clean_test_results_vrpn_client_ros/fast:
 .PHONY : clean_test_results_vrpn_client_ros/fast
 
 #=============================================================================
+# Target rules for targets named computed_vel
+
+# Build rule for target.
+computed_vel: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 computed_vel
+.PHONY : computed_vel
+
+# fast build rule for target.
+computed_vel/fast:
+	$(MAKE) -f vrpn_client_ros/CMakeFiles/computed_vel.dir/build.make vrpn_client_ros/CMakeFiles/computed_vel.dir/build
+.PHONY : computed_vel/fast
+
+#=============================================================================
 # Target rules for targets named roslint
 
 # Build rule for target.
@@ -1429,6 +1442,7 @@ help:
 	@echo "... _run_tests_vrpn_client_ros_roslint"
 	@echo "... _run_tests_vrpn_client_ros_roslint_package"
 	@echo "... clean_test_results_vrpn_client_ros"
+	@echo "... computed_vel"
 	@echo "... roslint"
 	@echo "... roslint_vrpn_client_ros"
 	@echo "... run_tests_vrpn_client_ros"

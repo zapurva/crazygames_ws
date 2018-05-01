@@ -237,6 +237,20 @@ clean_test_results_vrpn_client_ros/fast:
 .PHONY : clean_test_results_vrpn_client_ros/fast
 
 # Convenience name for target.
+vrpn_client_ros/CMakeFiles/computed_vel.dir/rule:
+	cd /home/jan/apurva_joshi/crazygames_ws/build && $(MAKE) -f CMakeFiles/Makefile2 vrpn_client_ros/CMakeFiles/computed_vel.dir/rule
+.PHONY : vrpn_client_ros/CMakeFiles/computed_vel.dir/rule
+
+# Convenience name for target.
+computed_vel: vrpn_client_ros/CMakeFiles/computed_vel.dir/rule
+.PHONY : computed_vel
+
+# fast build rule for target.
+computed_vel/fast:
+	cd /home/jan/apurva_joshi/crazygames_ws/build && $(MAKE) -f vrpn_client_ros/CMakeFiles/computed_vel.dir/build.make vrpn_client_ros/CMakeFiles/computed_vel.dir/build
+.PHONY : computed_vel/fast
+
+# Convenience name for target.
 vrpn_client_ros/CMakeFiles/roslint.dir/rule:
 	cd /home/jan/apurva_joshi/crazygames_ws/build && $(MAKE) -f CMakeFiles/Makefile2 vrpn_client_ros/CMakeFiles/roslint.dir/rule
 .PHONY : vrpn_client_ros/CMakeFiles/roslint.dir/rule
@@ -376,6 +390,30 @@ vrpn_tracker_node/fast:
 	cd /home/jan/apurva_joshi/crazygames_ws/build && $(MAKE) -f vrpn_client_ros/CMakeFiles/vrpn_tracker_node.dir/build.make vrpn_client_ros/CMakeFiles/vrpn_tracker_node.dir/build
 .PHONY : vrpn_tracker_node/fast
 
+src/compute_velocity_node.o: src/compute_velocity_node.cpp.o
+.PHONY : src/compute_velocity_node.o
+
+# target to build an object file
+src/compute_velocity_node.cpp.o:
+	cd /home/jan/apurva_joshi/crazygames_ws/build && $(MAKE) -f vrpn_client_ros/CMakeFiles/computed_vel.dir/build.make vrpn_client_ros/CMakeFiles/computed_vel.dir/src/compute_velocity_node.cpp.o
+.PHONY : src/compute_velocity_node.cpp.o
+
+src/compute_velocity_node.i: src/compute_velocity_node.cpp.i
+.PHONY : src/compute_velocity_node.i
+
+# target to preprocess a source file
+src/compute_velocity_node.cpp.i:
+	cd /home/jan/apurva_joshi/crazygames_ws/build && $(MAKE) -f vrpn_client_ros/CMakeFiles/computed_vel.dir/build.make vrpn_client_ros/CMakeFiles/computed_vel.dir/src/compute_velocity_node.cpp.i
+.PHONY : src/compute_velocity_node.cpp.i
+
+src/compute_velocity_node.s: src/compute_velocity_node.cpp.s
+.PHONY : src/compute_velocity_node.s
+
+# target to generate assembly for a file
+src/compute_velocity_node.cpp.s:
+	cd /home/jan/apurva_joshi/crazygames_ws/build && $(MAKE) -f vrpn_client_ros/CMakeFiles/computed_vel.dir/build.make vrpn_client_ros/CMakeFiles/computed_vel.dir/src/compute_velocity_node.cpp.s
+.PHONY : src/compute_velocity_node.cpp.s
+
 src/vrpn_client_node.o: src/vrpn_client_node.cpp.o
 .PHONY : src/vrpn_client_node.o
 
@@ -460,6 +498,7 @@ help:
 	@echo "... _run_tests_vrpn_client_ros_roslint"
 	@echo "... _run_tests_vrpn_client_ros_roslint_package"
 	@echo "... clean_test_results_vrpn_client_ros"
+	@echo "... computed_vel"
 	@echo "... edit_cache"
 	@echo "... install"
 	@echo "... install/local"
@@ -477,6 +516,9 @@ help:
 	@echo "... vrpn_client_node"
 	@echo "... vrpn_client_ros"
 	@echo "... vrpn_tracker_node"
+	@echo "... src/compute_velocity_node.o"
+	@echo "... src/compute_velocity_node.i"
+	@echo "... src/compute_velocity_node.s"
 	@echo "... src/vrpn_client_node.o"
 	@echo "... src/vrpn_client_node.i"
 	@echo "... src/vrpn_client_node.s"
