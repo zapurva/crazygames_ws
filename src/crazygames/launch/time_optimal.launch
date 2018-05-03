@@ -16,7 +16,7 @@
 
   <!--Defining goal coordinates-->
   <arg name="x" default="0" />
-  <arg name="y" default="0" />
+  <arg name="y" default="-1" />
   <arg name="z" default="1" />
 
   <!--Launching CF server-->
