@@ -16,7 +16,7 @@
 
   <!--Defining goal coordinates-->
   <arg name="x" default="0" />
-  <arg name="y" default="-1" />
+  <arg name="y" default="0" />
   <arg name="z" default="1" />
 
   <!--Launching CF server-->
@@ -28,8 +28,8 @@
     <include file="$(find crazyflie_driver)/launch/crazyflie_add.launch">
       <arg name="uri" value="$(arg uri)" />
       <arg name="tf_prefix" value="crazyflie" />
-      <arg name="roll_trim" default="1" />
-      <arg name="pitch_trim" default="1" />
+      <arg name="roll_trim" default="0" />
+      <arg name="pitch_trim" default="0" />
     </include>
 
     <!--Initializing joystick -->
@@ -43,7 +43,7 @@
     </node>
 
     <!--Launching controller script: controller.cpp-->
-    <include file="$(find crazyflie_controller)/launch/init_controller.launch">
+    <include file="$(find crazyflie_controller)/launch/init_time_optimal_controller.launch">
       <arg name="frame" value="$(arg frame)" />
     </include>
 

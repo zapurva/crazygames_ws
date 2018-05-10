@@ -1,0 +1,295 @@
+jan@jan:~/apurva_joshi/crazygames_ws$ catkin_make
+Base path: /home/jan/apurva_joshi/crazygames_ws
+Source space: /home/jan/apurva_joshi/crazygames_ws/src
+Build space: /home/jan/apurva_joshi/crazygames_ws/build
+Devel space: /home/jan/apurva_joshi/crazygames_ws/devel
+Install space: /home/jan/apurva_joshi/crazygames_ws/install
+####
+#### Running command: "cmake /home/jan/apurva_joshi/crazygames_ws/src -DCATKIN_DEVEL_PREFIX=/home/jan/apurva_joshi/crazygames_ws/devel -DCMAKE_INSTALL_PREFIX=/home/jan/apurva_joshi/crazygames_ws/install -G Unix Makefiles" in "/home/jan/apurva_joshi/crazygames_ws/build"
+####
+-- The C compiler identification is GNU 4.8.4
+-- The CXX compiler identification is GNU 4.8.4
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Using CATKIN_DEVEL_PREFIX: /home/jan/apurva_joshi/crazygames_ws/devel
+-- Using CMAKE_PREFIX_PATH: /home/jan/apurva_joshi/crazygames_ws/devel;/opt/ros/indigo
+-- This workspace overlays: /home/jan/apurva_joshi/crazygames_ws/devel;/opt/ros/indigo
+-- Found PythonInterp: /usr/bin/python (found version "2.7.6") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python
+-- Using Debian Python package layout
+-- Using empy: /usr/bin/empy
+-- Using CATKIN_ENABLE_TESTING: ON
+-- Call enable_testing()
+-- Using CATKIN_TEST_RESULTS_DIR: /home/jan/apurva_joshi/crazygames_ws/build/test_results
+-- Looking for include file pthread.h
+-- Looking for include file pthread.h - found
+-- Looking for pthread_create
+-- Looking for pthread_create - not found
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
+-- Found gtest sources under '/usr/src/gtest': gtests will be built
+-- Using Python nosetests: /usr/bin/nosetests-2.7
+-- catkin 0.6.19
+-- BUILD_SHARED_LIBS is on
+-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-- ~~  traversing 9 packages in topological order:
+-- ~~  - crazyflie (metapackage)
+-- ~~  - crazyflie_controller
+-- ~~  - crazyflie_cpp
+-- ~~  - crazyflie_description
+-- ~~  - crazyflie_tools
+-- ~~  - crazyflie_demo
+-- ~~  - crazygames
+-- ~~  - crazyflie_driver
+-- ~~  - vrpn_client_ros
+-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-- +++ processing catkin metapackage: 'crazyflie'
+-- ==> add_subdirectory(crazyflie_ros/crazyflie)
+-- +++ processing catkin package: 'crazyflie_controller'
+-- ==> add_subdirectory(crazyflie_ros/crazyflie_controller)
+-- Using these message generators: gencpp;genlisp;genpy
+-- +++ processing catkin package: 'crazyflie_cpp'
+-- ==> add_subdirectory(crazyflie_ros/crazyflie_cpp)
+Using ROS (catkin_make)
+-- +++ processing catkin package: 'crazyflie_description'
+-- ==> add_subdirectory(crazyflie_ros/crazyflie_description)
+-- +++ processing catkin package: 'crazyflie_tools'
+-- ==> add_subdirectory(crazyflie_ros/crazyflie_tools)
+Using ROS (catkin_make)
+-- Boost version: 1.54.0
+-- Found the following Boost libraries:
+--   program_options
+-- +++ processing catkin package: 'crazyflie_demo'
+-- ==> add_subdirectory(crazyflie_ros/crazyflie_demo)
+-- +++ processing catkin package: 'crazygames'
+-- ==> add_subdirectory(crazygames)
+-- +++ processing catkin package: 'crazyflie_driver'
+-- ==> add_subdirectory(crazyflie_ros/crazyflie_driver)
+-- Using these message generators: gencpp;genlisp;genpy
+-- crazyflie_driver: 7 messages, 11 services
+-- +++ processing catkin package: 'vrpn_client_ros'
+-- ==> add_subdirectory(vrpn_client_ros)
+-- Using these message generators: gencpp;genlisp;genpy
+-- Found VRPN: /opt/ros/indigo/lib/libvrpn.a  
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/jan/apurva_joshi/crazygames_ws/build
+####
+#### Running command: "make -j8 -l8" in "/home/jan/apurva_joshi/crazygames_ws/build"
+####
+Scanning dependencies of target controller
+Scanning dependencies of target leader_follower
+Scanning dependencies of target geometry_msgs_generate_messages_cpp
+Scanning dependencies of target crazyflie_cpp
+Scanning dependencies of target std_msgs_generate_messages_cpp
+Scanning dependencies of target quadrotor_teleop
+Scanning dependencies of target time_optimal_controller
+Scanning dependencies of target _crazyflie_driver_generate_messages_check_deps_AddCrazyflie
+[  0%] Built target geometry_msgs_generate_messages_cpp
+[  0%] Built target std_msgs_generate_messages_cpp
+[  1%] Scanning dependencies of target _crazyflie_driver_generate_messages_check_deps_Land
+Scanning dependencies of target _crazyflie_driver_generate_messages_check_deps_GenericLogData
+Building CXX object crazyflie_ros/crazyflie_cpp/CMakeFiles/crazyflie_cpp.dir/src/USBDevice.cpp.o
+[  2%] Building CXX object crazyflie_ros/crazyflie_demo/CMakeFiles/quadrotor_teleop.dir/src/quadrotor_teleop.cpp.o
+[  2%] Built target _crazyflie_driver_generate_messages_check_deps_AddCrazyflie
+[  2%] Built target _crazyflie_driver_generate_messages_check_deps_GenericLogData
+Scanning dependencies of target _crazyflie_driver_generate_messages_check_deps_UploadTrajectory
+[  2%] Built target _crazyflie_driver_generate_messages_check_deps_Land
+Scanning dependencies of target _crazyflie_driver_generate_messages_check_deps_sendPacket
+Scanning dependencies of target _crazyflie_driver_generate_messages_check_deps_Hover
+[  3%] Building CXX object crazyflie_ros/crazyflie_controller/CMakeFiles/controller.dir/src/controller.cpp.o
+[  5%] [  6%] Building CXX object crazyflie_ros/crazyflie_controller/CMakeFiles/time_optimal_controller.dir/src/time_optimal_controller.cpp.o
+Building CXX object crazyflie_ros/crazyflie_controller/CMakeFiles/leader_follower.dir/src/leader_follower.cpp.o
+[  6%] Built target _crazyflie_driver_generate_messages_check_deps_UploadTrajectory
+Scanning dependencies of target _crazyflie_driver_generate_messages_check_deps_Stop
+[  6%] Built target _crazyflie_driver_generate_messages_check_deps_sendPacket
+Scanning dependencies of target _crazyflie_driver_generate_messages_check_deps_Takeoff
+[  6%] Built target _crazyflie_driver_generate_messages_check_deps_Hover
+Scanning dependencies of target _crazyflie_driver_generate_messages_check_deps_TrajectoryPolynomialPiece
+[  6%] Built target _crazyflie_driver_generate_messages_check_deps_Stop
+[  6%] Built target _crazyflie_driver_generate_messages_check_deps_Takeoff
+Scanning dependencies of target _crazyflie_driver_generate_messages_check_deps_crtpPacket
+Scanning dependencies of target _crazyflie_driver_generate_messages_check_deps_FullState
+[  6%] Built target _crazyflie_driver_generate_messages_check_deps_TrajectoryPolynomialPiece
+[  7%] Building CXX object crazyflie_ros/crazyflie_cpp/CMakeFiles/crazyflie_cpp.dir/src/Crazyradio.cpp.o
+[  7%] Built target _crazyflie_driver_generate_messages_check_deps_FullState
+[  8%] [  8%] Built target _crazyflie_driver_generate_messages_check_deps_crtpPacket
+Building CXX object crazyflie_ros/crazyflie_cpp/CMakeFiles/crazyflie_cpp.dir/src/CrazyflieUSB.cpp.o
+[ 10%] Building CXX object crazyflie_ros/crazyflie_cpp/CMakeFiles/crazyflie_cpp.dir/src/Crazyflie.cpp.o
+Scanning dependencies of target _crazyflie_driver_generate_messages_check_deps_LogBlock
+[ 10%] Built target _crazyflie_driver_generate_messages_check_deps_LogBlock
+Scanning dependencies of target _crazyflie_driver_generate_messages_check_deps_SetGroupMask
+[ 10%] Built target _crazyflie_driver_generate_messages_check_deps_SetGroupMask
+Scanning dependencies of target _crazyflie_driver_generate_messages_check_deps_RemoveCrazyflie
+Scanning dependencies of target _crazyflie_driver_generate_messages_check_deps_GoTo
+[ 11%] Building CXX object crazyflie_ros/crazyflie_cpp/CMakeFiles/crazyflie_cpp.dir/src/crtp.cpp.o
+[ 11%] Built target _crazyflie_driver_generate_messages_check_deps_GoTo
+[ 11%] Built target _crazyflie_driver_generate_messages_check_deps_RemoveCrazyflie
+Scanning dependencies of target _crazyflie_driver_generate_messages_check_deps_StartTrajectory
+Scanning dependencies of target _crazyflie_driver_generate_messages_check_deps_UpdateParams
+[ 11%] Built target _crazyflie_driver_generate_messages_check_deps_StartTrajectory
+Scanning dependencies of target _crazyflie_driver_generate_messages_check_deps_Position
+[ 11%] Built target _crazyflie_driver_generate_messages_check_deps_UpdateParams
+Scanning dependencies of target geometry_msgs_generate_messages_py
+Scanning dependencies of target std_msgs_generate_messages_py
+[ 11%] Built target geometry_msgs_generate_messages_py
+[ 11%] [ 11%] Built target std_msgs_generate_messages_py
+Built target _crazyflie_driver_generate_messages_check_deps_Position
+Scanning dependencies of target std_msgs_generate_messages_lisp
+Scanning dependencies of target geometry_msgs_generate_messages_lisp
+Scanning dependencies of target computed_vel
+[ 11%] Built target std_msgs_generate_messages_lisp
+[ 11%] Built target geometry_msgs_generate_messages_lisp
+Scanning dependencies of target vrpn_client_ros
+Scanning dependencies of target crazyflie_driver_generate_messages_cpp
+[ 12%] [ 13%] Building CXX object vrpn_client_ros/CMakeFiles/computed_vel.dir/src/compute_velocity_node.cpp.o
+Generating C++ code from crazyflie_driver/Hover.msg
+[ 15%] Building CXX object vrpn_client_ros/CMakeFiles/vrpn_client_ros.dir/src/vrpn_client_ros.cpp.o
+[ 16%] Generating C++ code from crazyflie_driver/LogBlock.msg
+[ 17%] Generating C++ code from crazyflie_driver/crtpPacket.msg
+[ 18%] Generating C++ code from crazyflie_driver/GenericLogData.msg
+[ 20%] Generating C++ code from crazyflie_driver/TrajectoryPolynomialPiece.msg
+[ 21%] Generating C++ code from crazyflie_driver/FullState.msg
+Linking CXX shared library /home/jan/apurva_joshi/crazygames_ws/devel/lib/libcrazyflie_cpp.so
+[ 22%] Generating C++ code from crazyflie_driver/Position.msg
+[ 22%] Built target crazyflie_cpp
+[ 23%] Generating C++ code from crazyflie_driver/SetGroupMask.srv
+[ 25%] Generating C++ code from crazyflie_driver/UploadTrajectory.srv
+[ 26%] Generating C++ code from crazyflie_driver/Land.srv
+[ 27%] Generating C++ code from crazyflie_driver/Stop.srv
+[ 28%] Generating C++ code from crazyflie_driver/RemoveCrazyflie.srv
+[ 30%] Generating C++ code from crazyflie_driver/Takeoff.srv
+[ 31%] Generating C++ code from crazyflie_driver/sendPacket.srv
+Scanning dependencies of target crazyflie_driver_generate_messages_py
+[ 32%] Generating Python from MSG crazyflie_driver/Hover
+[ 33%] Generating Python from MSG crazyflie_driver/LogBlock
+[ 35%] [ 36%] Generating C++ code from crazyflie_driver/GoTo.srv
+Generating Python from MSG crazyflie_driver/crtpPacket
+[ 37%] Generating Python from MSG crazyflie_driver/GenericLogData
+[ 38%] Generating Python from MSG crazyflie_driver/TrajectoryPolynomialPiece
+[ 40%] Generating Python from MSG crazyflie_driver/FullState
+[ 41%] [ 42%] Generating C++ code from crazyflie_driver/AddCrazyflie.srv
+Generating Python from MSG crazyflie_driver/Position
+[ 43%] Generating Python code from SRV crazyflie_driver/SetGroupMask
+Linking CXX executable /home/jan/apurva_joshi/crazygames_ws/devel/lib/crazyflie_demo/quadrotor_teleop
+[ 45%] Generating Python code from SRV crazyflie_driver/UploadTrajectory
+[ 46%] Generating Python code from SRV crazyflie_driver/Land
+[ 47%] Generating C++ code from crazyflie_driver/UpdateParams.srv
+[ 47%] Built target quadrotor_teleop
+[ 48%] Scanning dependencies of target crazyflie_driver_generate_messages_lisp
+Generating Python code from SRV crazyflie_driver/Stop
+[ 50%] Generating Lisp code from crazyflie_driver/Hover.msg
+[ 51%] Generating Python code from SRV crazyflie_driver/RemoveCrazyflie
+[ 52%] Generating Lisp code from crazyflie_driver/LogBlock.msg
+[ 53%] [ 55%] Generating Lisp code from crazyflie_driver/crtpPacket.msg
+Generating Python code from SRV crazyflie_driver/Takeoff
+[ 56%] Generating Python code from SRV crazyflie_driver/sendPacket
+[ 57%] Generating Lisp code from crazyflie_driver/GenericLogData.msg
+[ 58%] [ 60%] Generating Python code from SRV crazyflie_driver/GoTo
+Generating C++ code from crazyflie_driver/StartTrajectory.srv
+[ 61%] Generating Lisp code from crazyflie_driver/TrajectoryPolynomialPiece.msg
+[ 62%] Generating Python code from SRV crazyflie_driver/AddCrazyflie
+[ 63%] Generating Lisp code from crazyflie_driver/FullState.msg
+[ 65%] Generating Python code from SRV crazyflie_driver/UpdateParams
+[ 66%] Generating Lisp code from crazyflie_driver/Position.msg
+[ 67%] Generating Python code from SRV crazyflie_driver/StartTrajectory
+[ 68%] [ 68%] Built target crazyflie_driver_generate_messages_cpp
+Scanning dependencies of target battery
+Generating Lisp code from crazyflie_driver/SetGroupMask.srv
+[ 70%] [ 71%] Building CXX object crazyflie_ros/crazyflie_tools/CMakeFiles/battery.dir/src/battery.cpp.o
+Generating Python msg __init__.py for crazyflie_driver
+[ 72%] Generating Lisp code from crazyflie_driver/UploadTrajectory.srv
+[ 73%] Generating Python srv __init__.py for crazyflie_driver
+[ 75%] Generating Lisp code from crazyflie_driver/Land.srv
+[ 75%] Built target crazyflie_driver_generate_messages_py
+[ 76%] Generating Lisp code from crazyflie_driver/Stop.srv
+[ 77%] Generating Lisp code from crazyflie_driver/RemoveCrazyflie.srv
+[ 78%] Generating Lisp code from crazyflie_driver/Takeoff.srv
+[ 80%] Generating Lisp code from crazyflie_driver/sendPacket.srv
+[ 81%] Scanning dependencies of target console
+Generating Lisp code from crazyflie_driver/GoTo.srv
+[ 82%] Building CXX object crazyflie_ros/crazyflie_tools/CMakeFiles/console.dir/src/console.cpp.o
+[ 83%] Generating Lisp code from crazyflie_driver/AddCrazyflie.srv
+[ 85%] Generating Lisp code from crazyflie_driver/UpdateParams.srv
+[ 86%] Generating Lisp code from crazyflie_driver/StartTrajectory.srv
+[ 86%] Built target crazyflie_driver_generate_messages_lisp
+Scanning dependencies of target flash
+/home/jan/apurva_joshi/crazygames_ws/src/vrpn_client_ros/src/compute_velocity_node.cpp: In constructor ‘ComputeVelocity::ComputeVelocity(const string&, const string&, const ros::NodeHandle&)’:
+/home/jan/apurva_joshi/crazygames_ws/src/vrpn_client_ros/src/compute_velocity_node.cpp:115:20: warning: ‘ComputeVelocity::m_pubVel’ will be initialized after [-Wreorder]
+     ros::Publisher m_pubVel;
+                    ^
+/home/jan/apurva_joshi/crazygames_ws/src/vrpn_client_ros/src/compute_velocity_node.cpp:114:27: warning:   ‘tf::TransformListener ComputeVelocity::m_listenPose’ [-Wreorder]
+     tf::TransformListener m_listenPose;
+                           ^
+/home/jan/apurva_joshi/crazygames_ws/src/vrpn_client_ros/src/compute_velocity_node.cpp:11:5: warning:   when initialized here [-Wreorder]
+     ComputeVelocity(
+     ^
+[ 87%] Building CXX object crazyflie_ros/crazyflie_tools/CMakeFiles/flash.dir/src/flash.cpp.o
+Linking CXX shared library /home/jan/apurva_joshi/crazygames_ws/devel/lib/libvrpn_client_ros.so
+[ 87%] Built target vrpn_client_ros
+Scanning dependencies of target listLogVariables
+[ 88%] Building CXX object crazyflie_ros/crazyflie_tools/CMakeFiles/listLogVariables.dir/src/listLogVariables.cpp.o
+Linking CXX executable /home/jan/apurva_joshi/crazygames_ws/devel/lib/vrpn_client_ros/computed_vel
+[ 88%] Built target computed_vel
+Scanning dependencies of target listMemories
+Linking CXX executable /home/jan/apurva_joshi/crazygames_ws/devel/lib/crazyflie_controller/controller
+[ 90%] Building CXX object crazyflie_ros/crazyflie_tools/CMakeFiles/listMemories.dir/src/listMemories.cpp.o
+Linking CXX executable /home/jan/apurva_joshi/crazygames_ws/devel/lib/crazyflie_controller/leader_follower
+Linking CXX executable /home/jan/apurva_joshi/crazygames_ws/devel/lib/crazyflie_tools/battery
+Linking CXX executable /home/jan/apurva_joshi/crazygames_ws/devel/lib/crazyflie_controller/time_optimal_controller
+[ 90%] Built target controller
+[ 90%] Built target battery
+Scanning dependencies of target listParams
+Scanning dependencies of target reboot
+[ 91%] [ 92%] Building CXX object crazyflie_ros/crazyflie_tools/CMakeFiles/reboot.dir/src/reboot.cpp.o
+Building CXX object crazyflie_ros/crazyflie_tools/CMakeFiles/listParams.dir/src/listParams.cpp.o
+[ 92%] Built target leader_follower
+Scanning dependencies of target scan
+[ 93%] Building CXX object crazyflie_ros/crazyflie_tools/CMakeFiles/scan.dir/src/scan.cpp.o
+[ 93%] Built target time_optimal_controller
+Scanning dependencies of target version
+[ 95%] Building CXX object crazyflie_ros/crazyflie_tools/CMakeFiles/version.dir/src/version.cpp.o
+Linking CXX executable /home/jan/apurva_joshi/crazygames_ws/devel/lib/crazyflie_tools/console
+[ 95%] Built target console
+Scanning dependencies of target crazyflie_add
+[ 96%] Building CXX object crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_add.dir/src/crazyflie_add.cpp.o
+Linking CXX executable /home/jan/apurva_joshi/crazygames_ws/devel/lib/crazyflie_tools/listLogVariables
+Linking CXX executable /home/jan/apurva_joshi/crazygames_ws/devel/lib/crazyflie_tools/flash
+[ 96%] [ 96%] Built target flash
+Built target listLogVariables
+Scanning dependencies of target crazyflie_server
+Scanning dependencies of target crazyflie_driver_generate_messages
+[ 96%] Built target crazyflie_driver_generate_messages
+[ 97%] Scanning dependencies of target vrpn_client_node
+Building CXX object crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_server.dir/src/crazyflie_server.cpp.o
+[ 98%] Building CXX object vrpn_client_ros/CMakeFiles/vrpn_client_node.dir/src/vrpn_client_node.cpp.o
+Linking CXX executable /home/jan/apurva_joshi/crazygames_ws/devel/lib/crazyflie_tools/listMemories
+[ 98%] Built target listMemories
+Scanning dependencies of target vrpn_tracker_node
+[100%] Building CXX object vrpn_client_ros/CMakeFiles/vrpn_tracker_node.dir/src/vrpn_tracker_node.cpp.o
+Linking CXX executable /home/jan/apurva_joshi/crazygames_ws/devel/lib/crazyflie_tools/scan
+[100%] Built target scan
+Linking CXX executable /home/jan/apurva_joshi/crazygames_ws/devel/lib/crazyflie_tools/version
+Linking CXX executable /home/jan/apurva_joshi/crazygames_ws/devel/lib/crazyflie_tools/reboot
+[100%] Built target version
+[100%] Built target reboot
+Linking CXX executable /home/jan/apurva_joshi/crazygames_ws/devel/lib/crazyflie_tools/listParams
+[100%] Built target listParams
+Linking CXX executable /home/jan/apurva_joshi/crazygames_ws/devel/lib/crazyflie_driver/crazyflie_add
+[100%] Built target crazyflie_add
+Linking CXX executable /home/jan/apurva_joshi/crazygames_ws/devel/lib/vrpn_client_ros/vrpn_client_node
+[100%] Built target vrpn_client_node
+Linking CXX executable /home/jan/apurva_joshi/crazygames_ws/devel/lib/vrpn_client_ros/vrpn_tracker_node
+[100%] Built target vrpn_tracker_node
+Linking CXX executable /home/jan/apurva_joshi/crazygames_ws/devel/lib/crazyflie_driver/crazyflie_server
+[100%] Built target crazyflie_server
+
