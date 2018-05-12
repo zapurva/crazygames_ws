@@ -105,40 +105,6 @@
     <!--node pkg="tf" type="static_transform_publisher" name="baselink_broadcaster" args="0 0 0 0 0 0 1 $(arg frame_follower) /follower/base_link 100" /-->
   </group>
 
-  <group ns="follower2">
-  <include file="$(find crazyflie_driver)/launch/crazyflie_add.launch">
-    <arg name="uri" value="$(arg uri3)" />
-    <arg name="tf_prefix" value="follower2" />
-    <!--arg name="enable_logging" value="False" /-->
-  </include>
-
-  <node name="joy" pkg="joy" type="joy_node" output="screen">
-    <param name="dev" value="$(arg joy_dev)" />
-  </node>
-
-  <node name="joystick_controller" pkg="crazyflie_demo" type="controller.py" output="screen">
-    <param name="use_crazyflie_controller" value="True" />
-  </node>
-
-  <include file="$(find crazyflie_controller)/launch/init_leader_follower_controller.launch">
-    <arg name="frame_follower" value="$(arg frame3)" />
-    <arg name="frame_leader" value="$(arg frame2)" />
-    <arg name="xOffset" value="$(arg xOffset3)" />
-      <arg name="yOffset" value="$(arg yOffset3)" />
-  </include>
-
-  <node name="pose" pkg="crazyflie_demo" type="publish_pose.py" output="screen">
-    <param name="name" value="goal" />
-    <param name="rate" value="50" />
-    <param name="x" value="$(arg x3)" />
-    <param name="y" value="$(arg y3)" />
-    <param name="z" value="$(arg z3)" />
-  </node>
-
-  <!--To visualize the current pose of the Crazyflie in rviz using the 3D model-->
-  <!--node pkg="tf" type="static_transform_publisher" name="baselink_broadcaster" args="0 0 0 0 0 0 1 $(arg frame_follower) /follower/base_link 100" /-->
-</group> 
-
   <node pkg="vrpn_client_ros" type="vrpn_client_node" name="vrpn_client_node" output="screen">
   <rosparam subst_value="true">
     server: $(arg server)
