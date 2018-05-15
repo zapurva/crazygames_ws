@@ -1,0 +1,3 @@
+[submodule "crazyflie_ros"]
+	path = crazyflie_ros
+	url = https://github.com/zapurva/crazyflie_ros
