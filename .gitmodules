@@ -2,5 +2,5 @@
 	path = src/crazyflie_ros/
 	url = https://github.com/zapurva/crazyflie_ros.git
 [submodule "vrpn_client_ros"]
-	path = src/vrpn_client_ros/
+	path = vrpn_client_ros
 	url = https://github.com/zapurva/vrpn_client_ros
