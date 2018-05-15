@@ -4,6 +4,3 @@
 [submodule "vrpn_client_ros"]
 	path = src/vrpn_client_ros/
 	url = https://github.com/zapurva/vrpn_client_ros
-[submodule "crazyflie_cpp"]
-	path = crazyflie_cpp
-	url = https://github.com/whoenig/crazyflie_cpp.git
