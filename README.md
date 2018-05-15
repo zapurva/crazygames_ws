@@ -6,6 +6,7 @@ In this project we implement pursuit-evasion games between multiple agents on th
 Features:
 * Leader-Follower 
 * Formation flight with multiple agents
-* Time-optimal control
+* [Time-optimal control](https://youtu.be/RUD8US8enEw)
+* [Basic pursuit-evasion games](https://youtu.be/VzRvcAKm9YA)
 
 This is a work in progress and the technical details will be updated soon.
