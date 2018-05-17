@@ -6,6 +6,10 @@
 
 #include "pid.hpp"
 
+#define MAX_PITCH 5.0
+#define MAX_ROLL 5.0
+
+
 double get(
     const ros::NodeHandle& n,
     const std::string& name) {
@@ -333,8 +337,8 @@ private:
 
                 geometry_msgs::Twist msg;
 
-                float s_x = targetDrone.pose.position.x + (1/2*0.1744)*m_twistData.twist.linear.x*fabs(m_twistData.twist.linear.x);
-                float s_y = targetDrone.pose.position.y + (1/2*0.1744)*m_twistData.twist.linear.y*fabs(m_twistData.twist.linear.y);
+                float s_x = targetDrone.pose.position.x + (1/2*0.21)*m_twistData.twist.linear.x*fabs(m_twistData.twist.linear.x);
+                float s_y = targetDrone.pose.position.y + (1/2*0.21)*m_twistData.twist.linear.y*fabs(m_twistData.twist.linear.y);
 
                 //ROS_INFO("s_x = %f, s_y = %f", s_x, s_y);
 
@@ -347,19 +351,19 @@ private:
                     if (s_x > 0.08)
                     {
                         //ROS_INFO("%f", s_x);
-                        msg.linear.x = 10.0;
+                        msg.linear.x = MAX_PITCH;
                     }
                     else if (s_x < -0.08)
                     {
                         //ROS_INFO("%f", s_x);
-                        msg.linear.x = -10.0;
+                        msg.linear.x = -MAX_PITCH;
                     }
                     else if (s_x < 0.08 && s_x > -0.08)
                     {
                         if (m_twistData.twist.linear.x > 0.1)
-                            msg.linear.x = -10;
+                            msg.linear.x = -MAX_PITCH;
                         else if (m_twistData.twist.linear.x < -0.1)
-                            msg.linear.y = 10;
+                            msg.linear.y = MAX_PITCH;
                         else
                             msg.linear.y = 0;
                     }
@@ -369,19 +373,19 @@ private:
                     if (s_y > 0.08)
                     {
                         //ROS_INFO("%f", s_x);
-                        msg.linear.y = -10.0;
+                        msg.linear.y = -MAX_ROLL;
                     }
                     else if (s_y < -0.08)
                     {
                         //ROS_INFO("%f", s_x);
-                        msg.linear.y = 10.0;
+                        msg.linear.y = MAX_ROLL;
                     }
                     else if (s_y < 0.08 && s_y > -0.08)
                     {
                         if (m_twistData.twist.linear.y > 0.1)
-                            msg.linear.y = 10.0;
+                            msg.linear.y = MAX_ROLL;
                         else if (m_twistData.twist.linear.y < -0.1)
-                            msg.linear.y = -10.0;
+                            msg.linear.y = -MAX_ROLL;
                         else
                             msg.linear.y = 0.0;
                     }

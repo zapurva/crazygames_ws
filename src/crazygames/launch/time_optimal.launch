@@ -10,13 +10,13 @@
   <arg name="port" default="3883" />
 
   <!--CF initialization-->
-  <arg name="uri" default="radio://0/85/2M/E7E7E7E704" />
-  <arg name="frame" default="crazyflie4" />
+  <arg name="uri" default="radio://1/85/2M/E7E7E7E703" />
+  <arg name="frame" default="crazyflie3" />
   <arg name="worldFrame" default="world"/>
 
   <!--Defining goal coordinates-->
-  <arg name="x" default="0" />
-  <arg name="y" default="0" />
+  <arg name="x" default="-1" />
+  <arg name="y" default="-1" />
   <arg name="z" default="1" />
 
   <!--Launching CF server-->
@@ -59,9 +59,9 @@
 
     <!--Launching velocity computation node-->
     <node pkg="vrpn_client_ros" type="computed_vel" name="computed_vel" output="screen">
-    <param name="frame" value="$(arg frame)" />
-    <param name="worldFrame" value="$(arg worldFrame)" />
-  </node>    
+      <param name="frame" value="$(arg frame)" />
+      <param name="worldFrame" value="$(arg worldFrame)" />
+    </node>    
   </group>
 
   <!-- Run motion capture -->
