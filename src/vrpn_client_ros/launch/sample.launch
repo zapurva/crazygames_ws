@@ -1,7 +1,7 @@
 <launch>
 
   <arg name="server" default="130.194.137.214"/>
-  <arg name="frame" default="crazyflie4"/>
+  <arg name="frame" default="crazyflie3"/>
   <arg name="worldFrame" default="world"/>
 
   <node pkg="vrpn_client_ros" type="vrpn_client_node" name="vrpn_client_node" output="screen">

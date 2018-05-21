@@ -263,17 +263,122 @@ private:
                         targetDrone1.pose.orientation.y,
                         targetDrone1.pose.orientation.z,
                         targetDrone1.pose.orientation.w
-                    )).getRPY(roll1, pitch1, yaw1);*/
+                    )).getRPY(roll1, pitch1, yaw1);
 
-                //float s_x = targetDrone1.pose.position.x + (1/2*0.1744)*m_twistData.twist.linear.x*fabs(m_twistData.twist.linear.x);
-                //float s_y = targetDrone1.pose.position.y + (1/2*0.1744)*m_twistData.twist.linear.y*fabs(m_twistData.twist.linear.y);
+                float s_x = targetDrone1.pose.position.x + (1/2*0.1744)*m_twistData.twist.linear.x*fabs(m_twistData.twist.linear.x);
+                float s_y = targetDrone1.pose.position.y + (1/2*0.1744)*m_twistData.twist.linear.y*fabs(m_twistData.twist.linear.y);
 
-                //ROS_INFO("%f %f %f %f %f %f", s_x, s_y, targetDrone1.pose.position.x, m_twistData.twist.linear.x, targetDrone1.pose.position.y, m_twistData.twist.linear.y);
+                //ROS_INFO("%f %f %f %f %f %f", s_x, s_y, targetDrone1.pose.position.x, m_twistData.twist.linear.x, targetDrone1.pose.position.y, m_twistData.twist.linear.y);*/
+            }
+            break;
+        case Automatic:
+            {
+                //ROS_INFO("Automatic mode initiated");
+                tf::StampedTransform transform;
+                m_listener.lookupTransform(m_worldFrame, m_frame, ros::Time(0), transform);
 
-                //ROS_INFO("roll = %f, pitch = %f, yaw = %f", roll1*180/3.14, pitch1*180/3.14, yaw1*180/3.14);
-                /*ROS_INFO("Error x = %f", targetDrone1.pose.position.x);
-                ROS_INFO("Error y = %f", targetDrone1.pose.position.y);
-                ROS_INFO("Error z = %f", targetDrone1.pose.position.z);*/
+                geometry_msgs::PoseStamped targetWorld;
+                targetWorld.header.stamp = transform.stamp_;
+                targetWorld.header.frame_id = m_worldFrame;
+                targetWorld.pose = m_goal.pose;
+
+                geometry_msgs::PoseStamped targetDrone;
+                m_listener.transformPose(m_frame, targetWorld, targetDrone);
+
+                tfScalar roll, pitch, yaw;
+                tf::Matrix3x3(
+                    tf::Quaternion(
+                        targetDrone.pose.orientation.x,
+                        targetDrone.pose.orientation.y,
+                        targetDrone.pose.orientation.z,
+                        targetDrone.pose.orientation.w
+                    )).getRPY(roll, pitch, yaw);
+
+                geometry_msgs::Twist msg;
+
+                //********* TIME OPTIMAL CONTROLLER START**************
+                /*float s_x = targetDrone.pose.position.x + (1/2*0.174)*m_twistData.twist.linear.x*fabs(m_twistData.twist.linear.x);
+                float s_y = targetDrone.pose.position.y + (1/2*0.174)*m_twistData.twist.linear.y*fabs(m_twistData.twist.linear.y);
+
+                //ROS_INFO("s_x = %f, s_y = %f", s_x, s_y);
+
+                if (targetDrone.pose.position.x > 0.25 || targetDrone.pose.position.y > 0.25)
+                {
+                    //ROS_INFO("Error present");
+                    //msg.linear.x = m_pidX.update(0, targetDrone.pose.position.x);
+                    //msg.linear.y = m_pidY.update(0.0, targetDrone.pose.position.y);
+                    
+                    if (s_x > 0.08)
+                    {
+                        //ROS_INFO("%f", s_x);
+                        msg.linear.x = MAX_PITCH;
+                    }
+                    else if (s_x < -0.08)
+                    {
+                        //ROS_INFO("%f", s_x);
+                        msg.linear.x = -MAX_PITCH;
+                    }
+                    else if (s_x < 0.08 && s_x > -0.08)
+                    {
+                        if (m_twistData.twist.linear.x > 0.1)
+                            msg.linear.x = -MAX_PITCH;
+                        else if (m_twistData.twist.linear.x < -0.1)
+                            msg.linear.x = MAX_PITCH;
+                        else
+                            msg.linear.x = 0;
+                    }
+                    else
+                        msg.linear.x = 0.0;
+
+                    if (s_y > 0.08)
+                    {
+                        //ROS_INFO("%f", s_x);
+                        msg.linear.y = -MAX_ROLL;
+                    }
+                    else if (s_y < -0.08)
+                    {
+                        //ROS_INFO("%f", s_x);
+                        msg.linear.y = MAX_ROLL;
+                    }
+                    else if (s_y < 0.08 && s_y > -0.08)
+                    {
+                        if (m_twistData.twist.linear.y > 0.1)
+                            msg.linear.y = MAX_ROLL;
+                        else if (m_twistData.twist.linear.y < -0.1)
+                            msg.linear.y = -MAX_ROLL;
+                        else
+                            msg.linear.y = 0.0;
+                    }
+                    else
+                    {
+                        //ROS_INFO("Case 5");
+                        msg.linear.y = 0.0;
+                    }
+                    msg.linear.z = m_pidZ.update(0.0, targetDrone.pose.position.z);
+                    msg.angular.z = m_pidYaw.update(0.0, yaw);
+                    m_pubNav.publish(msg);
+                }
+
+                else
+                { 
+                    //ROS_INFO("No error present");
+                    msg.linear.x = m_pidX.update(0, targetDrone.pose.position.x);
+                    msg.linear.y = m_pidY.update(0.0, targetDrone.pose.position.y);
+                    msg.linear.z = m_pidZ.update(0.0, targetDrone.pose.position.z);
+                    msg.angular.z = m_pidYaw.update(0.0, yaw);
+                    m_pubNav.publish(msg);
+                }
+                //ROS_INFO("%f %f %f %f %f %f", s_x, s_y, targetDrone.pose.position.x, m_twistData.twist.linear.x, targetDrone.pose.position.y, m_twistData.twist.linear.y);
+                //********* TIME OPTIMAL CONTROLLER END*************/
+
+                // **************PID POSITION CONTROLLER***********************
+
+                msg.linear.x = m_pidX.update(0, targetDrone.pose.position.x);
+                msg.linear.y = m_pidY.update(0.0, targetDrone.pose.position.y);
+                msg.linear.z = m_pidZ.update(0.0, targetDrone.pose.position.z);
+                msg.angular.z = m_pidYaw.update(0.0, yaw);
+                m_pubNav.publish(msg);
+                //*************************************************************
             }
             break;
         case Landing:
@@ -310,122 +415,6 @@ private:
                 msg.linear.z = m_pidZ.update(0.0, targetDrone.pose.position.z);
                 msg.angular.z = m_pidYaw.update(0.0, yaw);
                 m_pubNav.publish(msg);
-            }
-            break;
-        case Automatic:
-            {
-                ROS_INFO("Automatic mode initiated");
-                tf::StampedTransform transform;
-                m_listener.lookupTransform(m_worldFrame, m_frame, ros::Time(0), transform);
-
-                geometry_msgs::PoseStamped targetWorld;
-                targetWorld.header.stamp = transform.stamp_;
-                targetWorld.header.frame_id = m_worldFrame;
-                targetWorld.pose = m_goal.pose;
-
-                geometry_msgs::PoseStamped targetDrone;
-                m_listener.transformPose(m_frame, targetWorld, targetDrone);
-
-                tfScalar roll, pitch, yaw;
-                tf::Matrix3x3(
-                    tf::Quaternion(
-                        targetDrone.pose.orientation.x,
-                        targetDrone.pose.orientation.y,
-                        targetDrone.pose.orientation.z,
-                        targetDrone.pose.orientation.w
-                    )).getRPY(roll, pitch, yaw);
-
-                geometry_msgs::Twist msg;
-
-                float s_x = targetDrone.pose.position.x + (1/2*0.21)*m_twistData.twist.linear.x*fabs(m_twistData.twist.linear.x);
-                float s_y = targetDrone.pose.position.y + (1/2*0.21)*m_twistData.twist.linear.y*fabs(m_twistData.twist.linear.y);
-
-                //ROS_INFO("s_x = %f, s_y = %f", s_x, s_y);
-
-                if (targetDrone.pose.position.x > 0.25 || targetDrone.pose.position.y > 0.25)
-                {
-                    ROS_INFO("Error present");
-                    //msg.linear.x = m_pidX.update(0, targetDrone.pose.position.x);
-                    //msg.linear.y = m_pidY.update(0.0, targetDrone.pose.position.y);
-                    
-                    if (s_x > 0.08)
-                    {
-                        //ROS_INFO("%f", s_x);
-                        msg.linear.x = MAX_PITCH;
-                    }
-                    else if (s_x < -0.08)
-                    {
-                        //ROS_INFO("%f", s_x);
-                        msg.linear.x = -MAX_PITCH;
-                    }
-                    else if (s_x < 0.08 && s_x > -0.08)
-                    {
-                        if (m_twistData.twist.linear.x > 0.1)
-                            msg.linear.x = -MAX_PITCH;
-                        else if (m_twistData.twist.linear.x < -0.1)
-                            msg.linear.y = MAX_PITCH;
-                        else
-                            msg.linear.y = 0;
-                    }
-                    else
-                        msg.linear.x = 0.0;
-
-                    if (s_y > 0.08)
-                    {
-                        //ROS_INFO("%f", s_x);
-                        msg.linear.y = -MAX_ROLL;
-                    }
-                    else if (s_y < -0.08)
-                    {
-                        //ROS_INFO("%f", s_x);
-                        msg.linear.y = MAX_ROLL;
-                    }
-                    else if (s_y < 0.08 && s_y > -0.08)
-                    {
-                        if (m_twistData.twist.linear.y > 0.1)
-                            msg.linear.y = MAX_ROLL;
-                        else if (m_twistData.twist.linear.y < -0.1)
-                            msg.linear.y = -MAX_ROLL;
-                        else
-                            msg.linear.y = 0.0;
-                    }
-                    else
-                    {
-                        //ROS_INFO("Case 5");
-                        msg.linear.y = 0.0;
-                    }
-                    msg.linear.z = m_pidZ.update(0.0, targetDrone.pose.position.z);
-                    msg.angular.z = m_pidYaw.update(0.0, yaw);
-                    m_pubNav.publish(msg);
-                }
-
-                /*if (targetDrone.pose.position.y > 0.1)
-                {
-                    //ROS_INFO("Error along Y");
-                    
-                    if (s_y > 0.2)
-                    {
-                        //ROS_INFO("-ve roll");
-                        msg.linear.y = -10.0;
-                    }
-                    else if (s_y < -0.2)
-                    {
-                        //ROS_INFO("+ve roll");
-                        msg.linear.y = 10.0;
-                    }
-                    else
-                        msg.linear.y = 0.0;
-                }*/
-                else
-                { 
-                    ROS_INFO("No error present");
-                    msg.linear.x = m_pidX.update(0, targetDrone.pose.position.x);
-                    msg.linear.y = m_pidY.update(0.0, targetDrone.pose.position.y);
-                    msg.linear.z = m_pidZ.update(0.0, targetDrone.pose.position.z);
-                    msg.angular.z = m_pidYaw.update(0.0, yaw);
-                    m_pubNav.publish(msg);
-                }
-
             }
             break;
         case Idle:

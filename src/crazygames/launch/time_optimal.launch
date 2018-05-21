@@ -6,7 +6,7 @@
   <arg name="joy_dev" default="/dev/input/js0" />
 
   <!--Motion capture initialization-->
-  <arg name="server" default="130.194.137.214" />
+  <arg name="server" default="130.194.137.204" />
   <arg name="port" default="3883" />
 
   <!--CF initialization-->
@@ -16,7 +16,7 @@
 
   <!--Defining goal coordinates-->
   <arg name="x" default="-1" />
-  <arg name="y" default="-1" />
+  <arg name="y" default="1" />
   <arg name="z" default="1" />
 
   <!--Launching CF server-->
@@ -28,8 +28,8 @@
     <include file="$(find crazyflie_driver)/launch/crazyflie_add.launch">
       <arg name="uri" value="$(arg uri)" />
       <arg name="tf_prefix" value="crazyflie" />
-      <arg name="roll_trim" default="0" />
-      <arg name="pitch_trim" default="0" />
+      <arg name="roll_trim" default="1" />
+      <arg name="pitch_trim" default="1" />
     </include>
 
     <!--Initializing joystick -->
@@ -85,8 +85,16 @@
     </rosparam>
     </node>
 
+    <node pkg="imu_filter_madgwick" name="imu_filter_node" type="imu_filter_node" output="screen">
+    <remap from="/imu/data_raw" to="/crazyflie/imu" />
+    <param name="world_frame" value="nwu" />
+    <param name="use_sim_time" value="true" />
+    <param name="use_mag" value="false" />
+    <param name="use_magnetic_field_msg" value="false" />
+  </node>
+
   <!-- run rviz -->
-  <param name="robot_description" command="$(find xacro)/xacro.py $(find crazyflie_description)/urdf/crazyflie.urdf.xacro" />
-  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find crazyflie_demo)/launch/crazyflie_pos.rviz" required="true" />
+  <!--param name="robot_description" command="$(find xacro)/xacro.py $(find crazyflie_description)/urdf/crazyflie.urdf.xacro" />
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find crazyflie_demo)/launch/crazyflie_pos.rviz" required="true" /-->
 </launch>
 

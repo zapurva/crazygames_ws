@@ -83,8 +83,8 @@ private:
         tempZ = 0.0;
 
         filteredVx = averageVx * (1 - 0.5) + filteredVx * 0.5;
-        filteredVy = averageVx * (1 - 0.5) + filteredVy * 0.5;
-        filteredVz = averageVx * (1 - 0.5) + filteredVz * 0.5;
+        filteredVy = averageVy * (1 - 0.5) + filteredVy * 0.5;
+        filteredVz = averageVz * (1 - 0.5) + filteredVz * 0.5;
 
         //ROS_INFO ("dVx = %f, dVy = %f, dVz = %f", dVx, dVy, dVz);
 
