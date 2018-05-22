@@ -154,24 +154,19 @@ private:
         m_pidYaw.reset();
     }
 
+    void initVelComputation()
+    {
+        for (int thisReading = 0; thisReading < 10; thisReading++) 
+        {
+            velocityX[thisReading] = 0;
+            velocityY[thisReading] = 0;
+        }
+    }
+
     void iteration(const ros::TimerEvent& e)
     {
         float dt = e.current_real.toSec() - e.last_real.toSec();
-
-        /*tf::StampedTransform transform;
-        m_listener.lookupTransform(m_worldFrame, m_frame, ros::Time(0), transform);
-
-        ROS_INFO("Origin x = %f", transform.getOrigin().x());
-        ROS_INFO("Origin y = %f", transform.getOrigin().y());
-        ROS_INFO("Origin z = %f", transform.getOrigin().z());*/
-
-        /*ROS_INFO("Goal x = %f", m_goal.pose.position.x);
-        ROS_INFO("Goal y = %f", m_goal.pose.position.y);
-        ROS_INFO("Goal z = %f", m_goal.pose.position.z);*/
-
-        /*ROS_INFO("Vel x = %f", m_twistData.twist.linear.x);
-        ROS_INFO("Vel y = %f", m_twistData.twist.linear.y);
-        ROS_INFO("Vel z = %f", m_twistData.twist.linear.z);*/
+        initVelComputation();
 
         switch(m_state)
         {
@@ -189,10 +184,6 @@ private:
 
                     m_goal_temp.pose.position.x = m_startX;
                     m_goal_temp.pose.position.y = m_startY;
-
-                    /*ROS_INFO("Goal2 x = %f", m_goal_temp.pose.position.x);
-                    ROS_INFO("Goal2 y = %f", m_goal_temp.pose.position.y);
-                    ROS_INFO("Goal2 z = %f", m_goal_temp.pose.position.z);*/
 
                     m_state = GoToZDesired;
                     m_thrust = 0;
@@ -268,7 +259,7 @@ private:
                 float s_x = targetDrone1.pose.position.x + (1/2*0.1744)*m_twistData.twist.linear.x*fabs(m_twistData.twist.linear.x);
                 float s_y = targetDrone1.pose.position.y + (1/2*0.1744)*m_twistData.twist.linear.y*fabs(m_twistData.twist.linear.y);
 
-                //ROS_INFO("%f %f %f %f %f %f", s_x, s_y, targetDrone1.pose.position.x, m_twistData.twist.linear.x, targetDrone1.pose.position.y, m_twistData.twist.linear.y);*/
+                ROS_INFO("%f %f %f %f %f %f", s_x, s_y, targetDrone1.pose.position.x, m_twistData.twist.linear.x, targetDrone1.pose.position.y, m_twistData.twist.linear.y);*/
             }
             break;
         case Automatic:
@@ -296,33 +287,61 @@ private:
 
                 geometry_msgs::Twist msg;
 
-                //********* TIME OPTIMAL CONTROLLER START**************
-                /*float s_x = targetDrone.pose.position.x + (1/2*0.174)*m_twistData.twist.linear.x*fabs(m_twistData.twist.linear.x);
-                float s_y = targetDrone.pose.position.y + (1/2*0.174)*m_twistData.twist.linear.y*fabs(m_twistData.twist.linear.y);
+                //********************VELOCITY COMPUTATION*******************************
+                totalX = totalX - velocityX[readIndex];
+                totalY = totalY - velocityY[readIndex];
+                
+                currX = -targetDrone.pose.position.x;
+                currY = -targetDrone.pose.position.y;
+                
+                velocityX[readIndex] = (currX - prevX)/dt;
+                velocityY[readIndex] = (currY - prevY)/dt;
+                
+                totalX = totalX + velocityX[readIndex];
+                totalY = totalY + velocityY[readIndex];
 
+                readIndex = readIndex + 1;
+
+                if (readIndex >= 10)
+                {
+                    readIndex = 0;
+                } 
+
+                avgVelX = totalX / 10;
+                avgVelY = totalY / 10;
+
+                //************************************************************************
+
+                //********* TIME OPTIMAL CONTROLLER START**************
+                //float s_x = targetDrone.pose.position.x + (1/2*0.174)*m_twistData.twist.linear.x*fabs(m_twistData.twist.linear.x);
+                //float s_y = targetDrone.pose.position.y + (1/2*0.174)*m_twistData.twist.linear.y*fabs(m_twistData.twist.linear.y);
+
+                float s_x = currX + ((1/(2*10*0.0175))*avgVelX*fabs(avgVelX));
+                float s_y = currY + ((1/(2*10*0.0175))*avgVelY*fabs(avgVelY));
+                //ROS_INFO("%f %f %f %f %f %f", s_x, s_y, currX, currY, avgVelX, avgVelY);
                 //ROS_INFO("s_x = %f, s_y = %f", s_x, s_y);
 
-                if (targetDrone.pose.position.x > 0.25 || targetDrone.pose.position.y > 0.25)
+                if (fabs(targetDrone.pose.position.x) > 0.25 || fabs(targetDrone.pose.position.y) > 0.25)
                 {
                     //ROS_INFO("Error present");
                     //msg.linear.x = m_pidX.update(0, targetDrone.pose.position.x);
                     //msg.linear.y = m_pidY.update(0.0, targetDrone.pose.position.y);
-                    
-                    if (s_x > 0.08)
-                    {
-                        //ROS_INFO("%f", s_x);
-                        msg.linear.x = MAX_PITCH;
-                    }
-                    else if (s_x < -0.08)
+                    ROS_INFO("%f %f %f %f %f %f", s_x, s_y, currX, currY, avgVelX, avgVelY);
+                    if (s_x > 0.01)
                     {
                         //ROS_INFO("%f", s_x);
                         msg.linear.x = -MAX_PITCH;
                     }
-                    else if (s_x < 0.08 && s_x > -0.08)
+                    else if (s_x < -0.01)
                     {
-                        if (m_twistData.twist.linear.x > 0.1)
+                        //ROS_INFO("%f", s_x);
+                        msg.linear.x = +MAX_PITCH;
+                    }
+                    else if (s_x < 0.01 && s_x > -0.01)
+                    {
+                        if (avgVelX > 0.01)
                             msg.linear.x = -MAX_PITCH;
-                        else if (m_twistData.twist.linear.x < -0.1)
+                        else if (avgVelX < -0.01)
                             msg.linear.x = MAX_PITCH;
                         else
                             msg.linear.x = 0;
@@ -330,21 +349,21 @@ private:
                     else
                         msg.linear.x = 0.0;
 
-                    if (s_y > 0.08)
+                    if (s_y > 0.01)
+                    {
+                        //ROS_INFO("%f", s_x);
+                        msg.linear.y = +MAX_ROLL;
+                    }
+                    else if (s_y < -0.01)
                     {
                         //ROS_INFO("%f", s_x);
                         msg.linear.y = -MAX_ROLL;
                     }
-                    else if (s_y < -0.08)
+                    else if (s_y < 0.01 && s_y > -0.01)
                     {
-                        //ROS_INFO("%f", s_x);
-                        msg.linear.y = MAX_ROLL;
-                    }
-                    else if (s_y < 0.08 && s_y > -0.08)
-                    {
-                        if (m_twistData.twist.linear.y > 0.1)
+                        if (avgVelY > 0.01)
                             msg.linear.y = MAX_ROLL;
-                        else if (m_twistData.twist.linear.y < -0.1)
+                        else if (avgVelY < -0.01)
                             msg.linear.y = -MAX_ROLL;
                         else
                             msg.linear.y = 0.0;
@@ -368,17 +387,20 @@ private:
                     msg.angular.z = m_pidYaw.update(0.0, yaw);
                     m_pubNav.publish(msg);
                 }
+
+                prevX = currX;
+                prevY = currY;
                 //ROS_INFO("%f %f %f %f %f %f", s_x, s_y, targetDrone.pose.position.x, m_twistData.twist.linear.x, targetDrone.pose.position.y, m_twistData.twist.linear.y);
                 //********* TIME OPTIMAL CONTROLLER END*************/
 
-                // **************PID POSITION CONTROLLER***********************
+                /**************PID POSITION CONTROLLER***********************
 
                 msg.linear.x = m_pidX.update(0, targetDrone.pose.position.x);
                 msg.linear.y = m_pidY.update(0.0, targetDrone.pose.position.y);
                 msg.linear.z = m_pidZ.update(0.0, targetDrone.pose.position.z);
                 msg.angular.z = m_pidYaw.update(0.0, yaw);
                 m_pubNav.publish(msg);
-                //*************************************************************
+                /*************************************************************/
             }
             break;
         case Landing:
@@ -459,6 +481,12 @@ private:
     float m_thrust;
     float m_startZ, m_startX, m_startY;
     float m_HoverRMSEX, m_HoverRMSEY, m_HoverRMSEZ;
+
+    float totalX = 0.0, totalY = 0.0;
+    float velocityX[10], velocityY[10];
+    int readIndex;
+    float currX, currY, prevX, prevY, avgVelX, avgVelY;
+
 };
 
 int main(int argc, char **argv)
