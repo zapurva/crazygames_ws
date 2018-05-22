@@ -156,7 +156,7 @@ private:
 
     void initVelComputation()
     {
-        for (int thisReading = 0; thisReading < 10; thisReading++) 
+        for (int thisReading = 0; thisReading < 5; thisReading++) 
         {
             velocityX[thisReading] = 0;
             velocityY[thisReading] = 0;
@@ -302,13 +302,13 @@ private:
 
                 readIndex = readIndex + 1;
 
-                if (readIndex >= 10)
+                if (readIndex >= 5)
                 {
                     readIndex = 0;
                 } 
 
-                avgVelX = totalX / 10;
-                avgVelY = totalY / 10;
+                avgVelX = totalX / 5;
+                avgVelY = totalY / 5;
 
                 //************************************************************************
 
@@ -321,49 +321,57 @@ private:
                 //ROS_INFO("%f %f %f %f %f %f", s_x, s_y, currX, currY, avgVelX, avgVelY);
                 //ROS_INFO("s_x = %f, s_y = %f", s_x, s_y);
 
-                if (fabs(targetDrone.pose.position.x) > 0.25 || fabs(targetDrone.pose.position.y) > 0.25)
+                if (fabs(targetDrone.pose.position.x) > 0.25)  
                 {
                     //ROS_INFO("Error present");
                     //msg.linear.x = m_pidX.update(0, targetDrone.pose.position.x);
                     //msg.linear.y = m_pidY.update(0.0, targetDrone.pose.position.y);
-                    ROS_INFO("%f %f %f %f %f %f", s_x, s_y, currX, currY, avgVelX, avgVelY);
-                    if (s_x > 0.01)
+                    ROS_INFO("%f %f %f %f %f %f %f %f %f", s_x, s_y, currX, currY, avgVelX, avgVelY, prevX, prevY, dt);
+                    if (s_x > 0.1)
                     {
                         //ROS_INFO("%f", s_x);
                         msg.linear.x = -MAX_PITCH;
                     }
-                    else if (s_x < -0.01)
+                    else if (s_x < -0.1)
                     {
                         //ROS_INFO("%f", s_x);
                         msg.linear.x = +MAX_PITCH;
                     }
-                    else if (s_x < 0.01 && s_x > -0.01)
+                    else if (s_x < 0.1 && s_x > -0.1)
                     {
-                        if (avgVelX > 0.01)
+                        if (avgVelX > 0.1)
                             msg.linear.x = -MAX_PITCH;
-                        else if (avgVelX < -0.01)
+                        else if (avgVelX < -0.1)
                             msg.linear.x = MAX_PITCH;
                         else
                             msg.linear.x = 0;
                     }
                     else
                         msg.linear.x = 0.0;
+                }
+                else
+                {
+                    msg.linear.x = m_pidX.update(0, targetDrone.pose.position.x);
+                }
 
-                    if (s_y > 0.01)
+                if (fabs(targetDrone.pose.position.y) > 0.25)
+                {
+                    ROS_INFO("%f %f %f %f %f %f %f %f %f", s_x, s_y, currX, currY, avgVelX, avgVelY, prevX, prevY, dt);
+                    if (s_y > 0.1)
                     {
                         //ROS_INFO("%f", s_x);
                         msg.linear.y = +MAX_ROLL;
                     }
-                    else if (s_y < -0.01)
+                    else if (s_y < -0.1)
                     {
                         //ROS_INFO("%f", s_x);
                         msg.linear.y = -MAX_ROLL;
                     }
-                    else if (s_y < 0.01 && s_y > -0.01)
+                    else if (s_y < 0.1 && s_y > -0.1)
                     {
-                        if (avgVelY > 0.01)
+                        if (avgVelY > 0.1)
                             msg.linear.y = MAX_ROLL;
-                        else if (avgVelY < -0.01)
+                        else if (avgVelY < -0.1)
                             msg.linear.y = -MAX_ROLL;
                         else
                             msg.linear.y = 0.0;
@@ -373,21 +381,16 @@ private:
                         //ROS_INFO("Case 5");
                         msg.linear.y = 0.0;
                     }
-                    msg.linear.z = m_pidZ.update(0.0, targetDrone.pose.position.z);
-                    msg.angular.z = m_pidYaw.update(0.0, yaw);
-                    m_pubNav.publish(msg);
                 }
-
                 else
-                { 
-                    //ROS_INFO("No error present");
-                    msg.linear.x = m_pidX.update(0, targetDrone.pose.position.x);
+                {
                     msg.linear.y = m_pidY.update(0.0, targetDrone.pose.position.y);
-                    msg.linear.z = m_pidZ.update(0.0, targetDrone.pose.position.z);
-                    msg.angular.z = m_pidYaw.update(0.0, yaw);
-                    m_pubNav.publish(msg);
                 }
-
+                    
+                msg.linear.z = m_pidZ.update(0.0, targetDrone.pose.position.z);
+                msg.angular.z = m_pidYaw.update(0.0, yaw);
+                m_pubNav.publish(msg);
+            
                 prevX = currX;
                 prevY = currY;
                 //ROS_INFO("%f %f %f %f %f %f", s_x, s_y, targetDrone.pose.position.x, m_twistData.twist.linear.x, targetDrone.pose.position.y, m_twistData.twist.linear.y);
@@ -483,7 +486,7 @@ private:
     float m_HoverRMSEX, m_HoverRMSEY, m_HoverRMSEZ;
 
     float totalX = 0.0, totalY = 0.0;
-    float velocityX[10], velocityY[10];
+    float velocityX[5], velocityY[5];
     int readIndex;
     float currX, currY, prevX, prevY, avgVelX, avgVelY;
 
