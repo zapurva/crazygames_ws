@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 
 <launch>
-  <arg name="uri" default="radio://0/85/2M/E7E7E7E703" />
+  <arg name="uri" default="radio://0/85/2M/E7E7E7E704" />
   <arg name="joy_dev" default="/dev/input/js0" />
 
   <include file="$(find crazyflie_driver)/launch/crazyflie_server.launch">
@@ -30,7 +30,7 @@
   <node pkg="imu_filter_madgwick" name="imu_filter_node" type="imu_filter_node" output="screen">
     <remap from="/imu/data_raw" to="/crazyflie/imu" />
     <param name="world_frame" value="nwu" />
-    <param name="use_sim_time" value="true" />
+    <!--param name="use_sim_time" value="true" /-->
     <param name="use_mag" value="false" />
     <param name="use_magnetic_field_msg" value="false" />
   </node>
