@@ -8,6 +8,11 @@
 #define MAX_PITCH 7.0
 #define MAX_ROLL 7.0
 
+//***************************************
+//Tuning parameter for switching function
+#define c_x 0.1375  
+#define c_y 0.1375
+//***************************************
 
 double get(
     const ros::NodeHandle& n,
@@ -195,6 +200,7 @@ private:
                     geometry_msgs::Twist msg;
                     msg.linear.z = m_thrust;
                     m_pubNav.publish(msg);
+                    ROS_INFO("%d %f %f ", m_state, transform.getOrigin().z(), msg.linear.z);
                 }
 
             }
@@ -227,6 +233,7 @@ private:
                 msg.linear.z = m_pidZ.update(0.0, targetDrone.pose.position.z);
                 msg.angular.z = m_pidYaw.update(0.0, yaw);
                 m_pubNav.publish(msg);
+                ROS_INFO("%d %f %f ", m_state, targetDrone.pose.position.z, msg.linear.z);
 
                 m_HoverRMSEX = targetDrone.pose.position.x * targetDrone.pose.position.x;
                 m_HoverRMSEY = targetDrone.pose.position.y * targetDrone.pose.position.y;
@@ -328,8 +335,8 @@ private:
                 //float s_x = targetDrone.pose.position.x + (1/2*0.174)*m_twistData.twist.linear.x*fabs(m_twistData.twist.linear.x);
                 //float s_y = targetDrone.pose.position.y + (1/2*0.174)*m_twistData.twist.linear.y*fabs(m_twistData.twist.linear.y);
 
-                float s_x = currX + ((1/(2*7*0.08))*avgVelX*fabs(avgVelX));
-                float s_y = currY + ((1/(2*7*0.08))*avgVelY*fabs(avgVelY));
+                float s_x = currX + ((1/(2*MAX_PITCH*0.1375))*avgVelX*fabs(avgVelX));
+                float s_y = currY + ((1/(2*MAX_ROLL*0.1375))*avgVelY*fabs(avgVelY));
                 //ROS_INFO("%f %f %f %f %f %f", s_x, s_y, currX, currY, avgVelX, avgVelY);
                 //ROS_INFO("s_x = %f, s_y = %f", s_x, s_y);
 
@@ -415,7 +422,8 @@ private:
                 msg.linear.z = m_pidZ.update(0.0, targetDrone.pose.position.z);
                 msg.angular.z = m_pidYaw.update(0.0, yaw);
                 m_pubNav.publish(msg);
-            
+                ROS_INFO("%d %f %f ", m_state, targetDrone.pose.position.z, msg.linear.z);
+
                 prevX = currX;
                 prevY = currY;
                 //********* TIME OPTIMAL CONTROLLER END*************/
