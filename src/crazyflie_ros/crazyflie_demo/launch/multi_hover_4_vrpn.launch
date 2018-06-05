@@ -1,32 +1,32 @@
 <?xml version="1.0"?>
 <launch>
   <arg name="joy_dev" default="/dev/input/js0" />
-  <arg name="server" default="130.194.137.58" />
+  <arg name="server" default="130.194.137.204" />
   <arg name="port" default="3883" />
 
   <arg name="uri1" default="radio://0/85/2M/E7E7E7E703" />
   <arg name="frame1" default="crazyflie1" />
-  <arg name="x1" default="0.5" />
-  <arg name="y1" default="0.5" />
-  <arg name="z1" default="1" />
+  <arg name="x1" default="1.0" />
+  <arg name="y1" default="-1.0" />
+  <arg name="z1" default="1.7" />
 
   <arg name="uri2" default="radio://0/85/2M/E7E7E7E704" />
   <arg name="frame2" default="crazyflie2" />
-  <arg name="x2" default="0.5" />
-  <arg name="y2" default="-0.8" />
-  <arg name="z2" default="1" />
+  <arg name="x2" default="-1.0" />
+  <arg name="y2" default="-1.0" />
+  <arg name="z2" default="1.7" />
 
   <arg name="uri3" default="radio://1/90/2M/E7E7E7E705" />
   <arg name="frame3" default="crazyflie3" />
   <arg name="x3" default="-0.5" />
-  <arg name="y3" default="0.5" />
-  <arg name="z3" default="1" />
+  <arg name="y3" default="0.0" />
+  <arg name="z3" default="1.2" />
 
   <arg name="uri4" default="radio://1/90/2M/E7E7E7E702" />
   <arg name="frame4" default="crazyflie4" />
-  <arg name="x4" default="-0.5" />
-  <arg name="y4" default="-0.8" />
-  <arg name="z4" default="1" />
+  <arg name="x4" default="0.5" />
+  <arg name="y4" default="0.0" />
+  <arg name="z4" default="1.2" />
 
   <include file="$(find crazyflie_driver)/launch/crazyflie_server.launch">
   </include>
@@ -47,13 +47,13 @@
       <param name="joy_topic" value="/joy" />
     </node>
 
-    <include file="$(find crazyflie_controller)/launch/crazyflie2.launch">
+    <include file="$(find crazyflie_controller)/launch/init_controller.launch">
       <arg name="frame" value="$(arg frame1)" />
     </include>
 
     <node name="pose" pkg="crazyflie_demo" type="publish_pose.py" output="screen">
       <param name="name" value="goal" />
-      <param name="rate" value="10" />
+      <param name="rate" value="100" />
       <param name="x" value="$(arg x1)" />
       <param name="y" value="$(arg y1)" />
       <param name="z" value="$(arg z1)" />
@@ -93,13 +93,13 @@
       <param name="joy_topic" value="/joy" />
     </node>
 
-    <include file="$(find crazyflie_controller)/launch/crazyflie2.launch">
+    <include file="$(find crazyflie_controller)/launch/init_controller.launch">
       <arg name="frame" value="$(arg frame2)" />
     </include>
 
     <node name="pose" pkg="crazyflie_demo" type="publish_pose.py" output="screen">
       <param name="name" value="goal" />
-      <param name="rate" value="10" />
+      <param name="rate" value="100" />
       <param name="x" value="$(arg x2)" />
       <param name="y" value="$(arg y2)" />
       <param name="z" value="$(arg z2)" />
@@ -139,13 +139,13 @@
       <param name="joy_topic" value="/joy" />
     </node>
 
-    <include file="$(find crazyflie_controller)/launch/crazyflie2.launch">
+    <include file="$(find crazyflie_controller)/launch/init_controller.launch">
       <arg name="frame" value="$(arg frame3)" />
     </include>
 
     <node name="pose" pkg="crazyflie_demo" type="publish_pose.py" output="screen">
       <param name="name" value="goal" />
-      <param name="rate" value="10" />
+      <param name="rate" value="100" />
       <param name="x" value="$(arg x3)" />
       <param name="y" value="$(arg y3)" />
       <param name="z" value="$(arg z3)" />
@@ -185,13 +185,13 @@
       <param name="joy_topic" value="/joy" />
     </node>
 
-    <include file="$(find crazyflie_controller)/launch/crazyflie2.launch">
+    <include file="$(find crazyflie_controller)/launch/init_controller.launch">
       <arg name="frame" value="$(arg frame4)" />
     </include>
 
     <node name="pose" pkg="crazyflie_demo" type="publish_pose.py" output="screen">
       <param name="name" value="goal" />
-      <param name="rate" value="10" />
+      <param name="rate" value="100" />
       <param name="x" value="$(arg x4)" />
       <param name="y" value="$(arg y4)" />
       <param name="z" value="$(arg z4)" />
@@ -203,7 +203,7 @@
       server: $(arg server)
       port: $(arg port)
 
-      update_frequency: 100.0
+      update_frequency: 200.0
       frame_id: world
 
       # Use the VRPN server's time, or the client's ROS time.

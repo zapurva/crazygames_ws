@@ -307,6 +307,20 @@ leader_follower/fast:
 .PHONY : leader_follower/fast
 
 # Convenience name for target.
+crazyflie_ros/crazyflie_controller/CMakeFiles/pursuit_evasion.dir/rule:
+	cd /home/jan/apurva_joshi/crazygames_ws/build && $(MAKE) -f CMakeFiles/Makefile2 crazyflie_ros/crazyflie_controller/CMakeFiles/pursuit_evasion.dir/rule
+.PHONY : crazyflie_ros/crazyflie_controller/CMakeFiles/pursuit_evasion.dir/rule
+
+# Convenience name for target.
+pursuit_evasion: crazyflie_ros/crazyflie_controller/CMakeFiles/pursuit_evasion.dir/rule
+.PHONY : pursuit_evasion
+
+# fast build rule for target.
+pursuit_evasion/fast:
+	cd /home/jan/apurva_joshi/crazygames_ws/build && $(MAKE) -f crazyflie_ros/crazyflie_controller/CMakeFiles/pursuit_evasion.dir/build.make crazyflie_ros/crazyflie_controller/CMakeFiles/pursuit_evasion.dir/build
+.PHONY : pursuit_evasion/fast
+
+# Convenience name for target.
 crazyflie_ros/crazyflie_controller/CMakeFiles/roscpp_generate_messages_cpp.dir/rule:
 	cd /home/jan/apurva_joshi/crazygames_ws/build && $(MAKE) -f CMakeFiles/Makefile2 crazyflie_ros/crazyflie_controller/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
 .PHONY : crazyflie_ros/crazyflie_controller/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
@@ -620,6 +634,30 @@ src/leader_follower.cpp.s:
 	cd /home/jan/apurva_joshi/crazygames_ws/build && $(MAKE) -f crazyflie_ros/crazyflie_controller/CMakeFiles/leader_follower.dir/build.make crazyflie_ros/crazyflie_controller/CMakeFiles/leader_follower.dir/src/leader_follower.cpp.s
 .PHONY : src/leader_follower.cpp.s
 
+src/pursuit_evasion.o: src/pursuit_evasion.cpp.o
+.PHONY : src/pursuit_evasion.o
+
+# target to build an object file
+src/pursuit_evasion.cpp.o:
+	cd /home/jan/apurva_joshi/crazygames_ws/build && $(MAKE) -f crazyflie_ros/crazyflie_controller/CMakeFiles/pursuit_evasion.dir/build.make crazyflie_ros/crazyflie_controller/CMakeFiles/pursuit_evasion.dir/src/pursuit_evasion.cpp.o
+.PHONY : src/pursuit_evasion.cpp.o
+
+src/pursuit_evasion.i: src/pursuit_evasion.cpp.i
+.PHONY : src/pursuit_evasion.i
+
+# target to preprocess a source file
+src/pursuit_evasion.cpp.i:
+	cd /home/jan/apurva_joshi/crazygames_ws/build && $(MAKE) -f crazyflie_ros/crazyflie_controller/CMakeFiles/pursuit_evasion.dir/build.make crazyflie_ros/crazyflie_controller/CMakeFiles/pursuit_evasion.dir/src/pursuit_evasion.cpp.i
+.PHONY : src/pursuit_evasion.cpp.i
+
+src/pursuit_evasion.s: src/pursuit_evasion.cpp.s
+.PHONY : src/pursuit_evasion.s
+
+# target to generate assembly for a file
+src/pursuit_evasion.cpp.s:
+	cd /home/jan/apurva_joshi/crazygames_ws/build && $(MAKE) -f crazyflie_ros/crazyflie_controller/CMakeFiles/pursuit_evasion.dir/build.make crazyflie_ros/crazyflie_controller/CMakeFiles/pursuit_evasion.dir/src/pursuit_evasion.cpp.s
+.PHONY : src/pursuit_evasion.cpp.s
+
 src/time_optimal_controller.o: src/time_optimal_controller.cpp.o
 .PHONY : src/time_optimal_controller.o
 
@@ -666,6 +704,7 @@ help:
 	@echo "... install/strip"
 	@echo "... leader_follower"
 	@echo "... list_install_components"
+	@echo "... pursuit_evasion"
 	@echo "... rebuild_cache"
 	@echo "... roscpp_generate_messages_cpp"
 	@echo "... roscpp_generate_messages_lisp"
@@ -693,6 +732,9 @@ help:
 	@echo "... src/leader_follower.o"
 	@echo "... src/leader_follower.i"
 	@echo "... src/leader_follower.s"
+	@echo "... src/pursuit_evasion.o"
+	@echo "... src/pursuit_evasion.i"
+	@echo "... src/pursuit_evasion.s"
 	@echo "... src/time_optimal_controller.o"
 	@echo "... src/time_optimal_controller.i"
 	@echo "... src/time_optimal_controller.s"

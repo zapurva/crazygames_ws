@@ -400,6 +400,19 @@ leader_follower/fast:
 .PHONY : leader_follower/fast
 
 #=============================================================================
+# Target rules for targets named pursuit_evasion
+
+# Build rule for target.
+pursuit_evasion: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pursuit_evasion
+.PHONY : pursuit_evasion
+
+# fast build rule for target.
+pursuit_evasion/fast:
+	$(MAKE) -f crazyflie_ros/crazyflie_controller/CMakeFiles/pursuit_evasion.dir/build.make crazyflie_ros/crazyflie_controller/CMakeFiles/pursuit_evasion.dir/build
+.PHONY : pursuit_evasion/fast
+
+#=============================================================================
 # Target rules for targets named roscpp_generate_messages_cpp
 
 # Build rule for target.
@@ -1393,6 +1406,7 @@ help:
 	@echo "... geometry_msgs_generate_messages_lisp"
 	@echo "... geometry_msgs_generate_messages_py"
 	@echo "... leader_follower"
+	@echo "... pursuit_evasion"
 	@echo "... roscpp_generate_messages_cpp"
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... roscpp_generate_messages_py"

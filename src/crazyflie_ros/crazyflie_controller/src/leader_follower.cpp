@@ -489,7 +489,7 @@ int main(int argc, char **argv)
   n.getParam("yOffset", yOffset);
   //ROS_INFO("Received offsets %f and %f", xOffset, yOffset);
   double frequency;
-  n.param("frequency", frequency, 50.0);
+  n.param("frequency", frequency, 100.0);
 
   Follower follower(worldFrame, leaderFrame, followerFrame, xOffset, yOffset, n);
   follower.run(frequency);
