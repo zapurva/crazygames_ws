@@ -26,9 +26,15 @@ class Controller():
             rospy.wait_for_service('takeoff')
             rospy.loginfo("found takeoff service")
             self._takeoff = rospy.ServiceProxy('takeoff', Empty)
+
+            rospy.loginfo("waiting for auto service")
+            rospy.wait_for_service('autoRequest')
+            rospy.loginfo("found auto service")
+            self._auto = rospy.ServiceProxy('autoRequest', Empty)
         else:
             self._land = None
             self._takeoff = None
+            self._auto = None
 
         # subscribe to the joystick at the end to make sure that all required
         # services were found
@@ -44,6 +50,8 @@ class Controller():
                     self._emergency()
                 if i == 14 and data.buttons[i] == 1 and self._takeoff != None:
                     self._takeoff()
+                if i == 9 and data.buttons[i] == 1 and self._auto != None:
+                    self._auto()
                 if i == 4 and data.buttons[i] == 1:
                     value = int(rospy.get_param("ring/headlightEnable"))
                     if value == 0:

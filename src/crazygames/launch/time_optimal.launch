@@ -10,8 +10,8 @@
   <arg name="port" default="3883" />
 
   <!--CF initialization-->
-  <arg name="uri" default="radio://1/85/2M/E7E7E7E703" />
-  <arg name="frame" default="crazyflie3" />
+  <arg name="uri" default="radio://1/85/2M/E7E7E7E704" />
+  <arg name="frame" default="crazyflie4" />
   <arg name="worldFrame" default="world"/>
 
   <!--Defining goal coordinates-->

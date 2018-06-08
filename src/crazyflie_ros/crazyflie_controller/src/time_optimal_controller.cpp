@@ -77,6 +77,7 @@ public:
         , m_subscribeTwist()
         , m_serviceTakeoff()
         , m_serviceLand()
+        , m_serviceAuto()
         , m_thrust(0)
         , m_startZ(0)
     {
@@ -88,6 +89,7 @@ public:
         m_subscribeTwist = nh.subscribe(m_getTwistData, 1, &Controller::getTwistData, this);
         m_serviceTakeoff = nh.advertiseService("takeoff", &Controller::takeoff, this);
         m_serviceLand = nh.advertiseService("land", &Controller::land, this);
+        m_serviceAuto = nh.advertiseService("autoRequest", &Controller::autoRequest, this);
         initVelComputation();
     }
 
@@ -140,6 +142,16 @@ private:
     {
         ROS_INFO("Landing requested!");
         m_state = Landing;
+
+        return true;
+    }
+
+    bool autoRequest(
+        std_srvs::Empty::Request& req,
+        std_srvs::Empty::Response& res)
+    {
+        ROS_INFO("Autonomous Mode requested!");
+        m_autoEngage = 1;
 
         return true;
     }
@@ -200,7 +212,7 @@ private:
                     geometry_msgs::Twist msg;
                     msg.linear.z = m_thrust;
                     m_pubNav.publish(msg);
-                    ROS_INFO("%d %f %f ", m_state, transform.getOrigin().z(), msg.linear.z);
+                    //ROS_INFO("%d %f %f ", m_state, transform.getOrigin().z(), msg.linear.z);
                 }
 
             }
@@ -233,7 +245,7 @@ private:
                 msg.linear.z = m_pidZ.update(0.0, targetDrone.pose.position.z);
                 msg.angular.z = m_pidYaw.update(0.0, yaw);
                 m_pubNav.publish(msg);
-                ROS_INFO("%d %f %f ", m_state, targetDrone.pose.position.z, msg.linear.z);
+                //ROS_INFO("%d %f %f ", m_state, targetDrone.pose.position.z, msg.linear.z);
 
                 m_HoverRMSEX = targetDrone.pose.position.x * targetDrone.pose.position.x;
                 m_HoverRMSEY = targetDrone.pose.position.y * targetDrone.pose.position.y;
@@ -244,14 +256,14 @@ private:
                 if (m_HoverRMSEX < 0.05 && m_HoverRMSEY < 0.05 && m_HoverRMSEZ < 0.05)
                 {
                     stabilizeCheck = stabilizeCheck + 1;
-                    //ROS_INFO("%f %f %f %d", m_HoverRMSEX, m_HoverRMSEY, m_HoverRMSEZ, stabilizeCheck);
-                    if (stabilizeCheck > 300)
+                    ROS_INFO("%f %f %f %d", m_HoverRMSEX, m_HoverRMSEY, m_HoverRMSEZ, stabilizeCheck);
+                    if ((stabilizeCheck > 300) && m_autoEngage == 1)
                     {
                         ROS_INFO("Automatic");
                         m_state = Automatic;
                         stabilizeCheck = 0;
-                    }
-                    
+                        m_autoEngage = 0;
+                    }                    
                 }
                 
                 /*tf::StampedTransform transform1;
@@ -515,6 +527,7 @@ private:
     ros::Subscriber m_subscribeTwist;
     ros::ServiceServer m_serviceTakeoff;
     ros::ServiceServer m_serviceLand;
+    ros::ServiceServer m_serviceAuto;
     float m_thrust;
     float m_startZ, m_startX, m_startY;
     float m_HoverRMSEX, m_HoverRMSEY, m_HoverRMSEZ;
@@ -524,7 +537,7 @@ private:
     int readIndex = 0;
     float currX, currY, prevX, prevY, avgVelX, avgVelY;
 
-    bool m_xPIDEngage = 0, m_yPIDEngage = 0;
+    bool m_xPIDEngage = 0, m_yPIDEngage = 0, m_autoEngage = 0;
 
 };
 
