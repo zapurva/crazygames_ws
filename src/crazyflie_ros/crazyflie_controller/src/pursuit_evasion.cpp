@@ -82,6 +82,7 @@ public:
         , m_subscribeTwist()
         , m_serviceTakeoff()
         , m_serviceLand()
+        , m_serviceAuto()
         , m_thrust(0)
         , m_startZ(0)
     {
@@ -92,6 +93,7 @@ public:
         m_subscribeGoal = nh.subscribe("goal", 1, &Follower::goalChanged, this);
         m_serviceTakeoff = nh.advertiseService("takeoff", &Follower::takeoff, this);
         m_serviceLand = nh.advertiseService("land", &Follower::land, this);
+        m_serviceAuto = nh.advertiseService("autoRequest", &Follower::autoRequest, this);
         initVelComputation();
         //ROS_INFO("Pursuit-Evasion initiated");
     }
@@ -140,6 +142,16 @@ private:
     {
         ROS_INFO("Landing requested!");
         m_state = Landing;
+
+        return true;
+    }
+
+    bool autoRequest(
+        std_srvs::Empty::Request& req,
+        std_srvs::Empty::Response& res)
+    {
+        ROS_INFO("Autonomous Mode engaged!");
+        m_autoEngage = 1;
 
         return true;
     }
@@ -236,14 +248,16 @@ private:
                 if (m_HoverRMSEX < 0.05 && m_HoverRMSEY < 0.05 && m_HoverRMSEZ < 0.05)
                 {
                     stabilizeCheck = stabilizeCheck + 1;
-                    ROS_INFO("%f %f %f %d", m_HoverRMSEX, m_HoverRMSEY, m_HoverRMSEZ, stabilizeCheck);
-                    if (stabilizeCheck > 300)
+                    //ROS_INFO("%f %f %f %d", m_HoverRMSEX, m_HoverRMSEY, m_HoverRMSEZ, stabilizeCheck);
+                    if (stabilizeCheck > 300 && stabilizeCheck <= 301)
+                        ROS_INFO("%s is ready for pursuit", m_frame_follower.c_str());
+                    if ((stabilizeCheck > 300) && m_autoEngage == 1)
                     {
-                        //ROS_INFO("Automatic");
+                        ROS_INFO("Automatic");
                         m_state = Automatic;
                         stabilizeCheck = 0;
-                    }
-                    
+                        m_autoEngage = 0;
+                    }                    
                 }
                 
                 /*tf::StampedTransform transform1;
@@ -521,6 +535,7 @@ private:
     ros::Subscriber m_subscribeTwist;
     ros::ServiceServer m_serviceTakeoff;
     ros::ServiceServer m_serviceLand;
+    ros::ServiceServer m_serviceAuto;
 
     float m_thrust;
     float m_startZ, m_startX, m_startY;
@@ -532,7 +547,7 @@ private:
     int readIndex = 0;
     float currX, currY, prevX, prevY, avgVelX, avgVelY;
 
-    bool m_xPIDEngage = 0, m_yPIDEngage = 0;
+    bool m_xPIDEngage = 0, m_yPIDEngage = 0, m_autoEngage = 0;
 
 };
 

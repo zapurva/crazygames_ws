@@ -256,7 +256,9 @@ private:
                 if (m_HoverRMSEX < 0.05 && m_HoverRMSEY < 0.05 && m_HoverRMSEZ < 0.05)
                 {
                     stabilizeCheck = stabilizeCheck + 1;
-                    ROS_INFO("%f %f %f %d", m_HoverRMSEX, m_HoverRMSEY, m_HoverRMSEZ, stabilizeCheck);
+                    //ROS_INFO("%f %f %f %d", m_HoverRMSEX, m_HoverRMSEY, m_HoverRMSEZ, stabilizeCheck);
+                    if (stabilizeCheck > 300)
+                        ROS_INFO("%s is now stable", m_frame.c_str());
                     if ((stabilizeCheck > 300) && m_autoEngage == 1)
                     {
                         ROS_INFO("Automatic");

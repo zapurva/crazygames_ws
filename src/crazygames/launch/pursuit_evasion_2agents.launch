@@ -12,7 +12,7 @@
   <arg name="frame1" default="crazyflie3" />
 
   <!--Initialize parameters for AGENT2 (FOLLOWER1)-->
-  <arg name="uri2" default="radio://0/85/2M/E7E7E7E704" />
+  <arg name="uri2" default="radio://1/85/2M/E7E7E7E704" />
   <arg name="frame2" default="crazyflie4" />
   <arg name="xOffset2" default="0.0" />
   <arg name="yOffset2" default="1.0" />
@@ -54,7 +54,7 @@
 
     <node name="pose" pkg="crazyflie_demo" type="publish_pose_teleop.py" output="screen">
       <param name="name" value="goal" />
-      <param name="rate" value="100" />
+      <param name="rate" value="150" />
       <param name="x" value="$(arg x1)" />
       <param name="y" value="$(arg y1)" />
       <param name="z" value="$(arg z1)" />
@@ -85,7 +85,7 @@
 
     <node name="pose" pkg="crazyflie_demo" type="publish_pose.py" output="screen">
       <param name="name" value="goal" />
-      <param name="rate" value="100" />
+      <param name="rate" value="150" />
       <param name="x" value="$(arg x2)" />
       <param name="y" value="$(arg y2)" />
       <param name="z" value="$(arg z2)" />
@@ -100,7 +100,7 @@
     server: $(arg server)
     port: $(arg port)
 
-    update_frequency: 100.0
+    update_frequency: 200.0
     frame_id: world
 
     # Use the VRPN server's time, or the client's ROS time.

@@ -7,7 +7,7 @@
   <arg name="xOffset" />
   <arg name="yOffset" />
 
-  <node name="pursuit_evasion" pkg="crazyflie_controller" type="pursuit_evasion" output="log">
+  <node name="pursuit_evasion" pkg="crazyflie_controller" type="pursuit_evasion" output="screen">
     <param name="frame_follower" value="$(arg frame_follower)" />
     <param name="frame_leader" value="$(arg frame_leader)" />
     <param name="worldFrame" value="$(arg worldFrame)" />

@@ -67,6 +67,7 @@ public:
         , m_subscribeGoal()
         , m_serviceTakeoff()
         , m_serviceLand()
+        , m_serviceAuto()
         , m_thrust(0)
         , m_startZ(0)
     {
@@ -76,6 +77,7 @@ public:
         m_subscribeGoal = nh.subscribe("goal", 1, &Controller::goalChanged, this);
         m_serviceTakeoff = nh.advertiseService("takeoff", &Controller::takeoff, this);
         m_serviceLand = nh.advertiseService("land", &Controller::land, this);
+        m_serviceAuto = nh.advertiseService("autoRequest", &Controller::autoRequest, this);
     }
 
     void run(double frequency)
@@ -112,6 +114,16 @@ private:
     {
         ROS_INFO("Landing requested!");
         m_state = Landing;
+
+        return true;
+    }
+
+    bool autoRequest(
+        std_srvs::Empty::Request& req,
+        std_srvs::Empty::Response& res)
+    {
+        ROS_INFO("Autonomous Mode engaged!");
+        m_autoEngage = 1;
 
         return true;
     }
@@ -236,8 +248,11 @@ private:
     ros::Subscriber m_subscribeGoal;
     ros::ServiceServer m_serviceTakeoff;
     ros::ServiceServer m_serviceLand;
+    ros::ServiceServer m_serviceAuto;
     float m_thrust;
     float m_startZ;
+
+    bool m_autoEngage = 0;
 };
 
 int main(int argc, char **argv)
