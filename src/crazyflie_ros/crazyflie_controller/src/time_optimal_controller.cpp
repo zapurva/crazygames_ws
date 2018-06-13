@@ -5,8 +5,8 @@
 
 #include "pid.hpp"
 
-#define MAX_PITCH 7.0
-#define MAX_ROLL 7.0
+#define MAX_PITCH 4.0
+#define MAX_ROLL 4.0
 
 //***************************************
 //Tuning parameter for switching function
@@ -257,7 +257,7 @@ private:
                 {
                     stabilizeCheck = stabilizeCheck + 1;
                     //ROS_INFO("%f %f %f %d", m_HoverRMSEX, m_HoverRMSEY, m_HoverRMSEZ, stabilizeCheck);
-                    if (stabilizeCheck > 300)
+                    if (stabilizeCheck > 300 && stabilizeCheck <= 301)
                         ROS_INFO("%s is now stable", m_frame.c_str());
                     if ((stabilizeCheck > 300) && m_autoEngage == 1)
                     {

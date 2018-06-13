@@ -16,7 +16,7 @@
 
   <!--Defining goal coordinates-->
   <arg name="x" default="-1" />
-  <arg name="y" default="-1" />
+  <arg name="y" default="-2" />
   <arg name="z" default="1" />
 
   <!--Launching CF server-->
@@ -49,7 +49,7 @@
 
     <node name="pose" pkg="crazyflie_demo" type="publish_pose.py" output="screen">
       <param name="name" value="goal" />
-      <param name="rate" value="30" />
+      <param name="rate" value="100" />
       <param name="x" value="$(arg x)" />
       <param name="y" value="$(arg y)" />
       <param name="z" value="$(arg z)" />
@@ -70,7 +70,7 @@
       server: $(arg server)
       port: $(arg port)
 
-      update_frequency: 100.0
+      update_frequency: 200.0
       frame_id: world
 
       # Use the VRPN server's time, or the client's ROS time.
