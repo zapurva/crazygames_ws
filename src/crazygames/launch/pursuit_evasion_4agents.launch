@@ -14,30 +14,33 @@
   <!--Initialize parameters for AGENT2 (FOLLOWER1)-->
   <arg name="uri2" default="radio://0/85/2M/E7E7E7E704" />
   <arg name="frame2" default="crazyflie4" />
-  <arg name="xOffset2" default="-0.7" />
-  <arg name="yOffset2" default="0.0" />
+  <arg name="xOffset2" default="0" />
+  <arg name="yOffset2" default="0.7" />
+  <arg name="maxAngle2" default="7.0" />
 
   <arg name="uri3" default="radio://1/90/2M/E7E7E7E705" />
   <arg name="frame3" default="crazyflie5" />
-  <arg name="xOffset3" default="0.7" />
-  <arg name="yOffset3" default="0.0" />
+  <arg name="xOffset3" default="0" />
+  <arg name="yOffset3" default="0.7" />
+  <arg name="maxAngle3" default="7.0" />
 
   <arg name="uri4" default="radio://1/90/2M/E7E7E7E702" />
   <arg name="frame4" default="crazyflie2" />
-  <arg name="xOffset4" default="0.0" />
+  <arg name="xOffset4" default="0" />
   <arg name="yOffset4" default="0.7" />
+  <arg name="maxAngle4" default="7.0" />
 
   <!--Safe landing spot for LEADER-->
   <arg name="x1" default="0" />
-  <arg name="y1" default="0" />
+  <arg name="y1" default="-2.15" />
   <arg name="z1" default="1" />
     <!--Safe landing spot for AGENT2-->
   <arg name="x2" default="-1" />
-  <arg name="y2" default="1" />
+  <arg name="y2" default="0" />
   <arg name="z2" default="1" />
   <!--Safe landing spot for AGENT3-->
   <arg name="x3" default="1" />
-  <arg name="y3" default="1" />
+  <arg name="y3" default="0" />
   <arg name="z3" default="1" />
   <!--Safe landing spot for AGENT4-->
   <arg name="x4" default="0" />
@@ -98,9 +101,10 @@
 
     <include file="$(find crazyflie_controller)/launch/init_pursuit_evasion_controller.launch">
       <arg name="frame_follower" value="$(arg frame2)" />
-      <arg name="frame_leader" value="$(arg frame1)" />
+      <arg name="frame_leader" value="$(arg frame4)" />
       <arg name="xOffset" value="$(arg xOffset2)" />
       <arg name="yOffset" value="$(arg yOffset2)" />
+      <arg name="maxAngle" value="$(arg maxAngle2)" />
     </include>
 
     <node name="pose" pkg="crazyflie_demo" type="publish_pose.py" output="screen">
@@ -136,7 +140,8 @@
     <arg name="frame_follower" value="$(arg frame3)" />
     <arg name="frame_leader" value="$(arg frame1)" />
     <arg name="xOffset" value="$(arg xOffset3)" />
-      <arg name="yOffset" value="$(arg yOffset3)" />
+    <arg name="yOffset" value="$(arg yOffset3)" />
+    <arg name="maxAngle" value="$(arg maxAngle3)" />
   </include>
 
   <node name="pose" pkg="crazyflie_demo" type="publish_pose.py" output="screen">
@@ -170,9 +175,10 @@
 
   <include file="$(find crazyflie_controller)/launch/init_pursuit_evasion_controller.launch">
     <arg name="frame_follower" value="$(arg frame4)" />
-    <arg name="frame_leader" value="$(arg frame1)" />
+    <arg name="frame_leader" value="$(arg frame3)" />
     <arg name="xOffset" value="$(arg xOffset4)" />
-      <arg name="yOffset" value="$(arg yOffset4)" />
+    <arg name="yOffset" value="$(arg yOffset4)" />
+    <arg name="maxAngle" value="$(arg maxAngle4)" />
   </include>
 
   <node name="pose" pkg="crazyflie_demo" type="publish_pose.py" output="screen">

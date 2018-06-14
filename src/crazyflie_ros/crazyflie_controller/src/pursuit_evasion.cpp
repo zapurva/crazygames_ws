@@ -5,8 +5,8 @@
 
 #include "pid.hpp"
 
-#define MAX_PITCH 7.0
-#define MAX_ROLL 7.0
+//#define MAX_PITCH 7.0
+//#define MAX_ROLL 7.0
 
 //***************************************
 //Tuning parameter for switching function
@@ -32,12 +32,14 @@ public:
         const std::string& followerFrame,
         const float& xOffset,
         const float& yOffset,
+        const float& maxAngle,
         const ros::NodeHandle& n)
         : m_worldFrame(worldFrame)
         , m_frame_leader(leaderFrame)
         , m_frame_follower(followerFrame)
         , m_xOffset(xOffset)
         , m_yOffset(yOffset)
+        , m_maxAngle(maxAngle)
         , m_pubNav()
         , m_listener_follower()
         , m_pidX(
@@ -95,7 +97,7 @@ public:
         m_serviceLand = nh.advertiseService("land", &Follower::land, this);
         m_serviceAuto = nh.advertiseService("autoRequest", &Follower::autoRequest, this);
         initVelComputation();
-        //ROS_INFO("Pursuit-Evasion initiated");
+        ROS_INFO("Max angle is %f", m_maxAngle);
     }
 
     void run(double frequency)
@@ -354,8 +356,8 @@ private:
                 //float s_x = targetDrone.pose.position.x + (1/2*0.174)*m_twistData.twist.linear.x*fabs(m_twistData.twist.linear.x);
                 //float s_y = targetDrone.pose.position.y + (1/2*0.174)*m_twistData.twist.linear.y*fabs(m_twistData.twist.linear.y);
 
-                float s_x = currX + ((1/(2*MAX_PITCH*0.1375))*avgVelX*fabs(avgVelX));
-                float s_y = currY + ((1/(2*MAX_ROLL*0.1375))*avgVelY*fabs(avgVelY));
+                float s_x = currX + ((1/(2*m_maxAngle*0.1375))*avgVelX*fabs(avgVelX));
+                float s_y = currY + ((1/(2*m_maxAngle*0.1375))*avgVelY*fabs(avgVelY));
                 //ROS_INFO("%f %f %f %f %f %f", s_x, s_y, currX, currY, avgVelX, avgVelY);
                 //ROS_INFO("s_x = %f, s_y = %f", s_x, s_y);
 
@@ -367,24 +369,24 @@ private:
                     if (s_x > 0.001)
                     {
                         ROS_INFO("TOC_x s_x>0 -MAX_PITCH %f %f %f %f %f %f", s_x, s_y, currX, currY, avgVelX, avgVelY);
-                        msg.linear.x = -MAX_PITCH;
+                        msg.linear.x = -m_maxAngle;     //-MAX_PITCH;
                     }
                     else if (s_x < -0.001)
                     {
                         ROS_INFO("TOC_x s_x<-0 +MAX_PITCH %f %f %f %f %f %f", s_x, s_y, currX, currY, avgVelX, avgVelY);
-                        msg.linear.x = +MAX_PITCH;
+                        msg.linear.x = +m_maxAngle;     //+MAX_PITCH;
                     }
                     else if (s_x < 0.001 && s_x > -0.001)
                     {
                         if (avgVelX > 0.1)
                         {
                             ROS_INFO("TOC_x v_x>0 -MAX_PITCH %f %f %f %f %f %f", s_x, s_y, currX, currY, avgVelX, avgVelY);
-                            msg.linear.x = -MAX_PITCH;
+                            msg.linear.x = -m_maxAngle;  //-MAX_PITCH;
                         }
                         else if (avgVelX < -0.1)
                         {
                             ROS_INFO("TOC_x v_x<0 +MAX_PITCH %f %f %f %f %f %f", s_x, s_y, currX, currY, avgVelX, avgVelY);
-                            msg.linear.x = +MAX_PITCH;
+                            msg.linear.x = +m_maxAngle;     //+MAX_PITCH;
                         }
                         else
                             msg.linear.x = 0;
@@ -404,24 +406,24 @@ private:
                     if (s_y > 0.001)
                     {
                         ROS_INFO("TOC_y s_y>0 +MAX_ROLL %f %f %f %f %f %f", s_x, s_y, currX, currY, avgVelX, avgVelY);
-                        msg.linear.y = +MAX_ROLL;
+                        msg.linear.y = +m_maxAngle;         //+MAX_ROLL;
                     }
                     else if (s_y < -0.001)
                     {
                         ROS_INFO("TOC_y s_y<0 -MAX_ROLL %f %f %f %f %f %f", s_x, s_y, currX, currY, avgVelX, avgVelY);
-                        msg.linear.y = -MAX_ROLL;
+                        msg.linear.y = -m_maxAngle;         //-MAX_ROLL;
                     }
                     else if (s_y < 0.001 && s_y > -0.001)
                     {
                         if (avgVelY > 0.1)
                         {
                             ROS_INFO("TOC_y v_y>0 +MAX_ROLL %f %f %f %f %f %f", s_x, s_y, currX, currY, avgVelX, avgVelY);
-                            msg.linear.y = +MAX_ROLL;
+                            msg.linear.y = +m_maxAngle;         //+MAX_ROLL;
                         }
                         else if (avgVelY < -0.1)
                         {
                             ROS_INFO("TOC_y v_y<0 -MAX_ROLL %f %f %f %f %f %f", s_x, s_y, currX, currY, avgVelX, avgVelY);
-                            msg.linear.y = -MAX_ROLL;
+                            msg.linear.y = -m_maxAngle;         //-MAX_ROLL;
                         }
                         else
                             msg.linear.y = 0.0;
@@ -540,7 +542,7 @@ private:
     float m_thrust;
     float m_startZ, m_startX, m_startY;
     float m_HoverRMSEX, m_HoverRMSEY, m_HoverRMSEZ;
-    float m_xOffset, m_yOffset;
+    float m_xOffset, m_yOffset, m_maxAngle;
 
     float totalX = 0.0, totalY = 0.0;
     float velocityX[5], velocityY[5];
@@ -563,14 +565,15 @@ int main(int argc, char **argv)
   std::string followerFrame;
   n.getParam("frame_leader", leaderFrame);
   n.getParam("frame_follower", followerFrame);
-  float xOffset, yOffset;
+  float xOffset, yOffset, maxAngle;
   n.getParam("xOffset", xOffset);
   n.getParam("yOffset", yOffset);
+  n.getParam("maxAngle", maxAngle);
   //ROS_INFO("Received offsets %f and %f", xOffset, yOffset);
   double frequency;
   n.param("frequency", frequency, 150.0);
 
-  Follower follower(worldFrame, leaderFrame, followerFrame, xOffset, yOffset, n);
+  Follower follower(worldFrame, leaderFrame, followerFrame, xOffset, yOffset, maxAngle, n);
   follower.run(frequency);
 
   return 0;

@@ -6,6 +6,7 @@
   <arg name="worldFrame" default="world"/>
   <arg name="xOffset" />
   <arg name="yOffset" />
+  <arg name="maxAngle" />
 
   <node name="pursuit_evasion" pkg="crazyflie_controller" type="pursuit_evasion" output="screen">
     <param name="frame_follower" value="$(arg frame_follower)" />
@@ -13,6 +14,7 @@
     <param name="worldFrame" value="$(arg worldFrame)" />
     <param name="xOffset" value="$(arg xOffset)" />
     <param name="yOffset" value="$(arg yOffset)" />
+    <param name="maxAngle" value="$(arg maxAngle)" />
     <rosparam command="load" file="$(find crazyflie_controller)/config/PID_values.yaml" />
   </node>
 </launch>
