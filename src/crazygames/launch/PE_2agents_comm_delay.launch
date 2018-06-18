@@ -15,16 +15,16 @@
   <arg name="uri2" default="radio://1/85/2M/E7E7E7E704" />
   <arg name="frame2" default="crazyflie4" />
   <arg name="xOffset2" default="0.0" />
-  <arg name="yOffset2" default="0.7" />
+  <arg name="yOffset2" default="1.0" />
   <arg name="maxAngle2" default="7.0" />
 
   <!--Safe landing spot for LEADER-->
   <arg name="x1" default="0" />
-  <arg name="y1" default="-1" />
+  <arg name="y1" default="0" />
   <arg name="z1" default="1" />
     <!--Safe landing spot for AGENT2-->
-  <arg name="x2" default="0" />
-  <arg name="y2" default="0" />
+  <arg name="x2" default="1" />
+  <arg name="y2" default="1" />
   <arg name="z2" default="1" />
 
   <!-- Launch CFserver-->
@@ -55,7 +55,7 @@
 
     <node name="pose" pkg="crazyflie_demo" type="publish_pose_teleop.py" output="screen">
       <param name="name" value="goal" />
-      <param name="rate" value="150" />
+      <param name="rate" value="100" />
       <param name="x" value="$(arg x1)" />
       <param name="y" value="$(arg y1)" />
       <param name="z" value="$(arg z1)" />
@@ -77,7 +77,7 @@
       <param name="use_crazyflie_controller" value="True" />
     </node>
 
-    <include file="$(find crazyflie_controller)/launch/init_pursuit_evasion_controller.launch">
+    <include file="$(find crazyflie_controller)/launch/init_pe_controller_comm_delay.launch">
       <arg name="frame_follower" value="$(arg frame2)" />
       <arg name="frame_leader" value="$(arg frame1)" />
       <arg name="xOffset" value="$(arg xOffset2)" />
@@ -87,7 +87,7 @@
 
     <node name="pose" pkg="crazyflie_demo" type="publish_pose.py" output="screen">
       <param name="name" value="goal" />
-      <param name="rate" value="150" />
+      <param name="rate" value="100" />
       <param name="x" value="$(arg x2)" />
       <param name="y" value="$(arg y2)" />
       <param name="z" value="$(arg z2)" />

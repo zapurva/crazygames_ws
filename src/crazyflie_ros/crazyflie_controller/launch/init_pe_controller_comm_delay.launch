@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+
+<launch>
+  <arg name="frame_follower"/>
+  <arg name="frame_leader"/>
+  <arg name="worldFrame" default="world"/>
+  <arg name="xOffset" />
+  <arg name="yOffset" />
+  <arg name="maxAngle" />
+
+  <node name="pursuit_evasion_comm_delay" pkg="crazyflie_controller" type="pursuit_evasion_comm_delay" output="screen">
+    <param name="frame_follower" value="$(arg frame_follower)" />
+    <param name="frame_leader" value="$(arg frame_leader)" />
+    <param name="worldFrame" value="$(arg worldFrame)" />
+    <param name="xOffset" value="$(arg xOffset)" />
+    <param name="yOffset" value="$(arg yOffset)" />
+    <param name="maxAngle" value="$(arg maxAngle)" />
+    <rosparam command="load" file="$(find crazyflie_controller)/config/PID_values.yaml" />
+  </node>
+</launch>
